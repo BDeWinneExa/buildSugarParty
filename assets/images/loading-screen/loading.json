@@ -1,0 +1,351 @@
+{
+  "frames": {
+    "loading-bg-desktop": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 1920,
+        "h": 1080
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "sourceSize": {
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "loading-bg-mobile": {
+      "frame": {
+        "x": 1086,
+        "y": 2,
+        "w": 1080,
+        "h": 1920
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 1920
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 1920
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "footer-desktop": {
+      "frame": {
+        "x": 2170,
+        "y": 2,
+        "w": 1909,
+        "h": 494
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1909,
+        "h": 494
+      },
+      "sourceSize": {
+        "w": 1909,
+        "h": 494
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "loading-character": {
+      "frame": {
+        "x": 2668,
+        "y": 2,
+        "w": 1099,
+        "h": 1059
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1099,
+        "h": 1059
+      },
+      "sourceSize": {
+        "w": 1099,
+        "h": 1059
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "loading-text": {
+      "frame": {
+        "x": 2668,
+        "y": 1105,
+        "w": 710,
+        "h": 105
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 710,
+        "h": 105
+      },
+      "sourceSize": {
+        "w": 710,
+        "h": 105
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "loading-logo": {
+      "frame": {
+        "x": 2777,
+        "y": 1105,
+        "w": 700,
+        "h": 635
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 700,
+        "h": 635
+      },
+      "sourceSize": {
+        "w": 700,
+        "h": 635
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gold-panel": {
+      "frame": {
+        "x": 2668,
+        "y": 1819,
+        "w": 622,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 622,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 622,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "base-panel": {
+      "frame": {
+        "x": 3416,
+        "y": 1105,
+        "w": 612,
+        "h": 61
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 612,
+        "h": 61
+      },
+      "sourceSize": {
+        "w": 612,
+        "h": 61
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "loading-bar": {
+      "frame": {
+        "x": 3481,
+        "y": 1105,
+        "w": 598,
+        "h": 49
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 598,
+        "h": 49
+      },
+      "sourceSize": {
+        "w": 598,
+        "h": 49
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "loading-stripe": {
+      "frame": {
+        "x": 3534,
+        "y": 1105,
+        "w": 598,
+        "h": 49
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 598,
+        "h": 49
+      },
+      "sourceSize": {
+        "w": 598,
+        "h": 49
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "highlightBottom": {
+      "frame": {
+        "x": 2668,
+        "y": 1893,
+        "w": 575,
+        "h": 14
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 575,
+        "h": 14
+      },
+      "sourceSize": {
+        "w": 575,
+        "h": 14
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "highlightTop": {
+      "frame": {
+        "x": 3587,
+        "y": 1105,
+        "w": 575,
+        "h": 14
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 575,
+        "h": 14
+      },
+      "sourceSize": {
+        "w": 575,
+        "h": 14
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "startbutton": {
+      "frame": {
+        "x": 3731,
+        "y": 2,
+        "w": 559,
+        "h": 169
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 559,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 559,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "footer-mobile": {
+      "frame": {
+        "x": 3605,
+        "y": 1105,
+        "w": 430,
+        "h": 279
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 430,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 430,
+        "h": 279
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "loading.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3902,
+      "h": 1924
+    },
+    "scale": 1
+  }
+}

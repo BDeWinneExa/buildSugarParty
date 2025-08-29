@@ -67090,7 +67090,8 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         this.addChild(this.character);
         this.characterLogo = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-logo'));
         this.characterLogo.anchor.set(0.5, 0.5);
-        this.characterLogo.position.y = 50;
+        this.characterLogo.scale.set(0.55);
+        this.characterLogo.position.y = 450;
         this.character.addChild(this.characterLogo);
         this.createGradientBottom();
         this.footerText = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-text'));
@@ -67148,7 +67149,9 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         this.gradientBottomMobile = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('footer-mobile'));
         this.gradientBottom.anchor.set(0.5, 1);
         this.gradientBottom.position.set(0, 540);
+        this.gradientBottom.scale.set(1.1, 1);
         this.gradientBottomMobile.anchor.set(0.5, 1);
+        this.gradientBottomMobile.scale.set(1.1, 1);
         this.background.addChild(this.gradientBottom);
         this.addChild(this.gradientBottomMobile);
     }
@@ -67204,9 +67207,9 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         const height = window.innerHeight;
         const yScale = height / baseHeight;
         const xScale = width / baseWidth;
-        const scale = Math.min(xScale * 2, yScale);
+        const scale = Math.min(xScale, yScale);
         // Background: Scale on Y-axis to be full screen
-        this.character.position.set(width / 2, height / 2);
+        this.character.position.set(width / 2, (height / 2) - 200);
         // Character: Always keep centered
         if (ScreenOrientation_1.ScreenOrientation.HORIZONTAL == BrowserApplication_1.BrowserApplication.mainScreenStage.orientation) {
             this.character.scale.set(scale);
@@ -67214,7 +67217,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.gradientBottomMobile.visible = false;
             this.background.visible = true;
             this.gradientBottom.visible = true;
-            this.characterLogo.position.y = this.progressBar.alpha == 0 ? -50 : 50;
+            this.characterLogo.position.y = this.progressBar.alpha == 0 ? 300 : 300;
             // this.startButton.position.y = -150;
             if (width > height * (baseWidth / baseHeight)) {
                 this.background.scale.set(xScale);
@@ -67236,21 +67239,21 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             }
         }
         else {
-            this.character.scale.set(scale * 1.2);
+            this.character.scale.set(scale * 2.5);
             this.backgroundMobile.visible = true;
             this.background.visible = false;
             this.gradientBottomMobile.visible = true;
             this.gradientBottom.visible = false;
-            const mobileWidth = 430;
-            const mobileHeight = 744;
+            const mobileWidth = 1080;
+            const mobileHeight = 1920;
             const yScaleMobile = height / mobileHeight;
             const xScaleMobile = width / mobileWidth;
             const scaleMobile = Math.max(xScaleMobile, yScaleMobile);
-            this.characterLogo.position.y = this.progressBar.alpha == 0 ? 50 : 150;
+            this.characterLogo.position.y = this.progressBar.alpha == 0 ? 450 : 450;
             this.backgroundMobile.scale.set(scaleMobile, scaleMobile);
             this.backgroundMobile.x = width / 2;
             this.backgroundMobile.y = height / 2;
-            this.gradientBottomMobile.scale.set(scale * 2.5);
+            this.gradientBottomMobile.scale.set(scale * 5);
             this.gradientBottomMobile.position.set(width / 2, height);
             // Footer text: Center horizontally at bottom, positioned within gradient area
             this.footerText.x = width / 2;

@@ -2,391 +2,391 @@
   "layouts": [
     {
       "name": "intro-screen",
-      "url": "./layouts/intro-screen.json?v=0.0.10.1756496309778"
+      "url": "./layouts/intro-screen.json?v=0.0.10.1756496475349"
     },
     {
       "name": "main-screen",
-      "url": "./layouts/main-screen.json?v=0.0.10.1756496309778"
+      "url": "./layouts/main-screen.json?v=0.0.10.1756496475349"
     },
     {
       "name": "uiHorizontal",
-      "url": "./layouts/uiHorizontal.json?v=0.0.10.1756496309778"
+      "url": "./layouts/uiHorizontal.json?v=0.0.10.1756496475349"
     },
     {
       "name": "uiPortrait",
-      "url": "./layouts/uiPortrait.json?v=0.0.10.1756496309778"
+      "url": "./layouts/uiPortrait.json?v=0.0.10.1756496475349"
     },
     {
       "name": "adjustBetPanelPortrait",
-      "url": "./layouts/adjustBetPanelPortrait.json?v=0.0.10.1756496309778"
+      "url": "./layouts/adjustBetPanelPortrait.json?v=0.0.10.1756496475349"
     },
     {
       "name": "adjustBetPanelLandscape",
-      "url": "./layouts/adjustBetPanelLandscape.json?v=0.0.10.1756496309778"
+      "url": "./layouts/adjustBetPanelLandscape.json?v=0.0.10.1756496475349"
     },
     {
       "name": "autoplayPortrait",
-      "url": "./layouts/autoplayPortrait.json?v=0.0.10.1756496309778"
+      "url": "./layouts/autoplayPortrait.json?v=0.0.10.1756496475349"
     },
     {
       "name": "autoplayLandscape",
-      "url": "./layouts/autoplayLandscape.json?v=0.0.10.1756496309778"
+      "url": "./layouts/autoplayLandscape.json?v=0.0.10.1756496475349"
     },
     {
       "name": "settingPortrait",
-      "url": "./layouts/settingPortrait.json?v=0.0.10.1756496309778"
+      "url": "./layouts/settingPortrait.json?v=0.0.10.1756496475349"
     },
     {
       "name": "settingslLandscape",
-      "url": "./layouts/settingslLandscape.json?v=0.0.10.1756496309778"
+      "url": "./layouts/settingslLandscape.json?v=0.0.10.1756496475349"
     },
     {
       "name": "popupLostConnectionPortrait",
-      "url": "./layouts/popupLostConnectionPortrait.json?v=0.0.10.1756496309778"
+      "url": "./layouts/popupLostConnectionPortrait.json?v=0.0.10.1756496475349"
     },
     {
       "name": "popupLostConnectionLandscape",
-      "url": "./layouts/popupLostConnectionLandscape.json?v=0.0.10.1756496309778"
+      "url": "./layouts/popupLostConnectionLandscape.json?v=0.0.10.1756496475349"
     },
     {
       "name": "popupFeatureBuy",
-      "url": "./layouts/popupFeatureBuy.json?v=0.0.10.1756496309778"
+      "url": "./layouts/popupFeatureBuy.json?v=0.0.10.1756496475349"
     },
     {
       "name": "popups",
-      "url": "./layouts/popups.json?v=0.0.10.1756496309778"
+      "url": "./layouts/popups.json?v=0.0.10.1756496475349"
     }
   ],
   "textures": [
     {
       "name": "texture",
-      "url": "./images/texture.json?v=0.0.10.1756496309778"
+      "url": "./images/texture.json?v=0.0.10.1756496475349"
     },
     {
       "name": "winning_animation",
-      "url": "./images/winning_animation.png?v=0.0.10.1756496309778"
+      "url": "./images/winning_animation.png?v=0.0.10.1756496475349"
     },
     {
       "name": "intro-bg-desktop",
-      "url": "./images/intro-bg-desktop.png?v=0.0.10.1756496309778"
+      "url": "./images/intro-bg-desktop.png?v=0.0.10.1756496475349"
     },
     {
       "name": "intro-bg-mobile",
-      "url": "./images/intro-bg-mobile.png?v=0.0.10.1756496309778"
+      "url": "./images/intro-bg-mobile.png?v=0.0.10.1756496475349"
     },
     {
       "name": "reel-divider",
-      "url": "./images/reel-divider.png?v=0.0.10.1756496309778"
+      "url": "./images/reel-divider.png?v=0.0.10.1756496475349"
     }
   ],
   "spine": [
     {
       "name": "symbol-00",
-      "url": "./spine/low_payout_1.json?v=0.0.10.1756496309778"
+      "url": "./spine/low_payout_1.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-01",
-      "url": "./spine/low_payout_2.json?v=0.0.10.1756496309778"
+      "url": "./spine/low_payout_2.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-02",
-      "url": "./spine/low_payout_3.json?v=0.0.10.1756496309778"
+      "url": "./spine/low_payout_3.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-03",
-      "url": "./spine/low_payout_4.json?v=0.0.10.1756496309778"
+      "url": "./spine/low_payout_4.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-05",
-      "url": "./spine/high_payout_1.json?v=0.0.10.1756496309778"
+      "url": "./spine/high_payout_1.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-06",
-      "url": "./spine/high_payout_2.json?v=0.0.10.1756496309778"
+      "url": "./spine/high_payout_2.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-07",
-      "url": "./spine/high_payout_3.json?v=0.0.10.1756496309778"
+      "url": "./spine/high_payout_3.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-scatter",
-      "url": "./spine/scatter.json?v=0.0.10.1756496309778"
+      "url": "./spine/scatter.json?v=0.0.10.1756496475349"
     },
     {
       "name": "main-screen-background",
-      "url": "./spine/background_desktop.json?v=0.0.10.1756496309778"
+      "url": "./spine/background_desktop.json?v=0.0.10.1756496475349"
     },
     {
       "name": "main-screen-background-mobile",
-      "url": "./spine/mobile/background_mobile.json?v=0.0.10.1756496309778"
+      "url": "./spine/mobile/background_mobile.json?v=0.0.10.1756496475349"
     },
     {
       "name": "reel-frame",
-      "url": "./spine/reel_background.json?v=0.0.10.1756496309778"
+      "url": "./spine/reel_background.json?v=0.0.10.1756496475349"
     },
     {
       "name": "free-spin-popup",
-      "url": "./spine/congratulation.json?v=0.0.10.1756496309778"
+      "url": "./spine/congratulation.json?v=0.0.10.1756496475349"
     },
     {
       "name": "button-spin",
-      "url": "./spine/spin_button.json?v=0.0.10.1756496309778"
+      "url": "./spine/spin_button.json?v=0.0.10.1756496475349"
     },
     {
       "name": "character",
-      "url": "./spine/hero.json?v=0.0.10.1756496309778"
+      "url": "./spine/hero.json?v=0.0.10.1756496475349"
     },
     {
       "name": "big_win",
-      "url": "./spine/big_win.json?v=0.0.10.1756496309778"
+      "url": "./spine/big_win.json?v=0.0.10.1756496475349"
     },
     {
       "name": "super_win",
-      "url": "./spine/super_win.json?v=0.0.10.1756496309778"
+      "url": "./spine/super_win.json?v=0.0.10.1756496475349"
     },
     {
       "name": "mega_win",
-      "url": "./spine/mega_win.json?v=0.0.10.1756496309778"
+      "url": "./spine/mega_win.json?v=0.0.10.1756496475349"
     },
     {
       "name": "grand_win",
-      "url": "./spine/grand_win.json?v=0.0.10.1756496309778"
+      "url": "./spine/grand_win.json?v=0.0.10.1756496475349"
     },
     {
       "name": "logo",
-      "url": "./spine/Logo.json?v=0.0.10.1756496309778"
+      "url": "./spine/Logo.json?v=0.0.10.1756496475349"
     },
     {
       "name": "freespins-popup",
-      "url": "./spine/congratulation.json?v=0.0.10.1756496309778"
+      "url": "./spine/congratulation.json?v=0.0.10.1756496475349"
     },
     {
       "name": "symbol-destroy-animation",
-      "url": "./spine/symbol_destroy.json?v=0.0.10.1756496309778"
+      "url": "./spine/symbol_destroy.json?v=0.0.10.1756496475349"
     },
     {
       "name": "win-frame-animation",
-      "url": "./spine/frame_win.json?v=0.0.10.1756496309778"
+      "url": "./spine/frame_win.json?v=0.0.10.1756496475349"
     },
     {
       "name": "transition_desktop",
-      "url": "./spine/transition.json?v=0.0.10.1756496309778"
+      "url": "./spine/transition.json?v=0.0.10.1756496475349"
     },
     {
       "name": "transition_mobile",
-      "url": "./spine/mobile/transition.json?v=0.0.10.1756496309778"
+      "url": "./spine/mobile/transition.json?v=0.0.10.1756496475349"
     },
     {
       "name": "coins-shower-animation",
-      "url": "./spine/winning_coins.json?v=0.0.10.1756496309778"
+      "url": "./spine/winning_coins.json?v=0.0.10.1756496475349"
     }
   ],
   "sounds": [
     {
       "name": "big_win",
       "url": [
-        "./sounds/big_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/big_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "super_win",
       "url": [
-        "./sounds/super_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/super_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "ultra_win",
       "url": [
-        "./sounds/ultra_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/ultra_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "mega_win",
       "url": [
-        "./sounds/mega_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/mega_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "basegame_loop",
       "url": [
-        "./sounds/ambient_basegame.mp3?v=0.0.10.1756496309778"
+        "./sounds/ambient_basegame.mp3?v=0.0.10.1756496475349"
       ],
       "channel": "ambient"
     },
     {
       "name": "freegame_loop",
       "url": [
-        "./sounds/ambient_freegame.mp3?v=0.0.10.1756496309778"
+        "./sounds/ambient_freegame.mp3?v=0.0.10.1756496475349"
       ],
       "channel": "ambient"
     },
     {
       "name": "symbol_lp1_win",
       "url": [
-        "./sounds/symbol_lp1_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_lp1_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_lp2_win",
       "url": [
-        "./sounds/symbol_lp2_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_lp2_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_lp3_win",
       "url": [
-        "./sounds/symbol_lp3_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_lp3_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_lp4_win",
       "url": [
-        "./sounds/symbol_lp4_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_lp4_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_hp1_win",
       "url": [
-        "./sounds/symbol_hp1_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_hp1_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_hp2_win",
       "url": [
-        "./sounds/symbol_hp2_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_hp2_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_hp3_win",
       "url": [
-        "./sounds/symbol_hp3_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_hp3_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_scatter_win",
       "url": [
-        "./sounds/symbol_scatter_win.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_scatter_win.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "reel_stop",
       "url": [
-        "./sounds/reel_stop.mp3?v=0.0.10.1756496309778"
+        "./sounds/reel_stop.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "error_appearance",
       "url": [
-        "./sounds/error_appearance.mp3?v=0.0.10.1756496309778"
+        "./sounds/error_appearance.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "common_popup_window",
       "url": [
-        "./sounds/common_popup_window.mp3?v=0.0.10.1756496309778"
+        "./sounds/common_popup_window.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "button_click",
       "url": [
-        "./sounds/button_click.mp3?v=0.0.10.1756496309778"
+        "./sounds/button_click.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "counter_loop",
       "url": [
-        "./sounds/counter_loop.mp3?v=0.0.10.1756496309778"
+        "./sounds/counter_loop.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "symbol_scatter_land",
       "url": [
-        "./sounds/symbol_scatter_land.mp3?v=0.0.10.1756496309778"
+        "./sounds/symbol_scatter_land.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "popup_hide",
       "url": [
-        "./sounds/popup_hide.mp3?v=0.0.10.1756496309778"
+        "./sounds/popup_hide.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "transition",
       "url": [
-        "./sounds/transition.mp3?v=0.0.10.1756496309778"
+        "./sounds/transition.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "freespin_trigger",
       "url": [
-        "./sounds/freespin_award.mp3?v=0.0.10.1756496309778"
+        "./sounds/freespin_award.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "freespin_cong",
       "url": [
-        "./sounds/congratulations_screen.mp3?v=0.0.10.1756496309778"
+        "./sounds/congratulations_screen.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "bet_panel_turbo_icon_click",
       "url": [
-        "./sounds/bet_panel_turbo_icon_click.mp3?v=0.0.10.1756496309778"
+        "./sounds/bet_panel_turbo_icon_click.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "intro_spin_start_button_click",
       "url": [
-        "./sounds/intro_spin_start_button_click.mp3?v=0.0.10.1756496309778"
+        "./sounds/intro_spin_start_button_click.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "bet_panel_inside_amount_decrease",
       "url": [
-        "./sounds/bet_panel_inside_amount_decrease.mp3?v=0.0.10.1756496309778"
+        "./sounds/bet_panel_inside_amount_decrease.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "bet_panel_inside_amount_increase",
       "url": [
-        "./sounds/bet_panel_inside_amount_increase.mp3?v=0.0.10.1756496309778"
+        "./sounds/bet_panel_inside_amount_increase.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "buy_freespin",
       "url": [
-        "./sounds/buy_freespin.mp3?v=0.0.10.1756496309778"
+        "./sounds/buy_freespin.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "button_spin_start",
       "url": [
-        "./sounds/spin_btn.mp3?v=0.0.10.1756496309778"
+        "./sounds/spin_btn.mp3?v=0.0.10.1756496475349"
       ]
     },
     {
       "name": "hero_animation",
       "url": [
-        "./sounds/hero_animation.mp3?v=0.0.10.1756496309778"
+        "./sounds/hero_animation.mp3?v=0.0.10.1756496475349"
       ]
     }
   ],
   "fonts": [
     {
       "name": "JockeyOne",
-      "url": "./fonts/JockeyOne-Regular.ttf?v=0.0.10.1756496309778"
+      "url": "./fonts/JockeyOne-Regular.ttf?v=0.0.10.1756496475349"
     },
     {
       "name": "Inter",
-      "url": "./fonts/Inter-Variable.ttf?v=0.0.10.1756496309778"
+      "url": "./fonts/Inter-Variable.ttf?v=0.0.10.1756496475349"
     },
     {
       "name": "Alexandria",
-      "url": "./fonts/Alexandria-Medium.ttf?v=0.0.10.1756496309778"
+      "url": "./fonts/Alexandria-Medium.ttf?v=0.0.10.1756496475349"
     },
     {
       "name": "ZodiacRushGoldFont",
-      "url": "./fonts/ZodiacRushGoldFont.fnt?v=0.0.10.1756496309778",
+      "url": "./fonts/ZodiacRushGoldFont.fnt?v=0.0.10.1756496475349",
       "type": "bitmap"
     }
   ]

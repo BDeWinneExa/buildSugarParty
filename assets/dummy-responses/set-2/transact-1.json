@@ -1,0 +1,56 @@
+{
+    "data": {
+        "Current": {
+            "Type": 1,
+            "TotalWin": 0,
+            "AccWin": 0,
+            "MultiplierMap": {},
+            "Result": {
+                "R": "102,102,201,103,25,102,104|101,101,25,102,201,101,101|104,201,25,201,201,202,202|202,203,25,104,201,101,101|104,203,203,102,102,202,102|203,101,201,201,102,101,101|101,101,103,103,103,203,203",
+                "clusterDetails": [],
+                "scatter": {
+                    "symbol": 25,
+                    "payout": 0,
+                    "positions": [
+                        "0,4",
+                        "1,2",
+                        "2,2",
+                        "3,2"
+                    ]
+                }
+            },
+            "Round": {
+                "RoundType": 1,
+                "Bet": 4,
+                "ActualBet": 4,
+                "BetValue": 1,
+                "Line": 20,
+                "LineBet": 0.2,
+                "Payout": 0,
+                "Items": [
+                    "1|0|1"
+                ],
+                "Mode": 1
+            }
+        },
+        "Player": {
+            "Balance": 9966307.28,
+            "Rate": 1,
+            "Currency": "EUR",
+            "CoinRate": 100
+        },
+        "Next": {
+            "Type": 10,
+            "FreeSpin": {
+                "Next": 1,
+                "Total": 3
+            }
+        },
+        "Details": {
+            "betId": "107553",
+            "gameId": 26,
+            "userId": "17"
+        }
+    },
+    "errors": []
+}

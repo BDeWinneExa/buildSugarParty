@@ -1,0 +1,849 @@
+{
+  "layout": {
+    "children": [
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "Multiplier_Desktop"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "background",
+          "pivotX": 52,
+          "pivotY": 288,
+          "x": 272,
+          "y": 298.5,
+          "alpha": 0.7,
+          "scaleY": 1.04
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "color": "#FD6302",
+              "font": "Alexandria",
+              "size": 22,
+              "bold": true,
+              "align": "center"
+            }
+          },
+          "height": 19,
+          "name": "tfTitle",
+          "pivotX": 28.75,
+          "pivotY": 19,
+          "text": "MAXIMUM BET\n25X",
+          "width": 57.5,
+          "x": 270,
+          "y": 88.5
+        },
+        "tweenData": {
+          "translation-key": "adjustBet.title"
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMaxButtonLandscape"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "active"
+                }
+              },
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "bold": true,
+                      "color": "#000000",
+                      "font": "Alexandria",
+                      "size": 20
+                    }
+                  },
+                  "height": 72,
+                  "name": "tfText",
+                  "pivotX": 118.5,
+                  "pivotY": 36,
+                  "text": "MINIMUM BET\n\t\t\t\t\t\t\t\t\t\t\t\t25X",
+                  "width": 237,
+                  "x": 272,
+                  "y": 31
+                },
+                "tweenData": {
+                  "translation-key": "adjustBet.btnMin"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "onState",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMaxButtonLandscape"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "inactive"
+                }
+              },
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "bold": true,
+                      "color": "#000000",
+                      "font": "Alexandria",
+                      "size": 20
+                    }
+                  },
+                  "height": 72,
+                  "name": "tfText",
+                  "pivotX": 118.5,
+                  "pivotY": 36,
+                  "text": "MAXIMUM BET\n\t\t\t\t\t\t\t\t\t\t\t\t25X",
+                  "width": 237,
+                  "x": 272,
+                  "y": 31
+                },
+                "tweenData": {
+                  "translation-key": "adjustBet.btnMax"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "offState",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "ToggleButton"
+        },
+        "params": {
+          "name": "btnMaxBet",
+          "pivotX": 280.5,
+          "pivotY": 34.4,
+          "x": 285,
+          "y": 515,
+          "scaleX": 1,
+          "scaleY": 1
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "btn-close"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "normal",
+              "pivotX": 33.5,
+              "pivotY": 33.5,
+              "x": 33.5,
+              "y": 33.5
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnClose",
+          "pivotX": 33.5,
+          "pivotY": 33.5,
+          "x": 503,
+          "y": 0
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "totalBetBG-landscape"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "betmainBcg",
+              "x": 5.5,
+              "y": 143
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "totalBetBG-landscape"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "totalBetmainBcg",
+              "x": 5.5,
+              "y": 389
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "totalBetBG-landscape"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "coinValuemainBcg",
+              "x": 5.5,
+              "y": 263
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMinusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "normal"
+                }
+              },
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMinusDeactive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.4,
+                  "name": "disabled"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "btnBetDown",
+              "pivotX": 29,
+              "pivotY": 29,
+              "x": 42,
+              "y": 180
+            },
+            "tweenData": {
+              "animation": {
+                "type": "bounce"
+              }
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMinusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "normal"
+                }
+              },
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMinusDeactive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.4,
+                  "name": "disabled"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "btnCoinDown",
+              "pivotX": 29,
+              "pivotY": 29,
+              "x": 42,
+              "y": 303
+            },
+            "tweenData": {
+              "animation": {
+                "type": "bounce"
+              }
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMinusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "normal"
+                }
+              },
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betMinusDeactive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.4,
+                  "name": "disabled"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "btnTotalBetDown",
+              "pivotX": 29,
+              "pivotY": 29,
+              "x": 42,
+              "y": 425.5
+            },
+            "tweenData": {
+              "animation": {
+                "type": "bounce"
+              }
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betPlusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "normal"
+                }
+              },
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betPlusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.4,
+                  "name": "disabled"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "btnBetUp",
+              "pivotX": 29,
+              "pivotY": 29,
+              "x": 502,
+              "y": 180
+            },
+            "tweenData": {
+              "animation": {
+                "type": "bounce"
+              }
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betPlusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "normal"
+                }
+              },
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betPlusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.4,
+                  "name": "disabled"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "btnCoinUp",
+              "pivotX": 29,
+              "pivotY": 29,
+              "x": 502,
+              "y": 303
+            },
+            "tweenData": {
+              "animation": {
+                "type": "bounce"
+              }
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betPlusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "normal"
+                }
+              },
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "betPlusActive"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.4,
+                  "name": "disabled"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "btnTotalBetUp",
+              "pivotX": 29,
+              "pivotY": 29,
+              "x": 502,
+              "y": 425.5
+            },
+            "tweenData": {
+              "animation": {
+                "type": "bounce"
+              }
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#C5C5C5",
+                  "font": "Alexandria",
+                  "size": 18
+                }
+              },
+              "height": 19,
+              "name": "tfBet",
+              "pivotX": 28.75,
+              "pivotY": 19,
+              "text": "BET",
+              "width": 57.5,
+              "x": 276,
+              "y": 136
+            },
+            "tweenData": {
+              "translation-key": "adjustBet.tfBet"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#C5C5C5",
+                  "font": "Alexandria",
+                  "size": 18
+                }
+              },
+              "height": 19,
+              "name": "tfCoin",
+              "pivotX": 28.75,
+              "pivotY": 9.5,
+              "text": "COIN VALUE",
+              "width": 57.5,
+              "x": 276,
+              "y": 250
+            },
+            "tweenData": {
+              "translation-key": "adjustBet.tfCoinValue"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#C5C5C5",
+                  "font": "Alexandria",
+                  "size": 18
+                }
+              },
+              "height": 19,
+              "name": "tfTotalBet",
+              "pivotX": 28.75,
+              "pivotY": 9.5,
+              "text": "BET",
+              "width": 57.5,
+              "x": 276,
+              "y": 371
+            },
+            "tweenData": {
+              "translation-key": "adjustBet.tfTotalBet"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "font": "Alexandria",
+                      "color": "#ffffff",
+                      "size": 24
+                    }
+                  },
+                  "height": 24,
+                  "name": "tfValue",
+                  "pivotX": 70.5,
+                  "pivotY": 12,
+                  "text": "5",
+                  "width": 141,
+                  "x": 70.5,
+                  "y": 12
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "tfBetValue",
+              "x": 202,
+              "y": 165
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "font": "Alexandria",
+                      "color": "#ffffff",
+                      "size": 24
+                    }
+                  },
+                  "height": 24,
+                  "name": "tfValue",
+                  "pivotX": 70.5,
+                  "pivotY": 12,
+                  "text": "0.03 $",
+                  "width": 141,
+                  "x": 70.5,
+                  "y": 12
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "tfCoinValue",
+              "x": 206,
+              "y": 292
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "font": "Alexandria",
+                      "color": "#ffffff",
+                      "size": 24
+                    }
+                  },
+                  "height": 24,
+                  "name": "tfValue",
+                  "pivotX": 70.5,
+                  "pivotY": 12,
+                  "text": "2.40 $",
+                  "width": 141,
+                  "x": 70.5,
+                  "y": 12
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "tfTotalBetValue",
+              "x": 206,
+              "y": 412
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "BetSettings"
+        },
+        "params": {
+          "name": "betSettings",
+          "pivotX": 261,
+          "pivotY": 266,
+          "x": 261,
+          "y": 266
+        }
+      }
+    ],
+    "cls": "starling.display.Sprite",
+    "customParams": {
+      "customComponentClass": "",
+      "forEditor": true
+    },
+    "params": {
+      "name": "adjustBetPanelLandscape",
+      "pivotX": 279,
+      "pivotY": 289.25,
+      "x": 960.5,
+      "y": 547.75
+    }
+  }
+}

@@ -1,0 +1,16 @@
+high_payout_1.webp
+	size: 512, 512
+	filter: Linear, Linear
+	scale: 0.6
+glowcircle
+	bounds: 113, 176, 55, 55
+h1_glow_full
+	bounds: 2, 2, 107, 58
+high_1
+	bounds: 2, 233, 252, 252
+high_1_shatter
+	bounds: 256, 359, 126, 126
+shard
+	bounds: 256, 332, 29, 25
+squareblur
+	bounds: 2, 62, 109, 169

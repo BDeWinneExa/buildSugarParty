@@ -1,0 +1,11 @@
+reel_background.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+framepiece
+	bounds: 2, 291, 393, 272
+glare
+	bounds: 2, 214, 100, 75
+reel_frame
+	bounds: 2, 565, 1470, 1009
+sparks
+	bounds: 1474, 1362, 100, 212

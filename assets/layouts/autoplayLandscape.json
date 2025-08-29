@@ -1,0 +1,785 @@
+{
+  "layout": {
+    "children": [
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "Multiplier_Desktop"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "background",
+          "x": 310,
+          "y": 82,
+          "scaleY":1.17,
+          "alpha":0.7
+        }
+      },
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "autoplaySettingLandscape"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "autoplaySetting",
+          "x": 336,
+          "y": 369
+        }
+      },
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "numberofspinLandscape"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "numberofSpinBG",
+          "x": 336,
+          "y": 165
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": 16777215,
+              "font": "Alexandria",
+              "size": 16
+            }
+          },
+          "height": 20,
+          "name": "tfMin",
+          "pivotX": 125,
+          "pivotY":10,
+          "text": "TURBO SPIN",
+          "width": 250,
+          "x": 362.5,
+          "y": 318
+        },
+        "tweenData": {
+          "translation-key": "autoSpin.tfMin"
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": 16777215,
+              "font": "Alexandria",
+              "size": 16
+            }
+          },
+          "height": 20,
+          "name": "tfMax",
+          "pivotX": 125,
+          "pivotY":10,
+          "text": "TURBO SPIN",
+          "width": 250,
+          "x": 831,
+          "y": 318
+        },
+        "tweenData": {
+          "translation-key": "autoSpin.tfMax"
+        }
+      },
+      {
+        "children": [],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "SliderLandscape"
+        },
+        "params": {
+          "name": "slider",
+          "x": 388,
+          "y": 305
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "toogleON"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "active"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "onState",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "toogleOFF"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "inactive"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "offState",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "ToggleButton"
+        },
+        "params": {
+          "name": "skipBtn",
+          "pivotX": 48,
+          "pivotY": 24,
+          "x": 803,
+          "y": 469
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "toogleON"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "active"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "onState",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "toogleOFF"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "inactive"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": "Button"
+            },
+            "params": {
+              "name": "offState",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "ToggleButton"
+        },
+        "params": {
+          "name": "btnTurbo",
+          "pivotX": 48,
+          "pivotY": 24,
+          "x": 803,
+          "y": 408
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "font": "Alexandria",
+              "color": "#ffffff",
+              "size": 24
+            }
+          },
+          "height": 24,
+          "name": "tfTotalAutoSpinValue",
+          "pivotX": 70.5,
+          "pivotY": 12,
+          "text": "100",
+          "width": 141,
+          "x": 605,
+          "y": 251
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "color": "#FD6302",
+              "font": "Alexandria",
+              "size": 20
+            }
+          },
+          "height": 30,
+          "name": "tfHeading",
+          "pivotX": 131,
+          "pivotY":15,
+          "text": "NUMBER OF SPINS",
+          "width": 262,
+          "x": 600,
+          "y": 141
+        },
+        "tweenData": {
+          "translation-key": "autoSpin.tfHeading"
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": "#C5C5C5",
+              "font": "Alexandria",
+              "size": 16
+            }
+          },
+          "height": 20,
+          "name": "tfNumberOfSpins",
+          "pivotX": 100.5,
+          "pivotY":10,
+          "text": "NUMBER OF SPINS",
+          "width": 201,
+          "x": 598,
+          "y": 196
+        },
+        "tweenData": {
+          "translation-key": "autoSpin.tfNumber"
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": 16777215,
+              "font": "Alexandria",
+              "size": 16
+            }
+          },
+          "height": 20,
+          "name": "tfTurboSpin",
+          "pivotX": 0,
+          "pivotY":10,
+          "text": "TURBO SPIN",
+          "width": 250,
+          "x": 350,
+          "y": 408
+        },
+        "tweenData": {
+          "translation-key": "autoSpin.tfTurboSpin"
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": 16777215,
+              "font": "Alexandria",
+              "size": 16
+            }
+          },
+          "height": 20,
+          "name": "tfSkipSpin",
+          "pivotX": 0,
+          "pivotY":10,
+          "text": "QUICK SPIN",
+          "width": 250,
+          "x": 350,
+          "y": 470
+        },
+        "tweenData": {
+          "translation-key": "autoSpin.tfSkipSpin"
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "btn-close"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "normal",
+              "pivotX": 33.5,
+              "pivotY": 33.5
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnClose",
+          "x": 838.5,
+          "y": 86
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      },
+      {
+        "children":[
+          {
+            "cls":"starling.display.Image",
+            "constructorParams":[
+              {
+                "cls":"starling.textures.Texture",
+                "textureName":"totalBetBG-landscape"
+              }
+            ],
+            "customParams":{},
+            "params":{
+              "name":"totalBetBcg",
+              "pivotX":265,
+              "pivotY":48,
+              "x":376.19,
+              "y":61
+            }
+          },
+          {
+            "cls":"starling.text.TextField",
+            "constructorParams":[
+              {
+                "value":200
+              },
+              {
+                "value":100
+              },
+              {
+                "value":""
+              }
+            ],
+            "customParams":{},
+            "params":{
+              "format":{
+                "cls":"starling.text.TextFormat",
+                "customParams":{},
+                "params":{
+                  "bold":true,
+                  "color":16777215,
+                  "font":"Alexandria",
+                  "size":16
+                }
+              },
+              "height":42,
+              "name":"tfTotalBet",
+              "pivotX":100,
+              "pivotY":21,
+              "text":"TOTAL BET",
+              "width":200,
+              "x":376,
+              "y":0
+            },
+            "tweenData":{
+              "translation-key":"systemSettings.betSettings.tfTotalBet"
+            }
+          },
+          {
+            "children":[
+              {
+                "cls":"starling.display.Image",
+                "constructorParams":[
+                  {
+                    "cls":"starling.textures.Texture",
+                    "textureName":"betMinusActive"
+                  }
+                ],
+                "customParams":{},
+                "params":{
+                  "name":"normal"
+                }
+              },
+              {
+                "cls":"starling.display.Image",
+                "constructorParams":[
+                  {
+                    "cls":"starling.textures.Texture",
+                    "textureName":"betMinusDeactive"
+                  }
+                ],
+                "customParams":{},
+                "params":{
+                  "name":"disabled"
+                }
+              }
+            ],
+            "cls":"starling.display.Sprite",
+            "customParams":{
+              "customComponentClass":"Button"
+            },
+            "params":{
+              "name":"btnBetDown",
+              "pivotX":28,
+              "pivotY":28,
+              "x":147,
+              "y":50
+            }
+          },
+          {
+            "children":[
+              {
+                "cls":"starling.display.Image",
+                "constructorParams":[
+                  {
+                    "cls":"starling.textures.Texture",
+                    "textureName":"betPlusActive"
+                  }
+                ],
+                "customParams":{},
+                "params":{
+                  "name":"normal"
+                }
+              },
+              {
+                "cls":"starling.display.Image",
+                "constructorParams":[
+                  {
+                    "cls":"starling.textures.Texture",
+                    "textureName":"betPlusDeactive"
+                  }
+                ],
+                "customParams":{},
+                "params":{
+                  "name":"disabled"
+                }
+              }
+            ],
+            "cls":"starling.display.Sprite",
+            "customParams":{
+              "customComponentClass":"Button"
+            },
+            "params":{
+              "name":"btnBetUp",
+              "pivotX":28,
+              "pivotY":28,
+              "x":607,
+              "y":50
+            }
+          },
+        
+          {
+            "children":[
+              {
+                "cls":"starling.text.TextField",
+                "constructorParams":[
+                  {
+                    "value":200
+                  },
+                  {
+                    "value":100
+                  },
+                  {
+                    "value":""
+                  }
+                ],
+                "customParams":{},
+                "params":{
+                  "format":{
+                    "cls":"starling.text.TextFormat",
+                    "customParams":{},
+                    "params":{
+                      "bold": true,
+                      "font":"Alexandria",
+                      "size":19,
+                      "color":16777215
+                    }
+                  },
+                  "height":62,
+                  "name":"tfValue",
+                  "pivotX":102,
+                  "pivotY":31,
+                  "text":"20\r",
+                  "width":204,
+                  "x":102,
+                  "y":31
+                }
+              }
+            ],
+            "cls":"starling.display.Sprite",
+            "customParams":{
+              "customComponentClass":"ValueText"
+            },
+            "params":{
+              "name":"tfTotalBetValue",
+              "pivotX":102,
+              "pivotY":31,
+              "x":371.19,
+              "y":52
+            }
+          }
+        ],
+        "cls":"starling.display.Sprite",
+        "customParams":{
+          "customComponentClass":"AdjustTotalBet"
+        },
+        "params":{
+          "name":"betSettings",
+          "x":224,
+          "y":535.5
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "start-autoplay-landscape-btn"
+                  }
+                ],
+                "customParams": {
+                  "customComponentClass": ""
+                },
+                "params": {
+                  "name": "bcg",
+                  "pivotX": 266,
+                  "pivotY": 29,
+                  "x": 605,
+                  "y": 850
+                }
+              },
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "bold": true,
+                      "color":"#000000",
+                      "font":"Alexandria",
+                      "size":20
+                    }
+                  },
+                  "height": 100,
+                  "name": "tfStartAutoPlay",
+                  "pivotX": 100,
+                  "pivotY": 50,
+                  "text": "Start AutoPlay",
+                  "width": 200,
+                  "x": 606,
+                  "y": 849
+                },
+                "tweenData": {
+                  "translation-key": "autoSpin.tfStartAutoPlay"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "normal"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnConfirm",
+          "pivotX": 609,
+          "pivotY": 845,
+          "x": 606,
+          "y": 662
+        }
+      }
+    ],
+    "cls": "starling.display.Sprite",
+    "customParams": {},
+    "params": {
+      "name": "autoplayLandscape",
+      "pivotX": 595.5,
+      "pivotY": 466.25,
+      "x": 960.5,
+      "y": 507.25
+    }
+  }
+}

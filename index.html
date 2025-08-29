@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="minimum-scale=1,maximum-scale=1,user-scalable=no,width=device-width,minimal-ui,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <title>ExaGaming - Sugar Party</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background: #000 url(assets/images/loading.gif) no-repeat center center fixed;
+            background-size: 100px;
+        }
+    </style>
+    <!-- Asset versioning script will be injected here in production -->
+<script defer src="dist/game.bundle.js"></script></head>
+<body>
+    
+    <div id="game"></div>
+    
+    <script type="text/javascript">
+        var game;
+        function setResult() {
+            // If needed, update scenario here
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            try {
+                 // Get query parameters
+            function getQueryParam(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+            
+            // Extract parameters from URL
+            const token = getQueryParam('token');
+            const currency = getQueryParam('currency') || 'EUR';
+            const operator = getQueryParam('operator') || '1';
+            const language = getQueryParam('lang') || 'EN';
+            const gameId = getQueryParam('gameId') || '27';
+            
+            // Determine API base
+            const isProduction = window.location.pathname.includes('prod');
+            const apiBase = isProduction ? 'api-stage.exagaming.com' : 'api-stage.exagaming.com';
+            
+            var config = {
+                logLevel: 3,
+                debug: true,
+                mobileLog: false,
+                lobbyUrl: '',
+                startingBalance: 5000,
+                serverApiUrl: `https://${apiBase}/api/v1/game/slot/engine-six`,
+                jwtToken: token,
+                gameId: gameId,
+                language: language.toUpperCase(),
+                operatorId: operator,
+                currency: currency,
+                userLoginUrl: `https://${apiBase}/api/v1/user/login`
+            };
+            
+            console.log('=== URL PARAMETERS ===');
+            console.log('token:', token);
+            console.log('currency:', currency);
+            console.log('operator:', operator);
+            console.log('language:', language);
+            console.log('=== FINAL CONFIG ===');
+            console.log('jwtToken:', config.jwtToken);
+            console.log('currency:', config.currency);
+            console.log('operatorId:', config.operatorId);
+            console.log('language:', config.language);
+            console.log('userLoginUrl:', config.userLoginUrl);
+            console.log('====================');
+
+            game = new exagaming.SugarParty(document.getElementById('game'), config);
+            setResult();
+            } catch (error) {
+                console.error('Failed to initialize game:', error.message);
+
+                // Show user-friendly error message
+                var gameContainer = document.getElementById('game');
+                gameContainer.innerHTML = '<div style="color: red; text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">' +
+                    '<h2>Game Initialization Error</h2>' +
+                    '<p>' + error.message + '</p>' +
+                    '<p>Expected URL format: ?token=TOKEN&currency=CURRENCY&operator=OPERATOR</p>' +
+                    '<p>Optional parameters: &gameId=ID&lang=LANG&lobbyUrl=URL</p>' +
+                    '<p>Supported languages: en (default), tr, pt</p>' +
+                    '</div>';
+            }
+        });
+    </script>
+    <!-- Webpack will inject the JavaScript bundle here -->
+</body>
+</html>

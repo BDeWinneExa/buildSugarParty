@@ -1,0 +1,56 @@
+{
+    "data": {
+      "Current": {
+        "Type": 1,
+        "TotalWin": 2,
+        "AccWin": 2,
+        "MultiplierMap": {
+          "1,1": 1,
+          "1,2": 1,
+          "1,3": 1,
+          "2,2": 1,
+          "2,3": 1,
+          "2,4": 1
+        },
+        "Result": {
+          "R": "102,201,201,201,102,102,104|102,101,101,101,102,102,101|201,201,101,101,101,202,202|103,103,102,102,102,101,101|202,202,103,103,104,104,102|102,102,202,202,202,101,101|101,101,103,103,103,203,203",
+          "clusterDetails": [
+            {
+              "symbol": 101,
+              "positions": ["1,1", "1,2", "1,3", "2,2", "2,3", "2,4"],
+              "payout": 2,
+              "multiplier": 1,
+              "multiplierPositions": []
+            }
+          ]
+        },
+        "Round": {
+          "RoundType": 1,
+          "Bet": 4,
+          "ActualBet": 4,
+          "BetValue": 1,
+          "Line": 20,
+          "LineBet": 0.2,
+          "Payout": 2,
+          "Items": ["1|0.5|1"],
+          "Mode": 1
+        }
+      },
+      "Player": {
+        "Balance": 9966303.28,
+        "Rate": 1,
+        "Currency": "EUR",
+        "CoinRate": 100
+      },
+      "Next": {
+        "Type": 30
+      },
+      "Details": {
+        "betId": "107553",
+        "gameId": 26,
+        "userId": "17"
+      }
+    },
+    "errors": []
+  }
+  

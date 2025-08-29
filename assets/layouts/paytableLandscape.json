@@ -1,0 +1,3558 @@
+{
+  "layout": {
+    "children": [
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "insufficientBalance_Desktop"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "background",
+          "scaleX": 3,
+          "scaleY": 2.86,
+          "pivotX": 196,
+          "pivotY": 384,
+          "x": 643.82,
+          "y": 1060.26,
+          "scale9Grid":{
+            "cls":"flash.geom.Rectangle",
+            "customParams":{},
+            "params":{
+              "height":285,
+              "width":333,
+              "x":20,
+              "y":20
+            }
+          }
+        }
+      },
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "infoNavBar"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "infoNavBar",
+          "scaleX": 0.8,
+          "scaleY": 1.05,
+          "pivotX": 0,
+          "pivotY": 0,
+          "x": 143.5,
+          "y": 801
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "btn-close"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "normal",
+              "pivotX": 33.5,
+              "pivotY": 33.5
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnClose",
+          "x": 1072.5,
+          "y": -39
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "backBtn"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "normal",
+              "pivotX": 100,
+              "pivotY": 100
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnPreviousPage",
+          "x": 180,
+          "y": 830,
+          "scaleX": 0.25,
+          "scaleY": 0.25
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "forwardBtn"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "normal",
+              "pivotX": 100,
+              "pivotY": 100
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnNextPage",
+          "x": 240,
+          "y": 830,
+          "scaleX": 0.25,
+          "scaleY": 0.25
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "color": 16777215,
+              "font": "Alexandria",
+              "size": 24
+            }
+          },
+          "height": 38,
+          "name": "tfPageNumber",
+          "pivotX": 50,
+          "pivotY": 19,
+          "text": "1/6",
+          "width": 100,
+          "x": 1022,
+          "y": 828.75
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 51,
+              "name": "title",
+              "pivotX": 443.5,
+              "pivotY": 40.5,
+              "text": "Game Rules",
+              "width": 887,
+              "x": 605,
+              "y": 65
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page1.title"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "alpha": 0.55,
+              "height": 56,
+              "name": "tf0",
+              "pivotX": 443.5,
+              "pivotY": 35,
+              "text": "Semboller ekrandaki her yere ödeme yapar. Bir spinin sonunda ekrandaki aynı sembolün toplam\rsayısı, kazanma değerini belirler.",
+              "width": 887,
+              "x": 605,
+              "y": 116.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page1.tf0"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 765
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 524
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0,
+                  "name": "area"
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Quad",
+                    "constructorParams": [
+                      {
+                        "name": "width",
+                        "type": "Number",
+                        "value": 138
+                      },
+                      {
+                        "name": "height",
+                        "type": "Number",
+                        "value": 242
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "alpha": 0.01,
+                      "name": "symbolArea"
+                    }
+                  },
+                  {
+                    "children": [],
+                    "cls": "starling.display.Sprite",
+                    "customParams": {},
+                    "params": {
+                      "name": "staticIcon",
+                      "x": 69,
+                      "y": 136.5
+                    }
+                  },
+                  {
+                    "children": [
+                      {
+                        "cls": "starling.text.TextField",
+                        "constructorParams": [
+                          {
+                            "value": 200
+                          },
+                          {
+                            "value": 100
+                          },
+                          {
+                            "value": ""
+                          }
+                        ],
+                        "customParams": {},
+                        "params": {
+                          "format": {
+                            "cls": "starling.text.TextFormat",
+                            "customParams": {},
+                            "params": {
+                              "color": 16777215,
+                              "font": "Alexandria",
+                              "size": 15
+                            }
+                          },
+                          "height": 18,
+                          "name": "12-30",
+                          "text": "12 - 30",
+                          "width": 56
+                        }
+                      },
+                      {
+                        "cls": "starling.text.TextField",
+                        "constructorParams": [
+                          {
+                            "value": 200
+                          },
+                          {
+                            "value": 100
+                          },
+                          {
+                            "value": ""
+                          }
+                        ],
+                        "customParams": {},
+                        "params": {
+                          "format": {
+                            "cls": "starling.text.TextFormat",
+                            "customParams": {},
+                            "params": {
+                              "color": 16777215,
+                              "font": "Alexandria",
+                              "size": 15
+                            }
+                          },
+                          "height": 18,
+                          "name": "10-11",
+                          "text": "10 -11",
+                          "width": 56,
+                          "y": 26.5
+                        }
+                      },
+                      {
+                        "cls": "starling.text.TextField",
+                        "constructorParams": [
+                          {
+                            "value": 200
+                          },
+                          {
+                            "value": 100
+                          },
+                          {
+                            "value": ""
+                          }
+                        ],
+                        "customParams": {},
+                        "params": {
+                          "format": {
+                            "cls": "starling.text.TextFormat",
+                            "customParams": {},
+                            "params": {
+                              "color": 16777215,
+                              "font": "Alexandria",
+                              "size": 15
+                            }
+                          },
+                          "height": 18,
+                          "name": "8-9",
+                          "text": "8 - 9",
+                          "width": 56,
+                          "y": 53
+                        }
+                      },
+                      {
+                        "cls": "starling.text.TextField",
+                        "constructorParams": [
+                          {
+                            "value": 200
+                          },
+                          {
+                            "value": 100
+                          },
+                          {
+                            "value": ""
+                          }
+                        ],
+                        "customParams": {},
+                        "params": {
+                          "format": {
+                            "cls": "starling.text.TextFormat",
+                            "customParams": {},
+                            "params": {
+                              "color": 16777215,
+                              "font": "Alexandria",
+                              "size": 15
+                            }
+                          },
+                          "height": 18,
+                          "name": "tfPays6",
+                          "pivotX": 82,
+                          "pivotY": 9,
+                          "text": "0",
+                          "width": 82,
+                          "x": 138,
+                          "y": 9
+                        },
+                        "tweenData": {
+                          
+                        }
+                      },
+                      {
+                        "cls": "starling.text.TextField",
+                        "constructorParams": [
+                          {
+                            "value": 200
+                          },
+                          {
+                            "value": 100
+                          },
+                          {
+                            "value": ""
+                          }
+                        ],
+                        "customParams": {},
+                        "params": {
+                          "format": {
+                            "cls": "starling.text.TextFormat",
+                            "customParams": {},
+                            "params": {
+                              "color": 16777215,
+                              "font": "Alexandria",
+                              "size": 15
+                            }
+                          },
+                          "height": 18,
+                          "name": "tfPays5",
+                          "pivotX": 82,
+                          "pivotY": 9,
+                          "text": "0",
+                          "width": 82,
+                          "x": 138,
+                          "y": 35.5
+                        },
+                        "tweenData": {
+                          
+                        }
+                      },
+                      {
+                        "cls": "starling.text.TextField",
+                        "constructorParams": [
+                          {
+                            "value": 200
+                          },
+                          {
+                            "value": 100
+                          },
+                          {
+                            "value": ""
+                          }
+                        ],
+                        "customParams": {},
+                        "params": {
+                          "format": {
+                            "cls": "starling.text.TextFormat",
+                            "customParams": {},
+                            "params": {
+                              "color": 16777215,
+                              "font": "Alexandria",
+                              "size": 15
+                            }
+                          },
+                          "height": 18,
+                          "name": "tfPays4",
+                          "pivotX": 82,
+                          "pivotY": 9,
+                          "text": "0",
+                          "width": 82,
+                          "x": 138,
+                          "y": 62
+                        },
+                        "tweenData": {
+                          
+                        }
+                      }
+                    ],
+                    "cls": "starling.display.Sprite",
+                    "customParams": {},
+                    "params": {
+                      "name": "multiplierDescription",
+                      "y": 220
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {
+                  "customComponentClass": "PaytableSymbolCellDesktop",
+                  "forEditor": true
+                },
+                "params": {
+                  "name": "PaytableSymbolDesktop"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "item_1",
+              "x": 605.5,
+              "y": 90
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 100
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 100
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.5,
+                  "color": 16711680,
+                  "name": "area",
+                  "scaleX": 7.65,
+                  "scaleY": 1.4
+                }
+              },
+              {
+                "cls": "starling.text.TextField",
+                "constructorParams": [
+                  {
+                    "value": 200
+                  },
+                  {
+                    "value": 100
+                  },
+                  {
+                    "value": ""
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "format": {
+                    "cls": "starling.text.TextFormat",
+                    "customParams": {},
+                    "params": {
+                      "color": 16777215,
+                      "font": "Alexandria",
+                      "horizontalAlign": "left",
+                      "size": 20
+                    }
+                  },
+                  "height": 87,
+                  "name": "tfDescription",
+                  "pivotY": 50.5,
+                  "pivotX": 40,
+                  "text": "Bu SCATTER sembolüdür.\rSCATTER sembolü bütün makaralarda görülür.\rSCATTER herhangi bir pozisyonda ödeme yapar.",
+                  "width": 310,
+                  "x": 450,
+                  "y": 90
+                },
+                "tweenData": {
+                  "translation-key": "paytableDesktop.page1.item2"
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Quad",
+                    "constructorParams": [
+                      {
+                        "name": "width",
+                        "type": "Number",
+                        "value": 270
+                      },
+                      {
+                        "name": "height",
+                        "type": "Number",
+                        "value": 220
+                      }
+                    ],
+                    "customParams": {
+                      "forEditor": true
+                    },
+                    "params": {
+                      "alpha": 0.5,
+                      "name": "sizeReference",
+                      "pivotX": 135,
+                      "pivotY": 110,
+                      "x": 135,
+                      "y": 110
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "iconSlot",
+                  "pivotX": 215,
+                  "pivotY": 170,
+                  "scaleX": 0.9,
+                  "scaleY": 0.9,
+                  "x": 300,
+                  "y": 80
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "autoSize": "horizontal",
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 17
+                        }
+                      },
+                      "height": 40,
+                      "name": "6",
+                      "pivotY": 0,
+                      "text": "6",
+                      "width": 13,
+                      "y": 35
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "autoSize": "horizontal",
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 17
+                        }
+                      },
+                      "height": 40,
+                      "name": "5",
+                      "pivotY": 0,
+                      "text": "5",
+                      "width": 13,
+                      "x": 10,
+                      "y": 65
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "autoSize": "horizontal",
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 17
+                        }
+                      },
+                      "height": 40,
+                      "name": "4",
+                      "pivotY": 0,
+                      "text": "4",
+                      "width": 13,
+                      "x": 20,
+                      "y": 95
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "autoSize": "horizontal",
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "bold": true,
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 40,
+                      "name": "tfPays6",
+                      "pivotX": 14,
+                      "pivotY": 0,
+                      "text": "0",
+                      "width": 14,
+                      "x": 74,
+                      "y": 35
+                    },
+                    "tweenData": {
+                      
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "autoSize": "horizontal",
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "bold": true,
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 40,
+                      "name": "tfPays5",
+                      "pivotX": 14,
+                      "pivotY": 0,
+                      "text": "0",
+                      "width": 14,
+                      "x": 74,
+                      "y": 65
+                    },
+                    "tweenData": {
+                      
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "autoSize": "horizontal",
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "bold": true,
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 40,
+                      "name": "tfPays4",
+                      "pivotX": 14,
+                      "pivotY": 0,
+                      "text": "0",
+                      "width": 14,
+                      "x": 74,
+                      "y": 95
+                    },
+                    "tweenData": {
+                      
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "multiplierDescription",
+                  "y": 10
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "name": "item_2",
+              "pivotY": -62,
+              "x": 223,
+              "y": 565.5
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {},
+        "params": {
+          "name": "page_1",
+          "x": 18,
+          "y": -25
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "title",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "TUMBLE FEATURE",
+              "width": 400,
+              "x": 605,
+              "y": 75.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.title"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 84,
+              "name": "tf0",
+              "pivotX": 510.5,
+              "pivotY": 42,
+              "text": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\rdisappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced\rwith symbols coming from above.",
+              "width": 1021,
+              "x": 605,
+              "y": 149
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.tf0"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf1",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "Tumbling will continue until no more winning combinations appear as a result of a tumble.\nThere's no limit to thenumber of possible tumbles.",
+              "width": 1021,
+              "x": 605,
+              "y": 249
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.tf1"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf2",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.",
+              "width": 1021,
+              "x": 605,
+              "y": 335
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.tf2"
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "multiplier_1"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "multiplier_1",
+              "x": 95,
+              "y": 382,
+              "scaleX": 1,
+              "scaleY": 1
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "multiplier_2"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "multiplier_2",
+              "x": 370,
+              "y": 390,
+              "scaleX": 1,
+              "scaleY": 1
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "multiplier_3"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "multiplier_3",
+              "x": 645,
+              "y": 379,
+              "scaleX": 1,
+              "scaleY": 1
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "multiplier_4"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "multiplier_4",
+              "x": 920,
+              "y": 387,
+              "scaleX": 1,
+              "scaleY": 1
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf3",
+              "pivotX": 552.5,
+              "pivotY": 28,
+              "text": "These are the multiplier symbols. They are present on all reels and can hit randomly during\rspins and tumbles in both base game and FREE SPINS.",
+              "width": 1105,
+              "x": 605,
+              "y": 595
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.tf3"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf4",
+              "pivotX": 552.5,
+              "pivotY": 28,
+              "text": "Whenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 15x, 20x,\r25x, 50x, 100x, 250x or 500x.",
+              "width": 1105,
+              "x": 605,
+              "y": 681
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.tf4"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf5",
+              "pivotX": 552.5,
+              "pivotY": 28,
+              "text": "When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\rtogether and the total win of the sequence is multiplied by the final value.",
+              "width": 1105,
+              "x": 605,
+              "y": 767
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page2.tf5"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {},
+        "params": {
+          "name": "page_2",
+          "x": 18,
+          "y": -30
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "title",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "FREESPİN KURALLARI",
+              "width": 400,
+              "x": 605,
+              "y": 66.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.title"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 84,
+              "name": "tf0",
+              "pivotX": 510.5,
+              "pivotY": 42,
+              "text": "FREESPİN ÖZELLİĞİ, ekranın herhangi bir yerinde 4 veya daha fazla SCATTER sembolü denk geldiğinde verilir.Tur 15\rfreespinde başlar.",
+              "width": 1021,
+              "x": 605,
+              "y": 138
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf0"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 123,
+              "name": "tf1",
+              "pivotX": 510.5,
+              "pivotY": 61.5,
+              "text": "FREESPİN turu sırasında, ÇARPAN sembolü her denk geldiğinde ve spin bir galibiyetle sonuçlandığında, ÇARPANdeğeri\rtoplam çarpana eklenir. Turun tüm süresi boyunca, herhangi bir yeni ÇARPAN sembolü isabet ettiğinde ve birgalibiyetle\rsonuçlandığında, toplam çarpan değeri de kazancı çarpmak için kullanılır.",
+              "width": 1021,
+              "x": 605,
+              "y": 227.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf1"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 84,
+              "name": "tf2",
+              "pivotX": 510.5,
+              "pivotY": 42,
+              "text": "FREESPİN TURU sırasında 3 veya daha fazla SCATTER sembolü yakalandığında, 5 ilave freespin kazanılır.\rFREESPİN TURLARINDA özel makaralar oyundadır.",
+              "width": 1021,
+              "x": 605,
+              "y": 327
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf2"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "tf3",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "ANTE BAHİS",
+              "width": 400,
+              "x": 605,
+              "y": 432
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf3"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 84,
+              "name": "tf4",
+              "pivotX": 510.5,
+              "pivotY": 42,
+              "text": "Oyuncunun bahis mel anını 9625 artırarak çizgi başına 25x bahsi artırma seçeneği vardır. Aktif\rante bahsiyle oynarken Scatter sembollerini yakalama şansı artar.",
+              "width": 1021,
+              "x": 605,
+              "y": 508.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf4"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "tf5",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "ANTE BAHİS",
+              "width": 400,
+              "x": 605,
+              "y": 597
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf5"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 84,
+              "name": "tf6",
+              "pivotX": 510.5,
+              "pivotY": 42,
+              "text": "Oyuncunun bahis mel anını 9625 artırarak çizgi başına 25x bahsi artırma seçeneği vardır. Aktif\rante bahsiyle oynarken Scatter sembollerini yakalama şansı artar.",
+              "width": 1021,
+              "x": 605,
+              "y": 654
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.tf6"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {},
+        "params": {
+          "name": "page_3",
+          "x": 20,
+          "y": -10
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "title",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "OYUN KURALLARI",
+              "width": 400,
+              "x": 605,
+              "y": 57
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.title"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf0",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "Yüksek volatiliteli oyunlar ortalamaya göre daha az sayıda kazandırabilir fakat kısa bir zaman\raralığında birden çok büyük kazanç elde etme olasılığı yüksektir.",
+              "width": 1021,
+              "x": 605,
+              "y": 119.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf0"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf1",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "Semboller her yerde ödeme yapar.\rTüm kazançlar, temel bahis ile çarpılır.",
+              "width": 1021,
+              "x": 604,
+              "y": 205.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf1"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf2",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "Bütün değerler gerçek jeton kazanci bazinda ifade edilir\rBirden fazla sembolle kazanılırken, tüm kazançlar toplam kazanca eklenir.",
+              "width": 1021,
+              "x": 605,
+              "y": 291.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf2"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 28,
+              "name": "tf3",
+              "pivotX": 510.5,
+              "pivotY": 14,
+              "text": "Freespinler tur tamamlandıktan sonra oyuncuya verilir.",
+              "width": 1021,
+              "x": 605,
+              "y": 363.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf3"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 28,
+              "name": "tf4",
+              "pivotX": 510.5,
+              "pivotY": 14,
+              "text": "Geçmişte yer alan Freespin toplam kazancı serinin toplam kazancını içerir.",
+              "width": 1021,
+              "x": 605,
+              "y": 421.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf4"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf5",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "Bu oyunun teorik RTP'si 96.506\r\"ANTE BAHİS\" kullanırken oyunun RTP'si 96.506 'dır.",
+              "width": 1021,
+              "x": 605,
+              "y": 479.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf5"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf6",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "MİNİMUM BAHİS: 0.20 $\rMAKSİMUM BAHİS: 125.00 $",
+              "width": 1021,
+              "x": 605,
+              "y": 579.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf6"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 56,
+              "name": "tf7",
+              "pivotX": 510.5,
+              "pivotY": 28,
+              "text": "4 > Arıza bütün ödemeleri ve oyunları geçersiz kılar.",
+              "width": 1021,
+              "x": 605,
+              "y": 665.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page4.tf7"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {},
+        "params": {
+          "name": "page_4",
+          "x": 30,
+          "y": -10
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "title",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "NASIL OYNANIR",
+              "width": 400,
+              "x": 605,
+              "y": 57
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page5.title"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.37,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": "Bahis değerini değiştirmek ve bahis menüsünü açmak için",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined1.part1"
+                    }
+                  },
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-bet-down-normal"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "x": 590.5,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part2",
+                      "text": "veya",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined1.part2"
+                    }
+                  },
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-bet-up-normal"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon2",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part3",
+                      "text": "düğmelerini tıklayın.",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined1.part3"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 106.08,
+                  "x": 605,
+                  "y": 106.08
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined1",
+              "pivotX": 47.25,
+              "pivotY": 91.5,
+              "x": 47.25,
+              "y": 91.5
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 24,
+              "name": "tf0",
+              "pivotX": 510.5,
+              "pivotY": 12,
+              "text": "Oyunda kullanmak istediğiniz bahsinizi seçin.",
+              "width": 1021,
+              "x": 605,
+              "y": 147.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page5.tf0"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 32,
+                  "bold": true
+                }
+              },
+              "height": 39,
+              "name": "tf1",
+              "pivotX": 510.5,
+              "pivotY": 19.5,
+              "text": "ANA OYUN ARAYÜZÜ",
+              "width": 1021,
+              "x": 605,
+              "y": 252
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page5.tf1"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.27,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-settings"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "x": 94.5,
+                      "y": 94
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": " oyunun oynanma şeklini etkileyen ayarları içeren AYARLAR menüsünü açar.",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined2.part1"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 106.08,
+                  "x": 605,
+                  "y": 106.08
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined2",
+              "pivotX": 605,
+              "pivotY": 106.08,
+              "x": 605,
+              "y": 301.08
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.27,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-info"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": " oyunun oynanma şeklini etkileyen ayarları içeren AYARLAR menüsünü açar.",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined3.part1"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 94,
+                  "x": 605,
+                  "y": 94
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined3",
+              "pivotX": 605,
+              "pivotY": 108.5,
+              "x": 605,
+              "y": 360.5
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 48,
+              "name": "tf2",
+              "pivotX": 510.5,
+              "pivotY": 48,
+              "text": "KREDİ ve BAHİS etiketleri mevcut bakiyeyi ve geçerli toplami bahsi gösterir. Jeton\rgörünümü ve para görünümü arasında geçiş yapmak için etiketleri tıklayın.",
+              "width": 1021,
+              "x": 605,
+              "y": 452
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page5.tf2"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.27,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-bet-down-normal"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "x": 590.5,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": "Bahis değerini değiştirmek ve bahis menüsünü açmak için",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined4.part1"
+                    }
+                  },
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-bet-up-normal"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon2",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part2",
+                      "text": "veya",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined4.part2"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 106.08,
+                  "x": 605,
+                  "y": 106.08
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined4",
+              "pivotX": 605,
+              "pivotY": 120.66,
+              "x": 605,
+              "y": 513.66
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 24,
+              "name": "tf3",
+              "pivotX": 510.5,
+              "pivotY": 12,
+              "text": "KREDİ ve BAHİS etiketleri mevcut ",
+              "width": 1021,
+              "x": 605,
+              "y": 538
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page5.tf3"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 48,
+              "name": "tf4",
+              "pivotX": 510.5,
+              "pivotY": 48,
+              "text": "KREDİ ve BAHİS etiketleri mevcut ",
+              "width": 1021,
+              "x": 605,
+              "y": 628
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page5.tf4"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.27,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-spin"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "scaleX": 0.5,
+                      "scaleY": 0.5,
+                      "y": 60
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": "veya",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page5.textCombined5.part1"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 106.08,
+                  "x": 605,
+                  "y": 106.08
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined5",
+              "pivotX": 607.63,
+              "pivotY": 84,
+              "x": 605,
+              "y": 672.58
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {},
+        "params": {
+          "name": "page_5",
+          "x": 30,
+          "y": -12
+        }
+      },
+      {
+        "children": [
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "title",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "NASIL OYNANIR",
+              "width": 400,
+              "x": 605,
+              "y": 57
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.title"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 128,
+              "name": "tf0",
+              "pivotX": 510.5,
+              "pivotY": 64,
+              "text": "BGİRİŞ EKRANI - Giriş ekranını açar ve kapatır\rORTAM - oyundaki ortam sesini ve müziği açar ve kapatır\rSES EFEKTLERİ - oyunun ses efektlerini açar ve kapatır\rOYUN GEÇMİŞİ - oyun geçmişi sayfasını açar",
+              "width": 1021,
+              "x": 605,
+              "y": 143.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf0"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 32,
+                  "bold": true
+                }
+              },
+              "height": 39,
+              "name": "tf1",
+              "pivotX": 510.5,
+              "pivotY": 19.5,
+              "text": "BİLGİ EKRANI",
+              "width": 1021,
+              "x": 605,
+              "y": 256.5,
+              "bold": true
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf1"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.27,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn_previous_page"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "scaleX": 0.5,
+                      "scaleY": 0.5,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": "Bahis değerini değiştirmek ve bahis menüsünü açmak için",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page6.textCombined1.part1"
+                    }
+                  },
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn_next_page"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon2",
+                      "scaleX": 0.5,
+                      "scaleY": 0.5,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part2",
+                      "text": "veya",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page6.textCombined1.part2"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 106.08,
+                  "x": 605,
+                  "y": 106.08
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined1",
+              "pivotX": 47.25,
+              "pivotY": 91.5,
+              "x": 47.25,
+              "y": 310.5
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 32,
+                  "bold": true
+                }
+              },
+              "height": 39,
+              "name": "tf2",
+              "pivotX": 510.5,
+              "pivotY": 19.5,
+              "text": "BAHİS MENÜSÜBAHİS MENÜSÜ",
+              "width": 1021,
+              "x": 605,
+              "y": 396,
+              "bold": true
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf2"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 24,
+              "name": "tf3",
+              "pivotX": 510.5,
+              "pivotY": 12,
+              "text": "KREDİ ve BAHİS etiketleri mevcut ",
+              "width": 1021,
+              "x": 605,
+              "y": 442.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf3"
+            }
+          },
+          {
+            "children": [
+              {
+                "cls": "starling.display.Quad",
+                "constructorParams": [
+                  {
+                    "name": "width",
+                    "type": "Number",
+                    "value": 1105
+                  },
+                  {
+                    "name": "height",
+                    "type": "Number",
+                    "value": 24
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "alpha": 0.27,
+                  "name": "area",
+                  "pivotX": 552.5,
+                  "pivotY": 12,
+                  "x": 605,
+                  "y": 106
+                }
+              },
+              {
+                "children": [
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part1",
+                      "text": " oyunun oynanma şeklini etkileyen ayarları içeren AYARLAR menüsünü açar.",
+                      "width": 1021,
+                      "x": 94.5,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page6.textCombined2.part1"
+                    }
+                  },
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-bet-down-normal"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon1",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part2",
+                      "text": " oyunun oynanma şeklini etkileyen ayarları içeren AYARLAR menüsünü açar.",
+                      "width": 1021,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page6.textCombined2.part2"
+                    }
+                  },
+                  {
+                    "cls": "starling.display.Image",
+                    "constructorParams": [
+                      {
+                        "cls": "starling.textures.Texture",
+                        "textureName": "btn-bet-up-normal"
+                      }
+                    ],
+                    "customParams": {},
+                    "params": {
+                      "name": "icon2",
+                      "scaleX": 0.36,
+                      "scaleY": 0.36,
+                      "y": 90
+                    }
+                  },
+                  {
+                    "cls": "starling.text.TextField",
+                    "constructorParams": [
+                      {
+                        "value": 200
+                      },
+                      {
+                        "value": 100
+                      },
+                      {
+                        "value": ""
+                      }
+                    ],
+                    "customParams": {
+                      "customComponentClass": ""
+                    },
+                    "params": {
+                      "format": {
+                        "cls": "starling.text.TextFormat",
+                        "customParams": {},
+                        "params": {
+                          "color": 16777215,
+                          "font": "Alexandria",
+                          "size": 20
+                        }
+                      },
+                      "height": 24,
+                      "name": "part3",
+                      "text": " oyunun oynanma şeklini etkileyen ayarları içeren AYARLAR menüsünü açar.",
+                      "width": 1021,
+                      "y": 94
+                    },
+                    "tweenData": {
+                      "translation-key": "paytableDesktop.page6.textCombined2.part3"
+                    }
+                  }
+                ],
+                "cls": "starling.display.Sprite",
+                "customParams": {},
+                "params": {
+                  "name": "content",
+                  "pivotX": 557.75,
+                  "pivotY": 106.08,
+                  "x": 605,
+                  "y": 106.08
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "textCombined2",
+              "pivotX": 605,
+              "pivotY": 108.5,
+              "x": 605,
+              "y": 486
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 24,
+              "name": "tf4",
+              "pivotX": 510.5,
+              "pivotY": 12,
+              "text": "KREDİ ve BAHİS etiketleri mevcut ",
+              "width": 1021,
+              "x": 605,
+              "y": 541.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf4"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 24,
+              "name": "tf5",
+              "pivotX": 510.5,
+              "pivotY": 12,
+              "text": "KREDİ ve BAHİS etiketleri mevcut ",
+              "width": 1021,
+              "x": 605,
+              "y": 585.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf5"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 32,
+                  "bold": true
+                }
+              },
+              "height": 39,
+              "name": "tf6",
+              "pivotX": 510.5,
+              "pivotY": 19.5,
+              "text": "BAHİS MENÜSÜBAHİS MENÜSÜ",
+              "width": 1021,
+              "x": 605,
+              "y": 650,
+              "bold": true
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf6"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {
+              "customComponentClass": ""
+            },
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "color": 16777215,
+                  "font": "Alexandria",
+                  "size": 20
+                }
+              },
+              "height": 24,
+              "name": "tf7",
+              "pivotX": 510.5,
+              "pivotY": 12,
+              "text": "KREDİ ve BAHİS etiketleri mevcut ",
+              "width": 1021,
+              "x": 605,
+              "y": 705.5
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page6.tf7"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {},
+        "params": {
+          "name": "page_6",
+          "x": 32
+        }
+      }
+    ],
+    "cls": "starling.display.Sprite",
+    "customParams": {},
+    "params": {
+      "name": "paytableLandscape",
+      "pivotX": 614.5,
+      "pivotY": 466.25,
+      "x": 960.5,
+      "y": 525.75
+    }
+  }
+}

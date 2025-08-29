@@ -1,0 +1,17 @@
+transition.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+2
+	bounds: 2, 1238, 420, 420
+3
+	bounds: 2, 816, 420, 420
+4
+	bounds: 424, 1238, 420, 420
+5
+	bounds: 2, 2, 390, 390
+h1
+	bounds: 2, 394, 420, 420
+h2
+	bounds: 424, 816, 420, 420
+h3
+	bounds: 846, 1238, 420, 420

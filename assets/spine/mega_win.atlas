@@ -1,0 +1,34 @@
+mega_win.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+a
+	bounds: 1838, 1822, 80, 96
+base
+	bounds: 2, 715, 540, 525
+e
+	bounds: 1378, 1706, 69, 99
+	rotate: 90
+frame
+	bounds: 2, 1242, 665, 676
+g
+	bounds: 225, 415, 75, 98
+glare
+	bounds: 2, 220, 100, 75
+h1
+	bounds: 2, 297, 221, 216
+h2
+	bounds: 669, 1395, 313, 308
+i2
+	bounds: 544, 1039, 58, 102
+m
+	bounds: 669, 1297, 96, 96
+mega
+	bounds: 669, 1705, 707, 213
+n
+	bounds: 984, 1605, 84, 98
+rectangle
+	bounds: 1378, 1777, 458, 141
+w
+	bounds: 544, 1143, 121, 97
+win
+	bounds: 2, 515, 501, 198

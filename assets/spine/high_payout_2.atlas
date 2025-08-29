@@ -1,0 +1,12 @@
+high_payout_2.webp
+	size: 512, 512
+	filter: Linear, Linear
+	scale: 0.6
+high_2
+	bounds: 2, 200, 252, 252
+high_2_shatter
+	bounds: 256, 326, 126, 126
+shard
+	bounds: 2, 2, 29, 25
+squareblur
+	bounds: 2, 29, 109, 169

@@ -1,0 +1,79 @@
+mobile_normal.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+base
+	bounds: 2, 124, 1082, 1922
+castle
+	bounds: 1086, 790, 799, 1256
+cloud1L
+	bounds: 1086, 274, 615, 514
+cloud2L
+	bounds: 1703, 412, 376, 178
+	rotate: 90
+cloud3R
+	bounds: 1086, 29, 801, 243
+cloud4R
+	bounds: 1887, 1660, 214, 101
+	rotate: 90
+cloud5L
+	bounds: 2, 36, 231, 86
+cloud6L
+	bounds: 1990, 1751, 123, 43
+	rotate: 90
+dome1
+	bounds: 1887, 1876, 150, 170
+dome10
+	bounds: 1887, 1033, 78, 87
+dome2
+	bounds: 1887, 1239, 100, 126
+dome3
+	bounds: 1887, 1367, 104, 137
+dome4
+	bounds: 1887, 1122, 97, 115
+dome5
+	bounds: 1703, 307, 103, 142
+	rotate: 90
+dome6
+	bounds: 1887, 1506, 140, 152
+dome7
+	bounds: 335, 44, 72, 78
+dome8
+	bounds: 409, 49, 73, 73
+dome9
+	bounds: 1887, 957, 75, 74
+jugnu
+	bounds: 409, 2, 46, 45
+star 2
+	bounds: 235, 41, 98, 81
+
+mobile_normal_2.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+SH1
+	bounds: 2, 1329, 1082, 682
+SH2
+	bounds: 2, 2, 1082, 656
+SH4
+	bounds: 2, 660, 1077, 667
+cloud1R
+	bounds: 1086, 596, 555, 384
+cloud2R
+	bounds: 1086, 190, 347, 211
+cloud3L
+	bounds: 1086, 403, 372, 191
+cloud4L
+	bounds: 1762, 1254, 757, 242
+	rotate: 90
+glow
+	bounds: 1086, 982, 674, 1029
+
+mobile_normal_3.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+SH3
+	bounds: 2, 409, 1082, 651
+SH5
+	bounds: 2, 1062, 1082, 653
+SH6
+	bounds: 1086, 633, 1082, 629
+	rotate: 90

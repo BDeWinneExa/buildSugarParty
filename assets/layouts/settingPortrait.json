@@ -1,0 +1,594 @@
+{
+    "layout": {
+      "children":[
+        {
+          "cls":"starling.display.Image",
+          "constructorParams":[
+            {
+              "cls":"starling.textures.Texture",
+              "textureName":"SettingPanelBG-portrait"
+            }
+          ],
+          "customParams":{},
+          "params":{
+            "name":"background",
+            "x":313,
+            "y":630,
+            "alpha":0.7
+          }
+        },
+        {
+          "cls":"starling.display.Image",
+          "constructorParams":[
+            {
+              "cls":"starling.textures.Texture",
+              "textureName":"settingBG-portrait"
+            }
+          ],
+          "customParams":{},
+          "params":{
+            "name":"settingBG",
+            "x":337,
+            "y":716
+          }
+        },
+        {
+          "children":[
+            {
+              "cls":"starling.display.Image",
+              "constructorParams":[
+                {
+                  "cls":"starling.textures.Texture",
+                  "textureName":"btn-close"
+                }
+              ],
+              "customParams":{},
+              "params":{
+                "name":"normal",
+                "pivotX":33.5,
+                "pivotY":33.5
+              }
+            }
+          ],
+          "cls":"starling.display.Sprite",
+          "customParams":{
+            "customComponentClass":"Button"
+          },
+          "params":{
+            "name":"btnClose",
+            "x":641,
+            "y":634
+          },
+          "tweenData":{
+            "animation":{
+              "type":"bounce"
+            }
+          }
+        },
+        {
+          "cls":"starling.text.TextField",
+          "constructorParams":[
+            {
+              "value":200
+            },
+            {
+              "value":100
+            },
+            {
+              "value":""
+            }
+          ],
+          "customParams":{},
+          "params":{
+            "format":{
+              "cls":"starling.text.TextFormat",
+              "customParams":{},
+              "params":{
+                "color":"#FD6302",
+                "font":"Alexandria",
+                "size":20
+              }
+            },
+            "height":39,
+            "name":"title",
+            "pivotX":200,
+            "pivotY":19.5,
+            "text":"SYSTEM SETTINGS",
+            "width":400,
+            "x":500,
+            "y":690.5
+          },
+          "tweenData":{
+            "translation-key":"systemSettings.title"
+          }
+        },
+        {
+          "children":[
+            {
+              "children":[
+                {
+                  "cls":"starling.text.TextField",
+                  "constructorParams":[
+                    {
+                      "value":200
+                    },
+                    {
+                      "value":100
+                    },
+                    {
+                      "value":""
+                    }
+                  ],
+                  "customParams":{},
+                  "params":{
+                    "format":{
+                      "cls":"starling.text.TextFormat",
+                      "customParams":{},
+                      "params":{
+                        "bold":true,
+                        "color":16777215,
+                        "font":"Alexandria",
+                        "horizontalAlign":"left",
+                        "size":18
+                      }
+                    },
+                    "height":29,
+                    "name":"tf",
+                    "text":"BATTERY SAVER\r",
+                    "width":200,
+                    "y":134
+                  },
+                  "tweenData":{
+                    "translation-key":"systemSettings.switchModule.switch_module_1.tf"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleON"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "active"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "onState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleOFF"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "inactive"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "offState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "cls": "starling.display.Sprite",
+                  "customParams": {
+                    "customComponentClass": "ToggleButton"
+                  },
+                  "params": {
+                    "name": "switch_1",
+                    "pivotX": 48,
+                    "pivotY": 24,
+                    "x": 248,
+                    "y": 144
+                  }
+                }
+              ],
+              "cls":"starling.display.Sprite",
+              "customParams":{
+              },
+              "params":{
+                "name":"switch_module_1",
+                "pivotY":134,
+                "y":134
+              }
+            },
+            {
+              "children":[
+                {
+                  "cls":"starling.text.TextField",
+                  "constructorParams":[
+                    {
+                      "value":200
+                    },
+                    {
+                      "value":100
+                    },
+                    {
+                      "value":""
+                    }
+                  ],
+                  "customParams":{},
+                  "params":{
+                    "format":{
+                      "cls":"starling.text.TextFormat",
+                      "customParams":{},
+                      "params":{
+                        "bold":true,
+                        "color":16777215,
+                        "font":"Alexandria",
+                        "horizontalAlign":"left",
+                        "size":18
+                      }
+                    },
+                    "height":29,
+                    "name":"tf",
+                    "text":"QUICK SPIN\r",
+                    "width":200,
+                    "y":134
+                  },
+                  "tweenData":{
+                    "translation-key":"systemSettings.switchModule.switch_module_2.tf"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleON"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "active"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "onState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleOFF"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "inactive"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "offState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "cls": "starling.display.Sprite",
+                  "customParams": {
+                    "customComponentClass": "ToggleButton"
+                  },
+                  "params": {
+                    "name": "switch_2",
+                    "pivotX": 48,
+                    "pivotY": 24,
+                    "x": 248,
+                    "y": 144
+                  }
+                }
+              ],
+              "cls":"starling.display.Sprite",
+              "customParams":{
+              },
+              "params":{
+                "name":"switch_module_2",
+                "pivotY":134,
+                "y":196
+              }
+            },
+            {
+              "children":[
+                {
+                  "cls":"starling.text.TextField",
+                  "constructorParams":[
+                    {
+                      "value":200
+                    },
+                    {
+                      "value":100
+                    },
+                    {
+                      "value":""
+                    }
+                  ],
+                  "customParams":{},
+                  "params":{
+                    "format":{
+                      "cls":"starling.text.TextFormat",
+                      "customParams":{},
+                      "params":{
+                        "bold":true,
+                        "color":16777215,
+                        "font":"Alexandria",
+                        "horizontalAlign":"left",
+                        "size":18
+                      }
+                    },
+                    "height":29,
+                    "name":"tf",
+                    "text":"SOUND\r",
+                    "width":200,
+                    "y":134
+                  },
+                  "tweenData":{
+                    "translation-key":"systemSettings.switchModule.switch_module_3.tf"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleON"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "active"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "onState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleOFF"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "inactive"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "offState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "cls": "starling.display.Sprite",
+                  "customParams": {
+                    "customComponentClass": "ToggleButton"
+                  },
+                  "params": {
+                    "name": "switch_3",
+                    "pivotX": 48,
+                    "pivotY": 24,
+                    "x": 248,
+                    "y": 144
+                  }
+                }
+              ],
+              "cls":"starling.display.Sprite",
+              "customParams":{
+              },
+              "params":{
+                "name":"switch_module_3",
+                "pivotY":134,
+                "y":258
+              }
+            },
+            {
+              "children":[
+                {
+                  "cls":"starling.text.TextField",
+                  "constructorParams":[
+                    {
+                      "value":200
+                    },
+                    {
+                      "value":100
+                    },
+                    {
+                      "value":""
+                    }
+                  ],
+                  "customParams":{},
+                  "params":{
+                    "format":{
+                      "cls":"starling.text.TextFormat",
+                      "customParams":{},
+                      "params":{
+                        "bold":true,
+                        "color":16777215,
+                        "font":"Alexandria",
+                        "horizontalAlign":"left",
+                        "size":18
+                      }
+                    },
+                    "height":29,
+                    "name":"tf",
+                    "text":"SPIN BUTTON LOCK\r",
+                    "width":200,
+                    "y":134
+                  },
+                  "tweenData":{
+                    "translation-key":"systemSettings.switchModule.switch_module_4.tf"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleON"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "active"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "onState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "cls": "starling.display.Image",
+                          "constructorParams": [
+                            {
+                              "cls": "starling.textures.Texture",
+                              "textureName": "toogleOFF"
+                            }
+                          ],
+                          "customParams": {},
+                          "params": {
+                            "name": "inactive"
+                          }
+                        }
+                      ],
+                      "cls": "starling.display.Sprite",
+                      "customParams": {
+                        "customComponentClass": "Button"
+                      },
+                      "params": {
+                        "name": "offState",
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "cls": "starling.display.Sprite",
+                  "customParams": {
+                    "customComponentClass": "ToggleButton"
+                  },
+                  "params": {
+                    "name": "switch_4",
+                    "pivotX": 48,
+                    "pivotY": 24,
+                    "x": 248,
+                    "y": 144
+                  }
+                }
+              ],
+              "cls":"starling.display.Sprite",
+              "customParams":{
+              },
+              "params":{
+                "name":"switch_module_4",
+                "pivotY":134,
+                "y":320
+              }
+            }
+
+          ],
+          "cls":"starling.display.Sprite",
+          "customParams":{
+            "customComponentClass":"AdjustSettings"
+          },
+          "params":{
+            "name":"adjustSettings",
+            "x":350.6,
+            "y":610
+          }
+        }
+      ],
+          "cls":"starling.display.Sprite",
+          "customParams":{
+            "customComponentClass":""
+          },
+          "params":{
+            "name":"settingPortrait",
+            "pivotX":494.45,
+            "pivotY":1347,
+            "scaleX":2,
+            "scaleY":2,
+            "x":538.45,
+            "y":1987
+          }
+        }
+}

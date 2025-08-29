@@ -1,0 +1,86 @@
+mobile_bonus.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+0
+	bounds: 1093, 1013, 256, 256
+Circle_rays_11
+	bounds: 1511, 1304, 200, 200
+L
+	bounds: 680, 163, 120, 649
+Os
+	bounds: 2, 73, 676, 739
+R
+	bounds: 680, 2, 159, 585
+	rotate: 90
+SH1
+	bounds: 802, 163, 37, 50
+SH2
+	bounds: 1279, 959, 44, 52
+SH3
+	bounds: 1930, 1451, 44, 53
+SH4
+	bounds: 1431, 1053, 43, 52
+SH5
+	bounds: 1511, 1273, 32, 29
+SH6
+	bounds: 1351, 1022, 23, 28
+SH7
+	bounds: 544, 2, 69, 55
+	rotate: 90
+SHB1
+	bounds: 381, 29, 161, 42
+SHB1_
+	bounds: 2, 2, 183, 69
+SHB2
+	bounds: 1002, 675, 137, 43
+	rotate: 90
+SHB2_
+	bounds: 1206, 849, 162, 71
+	rotate: 90
+SHB3
+	bounds: 953, 623, 189, 47
+	rotate: 90
+SHB3_
+	bounds: 1713, 1429, 215, 75
+SHB4
+	bounds: 187, 19, 192, 52
+SHB4_
+	bounds: 1351, 1052, 217, 78
+	rotate: 90
+SHB5
+	bounds: 902, 463, 141, 40
+	rotate: 90
+SHB5_
+	bounds: 1431, 1107, 162, 67
+	rotate: 90
+SH_ba
+	bounds: 1511, 1506, 540, 494
+	rotate: 90
+Z1
+	bounds: 802, 445, 159, 98
+	rotate: 90
+Z2
+	bounds: 802, 606, 149, 206
+Z3
+	bounds: 802, 315, 128, 77
+	rotate: 90
+Z4
+	bounds: 1713, 1344, 83, 136
+	rotate: 90
+Z5
+	bounds: 1093, 824, 111, 187
+Z6
+	bounds: 2007, 1879, 13, 167
+cloud1
+	bounds: 1093, 1271, 416, 775
+sky1
+	bounds: 2, 814, 1089, 1232
+star 2
+	bounds: 802, 215, 98, 81
+	rotate: 90
+
+mobile_bonus_2.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+base
+	bounds: 2, 34, 1082, 1050

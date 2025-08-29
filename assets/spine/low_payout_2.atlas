@@ -1,0 +1,12 @@
+low_payout_2.webp
+	size: 512, 512
+	filter: Linear, Linear
+	scale: 0.6
+glare
+	bounds: 2, 2, 24, 18
+low_2
+	bounds: 2, 150, 252, 252
+low_2_shatter
+	bounds: 2, 22, 126, 126
+shard
+	bounds: 256, 377, 29, 25

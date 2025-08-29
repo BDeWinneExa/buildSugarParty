@@ -1,0 +1,246 @@
+{
+	"layout": {
+		"children":[
+			{
+			  "cls": "starling.display.Image",
+			  "constructorParams": [
+				{
+				  "cls": "starling.textures.Texture",
+				  "textureName": "insufficientBalance_Desktop"
+				}
+			  ],
+			  "customParams": {},
+			  "params": {
+				"name":"frame",
+				"pivotX":71.5,
+				"pivotY":193.5,
+				"x":-104.5,
+				"y":-151,
+				"scaleX":0.9,
+				"scaleY":0.8
+			  }
+			},
+			{
+			  "cls":"starling.text.TextField",
+			  "constructorParams":[
+				{
+				  "value":200
+				},
+				{
+				  "value":100
+				},
+				{
+				  "value":""
+				}
+			  ],
+			  "customParams":{},
+			  "params":{
+				"autoScale":true,
+				"format":{
+				  "cls":"starling.text.TextFormat",
+				  "customParams":{},
+				  "params":{
+					"color":"#FD6302",
+					"font":"Alexandria",
+					"size":20
+				  }
+				},
+				"height":67,
+				"name":"tfMessage",
+				"pivotX":358.5,
+				"pivotY":33.5,
+				"text":"ERROR",
+				"width":717,
+				"y":-241
+			  }
+			},
+			{
+			  "cls":"starling.text.TextField",
+			  "constructorParams":[
+				{
+				  "value":200
+				},
+				{
+				  "value":100
+				},
+				{
+				  "value":""
+				}
+			  ],
+			  "customParams":{},
+			  "params":{
+				"autoScale":true,
+				"format":{
+				  "cls":"starling.text.TextFormat",
+				  "customParams":{},
+				  "params":{
+					"color":16777215,
+					"font":"Alexandria",
+					"size":56
+				  }
+				},
+				"height":67,
+				"name":"tfMessage",
+				"pivotX":358.5,
+				"pivotY":33.5,
+				"text":"CONNECTION LOST",
+				"width":717,
+				"y":-241
+			  }
+			},
+			{
+			  "cls":"starling.text.TextField",
+			  "constructorParams":[
+				{
+				  "value":200
+				},
+				{
+				  "value":100
+				},
+				{
+				  "value":""
+				}
+			  ],
+			  "customParams":{},
+			  "params":{
+				"autoScale":true,
+				"format":{
+				  "cls":"starling.text.TextFormat",
+				  "customParams":{},
+				  "params":{
+					"color":"#999999",
+					"font":"Alexandria",
+					"size":18
+				  }
+				},
+				"height":67,
+				"name":"tfMessage2",
+				"pivotX":358.5,
+				"pivotY":33.5,
+				"text":"The Network Connection Lost",
+				"width":717,
+				"x":0,
+				"y":-178.5
+			  }
+			},
+			{
+			  "cls":"starling.text.TextField",
+			  "constructorParams":[
+				{
+				  "value":200
+				},
+				{
+				  "value":100
+				},
+				{
+				  "value":""
+				}
+			  ],
+			  "customParams":{},
+			  "params":{
+				"autoScale":true,
+				"format":{
+				  "cls":"starling.text.TextFormat",
+				  "customParams":{},
+				  "params":{
+					"color":"#FFFFFF",
+					"font":"Alexandria",
+					"size":18
+				  }
+				},
+				"height":67,
+				"name":"tfMessage1",
+				"pivotX":358.5,
+				"pivotY":33.5,
+				"text":"Reload",
+				"width":717,
+				"x":20,
+				"y":-105.5
+			  }
+			},
+			{
+			  "children": [
+				{
+				  "cls": "starling.display.Image",
+				  "constructorParams": [
+					{
+					  "cls": "starling.textures.Texture",
+					  "textureName": "btn-close"
+					}
+				  ],
+				  "customParams": {},
+				  "params": {
+					"name": "normal",
+					"pivotX": 33.5,
+					"pivotY": 33.5,
+					"x": 33.5,
+					"y": 33.5
+				  }
+				}
+			  ],
+			  "cls": "starling.display.Sprite",
+			  "customParams": {
+				"customComponentClass": "Button"
+			  },
+			  "params": {
+				"name": "btnClose",
+				"pivotX": 33.5,
+				"pivotY": 33.5,
+				"x": 122,
+				"y": -302
+			  },
+			  "tweenData": {
+				"animation": {
+				  "type": "bounce"
+				}
+			  }
+			},
+			{
+			  "children": [
+				{
+				  "cls": "starling.display.Image",
+				  "constructorParams": [
+					{
+					  "cls": "starling.textures.Texture",
+					  "textureName": "Group"
+					}
+				  ],
+				  "customParams": {},
+				  "params": {
+					"name": "normal",
+					"pivotX": 33.5,
+					"pivotY": 33.5,
+					"x": 33.5,
+					"y": 33.5
+				  }
+				}
+			  ],
+			  "cls": "starling.display.Sprite",
+			  "customParams": {
+				"customComponentClass": "Button"
+			  },
+			  "params": {
+				"name": "icon",
+				"pivotX": 33.5,
+				"pivotY": 33.5,
+				"y":-85,
+				"x":-22.5
+			  },
+			  "tweenData": {
+				"animation": {
+				  "type": "bounce"
+				}
+			  }
+			}
+		  ],
+		  "cls":"starling.display.Sprite",
+		  "customParams":{
+		  },
+		  "params":{
+			"name":"popupLostConnectionPortrait",
+			"x":540,
+			"y":960,
+			"pivotY":-180
+		  }
+	}
+}

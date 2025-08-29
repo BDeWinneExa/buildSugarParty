@@ -1,0 +1,27 @@
+scatter.webp
+	size: 1024, 1024
+	filter: Linear, Linear
+	scale: 0.6
+a
+	bounds: 584, 722, 34, 32
+c
+	bounds: 448, 620, 32, 35
+e
+	bounds: 242, 309, 33, 35
+glare
+	bounds: 321, 594, 24, 18
+r
+	bounds: 279, 524, 26, 38
+s
+	bounds: 279, 564, 40, 48
+scatter_base
+	bounds: 2, 346, 275, 266
+scatter_bow
+	bounds: 448, 657, 134, 97
+scatter_text
+	bounds: 2, 614, 444, 140
+scatter_top
+	bounds: 2, 46, 298, 238
+	rotate: 90
+t
+	bounds: 2, 2, 34, 42

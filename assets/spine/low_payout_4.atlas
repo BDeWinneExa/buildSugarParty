@@ -1,0 +1,11 @@
+low_payout_4.webp
+	size: 1024, 1024
+	filter: Linear, Linear
+glare
+	bounds: 2, 2, 40, 30
+low_4
+	bounds: 2, 246, 420, 420
+low_4_shatter
+	bounds: 2, 34, 210, 210
+shard
+	bounds: 424, 624, 48, 42

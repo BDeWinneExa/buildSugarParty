@@ -1,0 +1,30 @@
+congratulation.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+15fs
+	bounds: 2, 2, 299, 27
+	rotate: 90
+base
+	bounds: 669, 1497, 540, 525
+c1
+	bounds: 669, 1418, 119, 77
+c2
+	bounds: 210, 825, 127, 59
+c3
+	bounds: 31, 252, 101, 49
+c4
+	bounds: 1495, 1960, 109, 62
+c5
+	bounds: 1211, 1691, 101, 72
+congratulation
+	bounds: 2, 303, 1041, 206
+	rotate: 90
+frame
+	bounds: 2, 1346, 665, 676
+glare
+	bounds: 353, 1269, 100, 75
+rays
+	bounds: 1211, 1765, 282, 257
+rectangle
+	bounds: 210, 886, 458, 141
+	rotate: 90

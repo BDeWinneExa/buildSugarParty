@@ -1,0 +1,41 @@
+background_mobile.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+cloud_2
+	bounds: 1084, 1301, 817, 698
+glow
+	bounds: 1903, 1421, 578, 39
+	rotate: 90
+mnt_r_front
+	bounds: 1618, 516, 381, 783
+mntn_l_4
+	bounds: 1433, 76, 279, 243
+	rotate: 90
+mntn_r_3
+	bounds: 1084, 9, 346, 347
+	rotate: 90
+mntn_r_4
+	bounds: 1678, 272, 269, 242
+mntn_r_5
+	bounds: 1678, 53, 229, 217
+road
+	bounds: 1084, 357, 942, 532
+	rotate: 90
+sky
+	bounds: 2, 79, 1080, 1920
+
+background_mobile_2.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+cloud_1
+	bounds: 462, 707, 681, 528
+	rotate: 90
+cloud_3
+	bounds: 2, 1390, 845, 609
+mntn_l_2
+	bounds: 2, 604, 458, 784
+mntn_l_front
+	bounds: 2, 2, 424, 600
+mntn_r_2
+	bounds: 849, 1522, 477, 736
+	rotate: 90

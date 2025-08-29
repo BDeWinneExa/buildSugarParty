@@ -1,0 +1,46 @@
+congratulations.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+	scale: 0.5
+0
+	bounds: 1874, 1918, 128, 128
+Congratulations
+	bounds: 731, 1737, 882, 148
+L
+	bounds: 1227, 1255, 480, 401
+	rotate: 90
+O
+	bounds: 1635, 1897, 149, 237
+	rotate: 90
+R
+	bounds: 2, 2, 477, 413
+SH_C
+	bounds: 731, 1887, 902, 159
+SH_C1
+	bounds: 474, 648, 688, 138
+	rotate: 90
+SH_C2
+	bounds: 313, 442, 894, 159
+	rotate: 90
+SH_L
+	bounds: 614, 853, 454, 439
+SH_L1
+	bounds: 481, 229, 204, 121
+	rotate: 90
+SH_R
+	bounds: 731, 1294, 494, 441
+SH_R1
+	bounds: 474, 435, 211, 129
+	rotate: 90
+base
+	bounds: 2, 1338, 727, 708
+cloud
+	bounds: 2, 417, 919, 309
+	rotate: 90
+congratulation-panel 1
+	bounds: 614, 666, 479, 185
+glow
+	bounds: 1070, 916, 337, 515
+	rotate: 90
+star 2
+	bounds: 614, 1295, 49, 41

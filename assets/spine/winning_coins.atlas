@@ -1,0 +1,10 @@
+winning_coins.png
+	size: 424, 424
+	filter: Linear, Linear
+	pma: true
+coin2
+	bounds: 2, 83, 344, 339
+coin_side2
+	bounds: 2, 2, 79, 339
+	offsets: 2, 0, 83, 339
+	rotate: 90

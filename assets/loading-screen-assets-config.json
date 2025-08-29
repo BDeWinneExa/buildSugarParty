@@ -1,0 +1,30 @@
+{
+  "layouts": [
+    {
+      "name": "loading-screen",
+      "url": "./layouts/loading-screen.json?v=0.0.10.1756474470182"
+    }
+  ],
+  "textures": [
+    {
+      "name": "zoadiac_loading-0",
+      "url": "./images/loading-screen/zodiac_loading-0.json?v=0.0.10.1756474470182"
+    },
+    {
+      "name": "zoadiac_loading-1",
+      "url": "./images/loading-screen/zodiac_loading-1.json?v=0.0.10.1756474470182"
+    }
+  ],
+  "sounds": [],
+  "spine": [],
+  "fonts": [
+    {
+      "name": "AlbertSans",
+      "url": "./fonts/AlbertSans-Black.woff?v=0.0.10.1756474470182"
+    },
+    {
+      "name": "LongdonDecorative",
+      "url": "./fonts/LongdonDecorative.ttf?v=0.0.10.1756474470182"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+background_desktop.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+candy
+	bounds: 2, 2, 145, 204
+	rotate: 90
+front
+	bounds: 2, 149, 1920, 798
+glare
+	bounds: 208, 72, 100, 75
+gloww
+	bounds: 1924, 1834, 100, 75
+	rotate: 90
+heart
+	bounds: 1924, 1936, 93, 92
+sky
+	bounds: 2, 949, 1920, 1079
+star
+	bounds: 208, 39, 29, 31
+
+background_desktop_2.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+cake_r
+	bounds: 1614, 784, 244, 378
+candy_l
+	bounds: 2, 242, 265, 567
+candy_r
+	bounds: 269, 283, 233, 397
+	rotate: 90
+clouds
+	bounds: 2, 1164, 1920, 758
+mountains
+	bounds: 2, 811, 1610, 351
+stars
+	bounds: 269, 518, 441, 291
+tree
+	bounds: 712, 635, 174, 518
+	rotate: 90

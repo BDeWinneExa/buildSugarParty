@@ -1,0 +1,53 @@
+logo.webp
+	size: 1024, 1024
+	filter: Linear, Linear
+	scale: 0.6
+2
+	bounds: 2, 2, 40, 32
+3
+	bounds: 835, 953, 46, 44
+4
+	bounds: 242, 607, 22, 23
+5
+	bounds: 134, 372, 82, 82
+baloon
+	bounds: 582, 830, 74, 75
+base_logo
+	bounds: 279, 796, 301, 226
+glare
+	bounds: 402, 776, 24, 18
+p_1
+	bounds: 134, 259, 111, 17
+	rotate: 90
+p_2
+	bounds: 101, 57, 113, 18
+	rotate: 90
+p_3
+	bounds: 835, 999, 114, 23
+party
+	bounds: 582, 907, 251, 115
+s_1
+	bounds: 582, 811, 29, 17
+s_2
+	bounds: 279, 772, 121, 22
+s_3
+	bounds: 242, 632, 122, 22
+	rotate: 90
+s_4
+	bounds: 218, 387, 67, 17
+	rotate: 90
+scatter_base
+	bounds: 2, 756, 275, 266
+scatter_bow
+	bounds: 2, 36, 134, 97
+	rotate: 90
+scatter_top
+	bounds: 2, 456, 298, 238
+	rotate: 90
+spark
+	bounds: 658, 857, 48, 48
+star
+	bounds: 153, 336, 35, 34
+sugar
+	bounds: 2, 172, 282, 130
+	rotate: 90

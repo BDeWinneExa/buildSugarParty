@@ -1,0 +1,36 @@
+super_win.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+2
+	bounds: 2, 112, 248, 224
+4
+	bounds: 669, 1177, 211, 213
+base
+	bounds: 2, 540, 540, 525
+e
+	bounds: 252, 226, 77, 110
+frame
+	bounds: 2, 1067, 665, 676
+glare
+	bounds: 544, 891, 100, 75
+i2
+	bounds: 1542, 1641, 58, 102
+n
+	bounds: 882, 1292, 84, 98
+p
+	bounds: 669, 1101, 74, 109
+	rotate: 90
+r
+	bounds: 1129, 1424, 80, 109
+rectangle
+	bounds: 669, 1392, 458, 141
+s
+	bounds: 2, 2, 81, 108
+super
+	bounds: 669, 1535, 786, 208
+u
+	bounds: 1457, 1635, 83, 108
+w
+	bounds: 544, 968, 121, 97
+win
+	bounds: 2, 338, 504, 200

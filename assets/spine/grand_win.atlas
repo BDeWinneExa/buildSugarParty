@@ -1,0 +1,42 @@
+grand_win.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+2
+	bounds: 1213, 1610, 248, 224
+3
+	bounds: 2, 176, 208, 208
+4
+	bounds: 1463, 1621, 211, 213
+a
+	bounds: 508, 697, 89, 107
+base
+	bounds: 670, 1517, 541, 525
+cake
+	bounds: 2, 806, 600, 558
+d
+	bounds: 1131, 1407, 79, 108
+frame
+	bounds: 2, 1366, 666, 676
+g
+	bounds: 1213, 1525, 83, 108
+	rotate: 90
+glare
+	bounds: 348, 527, 100, 75
+grand
+	bounds: 1213, 1836, 829, 206
+h1
+	bounds: 2, 386, 221, 216
+i2
+	bounds: 604, 1262, 58, 102
+n
+	bounds: 225, 405, 84, 98
+n2
+	bounds: 1676, 1727, 82, 107
+r
+	bounds: 2, 67, 79, 107
+rectangle
+	bounds: 670, 1374, 459, 141
+w
+	bounds: 225, 505, 121, 97
+win
+	bounds: 2, 604, 504, 200

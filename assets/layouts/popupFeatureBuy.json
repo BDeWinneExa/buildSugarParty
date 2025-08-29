@@ -1,0 +1,198 @@
+{
+  "layout": {
+    "children": [
+      {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "buy-feature-bg"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "background",
+          "x": 960,
+          "y": 540,
+          "scaleX": 0.9,
+          "scaleY": 0.9,
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": 16777215,
+              "font": "LongdonDecorative",
+              "size": 40,
+              "align": "center"
+            }
+          },
+          "height": 150,
+          "name": "tfFreespins",
+          "pivotX": 300,
+          "pivotY": 75,
+          "text": "",
+          "width": 600,
+          "x": 960,
+          "y": 448
+        },
+        "tweenData": {
+          "translation-key": "freeSpins.buy"
+        }
+      },
+      {
+        "cls": "starling.text.TextField",
+        "constructorParams": [
+          {
+            "value": 200
+          },
+          {
+            "value": 100
+          },
+          {
+            "value": ""
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "format": {
+            "cls": "starling.text.TextFormat",
+            "customParams": {},
+            "params": {
+              "bold": true,
+              "color": 16777215,
+              "font": "ZodiacRushGoldFont",
+              "size": 15,
+              "align": "center"
+            }
+          },
+          "height": 120,
+          "name": "tfAmount",
+          "pivotX": 250,
+          "pivotY": 60,
+          "text": "675.00",
+          "width": 500,
+          "x": 960,
+          "y": 523
+        },
+        "tweenData": {}
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "buy-freespins-cancel"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "buy-freespins-cancel"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "normal"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnCancel",
+          "scaleX": 1,
+          "scaleY": 1,
+          "x": 893.5,
+          "y": 585.5
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "buy-freespins-accept"
+                  }
+                ],
+                "customParams": {},
+                "params": {
+                  "name": "buy-freespins-accept"
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "normal"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "Button"
+        },
+        "params": {
+          "name": "btnStart",
+          "scaleX": 1,
+          "scaleY": 1,
+          "x": 974.5,
+          "y": 585.5
+        },
+        "tweenData": {
+          "animation": {
+            "type": "bounce"
+          }
+        }
+      }
+    ],
+    "cls": "starling.display.Sprite",
+    "customParams": {
+      "customComponentClass": "PopupFeatureBuy"
+    },
+    "params": {
+      "name": "PopupFeatureBuy",
+      "pivotX": 960,
+      "pivotY": 540,
+      "width": 1920,
+      "height": 1080,
+      "x": 0,
+      "y": 0
+    }
+  }
+}

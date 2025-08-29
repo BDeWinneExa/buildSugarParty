@@ -292,20 +292,20 @@
       "frame": {
         "x": 3731,
         "y": 2,
-        "w": 559,
-        "h": 169
+        "w": 498,
+        "h": 155
       },
       "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 559,
-        "h": 169
+        "w": 498,
+        "h": 155
       },
       "sourceSize": {
-        "w": 559,
-        "h": 169
+        "w": 498,
+        "h": 155
       },
       "pivot": {
         "x": 0.5,
@@ -343,7 +343,7 @@
     "image": "loading.png",
     "format": "RGBA8888",
     "size": {
-      "w": 3902,
+      "w": 3888,
       "h": 1924
     },
     "scale": 1

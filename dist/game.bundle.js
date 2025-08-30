@@ -66609,7 +66609,6 @@ const SoundManager_1 = __importDefault(__webpack_require__(6881));
 const SoundList_1 = __importDefault(__webpack_require__(27310));
 const BrowserApplication_1 = __webpack_require__(32139);
 const ScreenOrientation_1 = __webpack_require__(81827);
-const Translation_1 = __importDefault(__webpack_require__(62231));
 const engineTween_1 = __webpack_require__(50381);
 const LoadingProgressBar_1 = __importDefault(__webpack_require__(64823));
 class LoadingScreen extends AdjustableLayoutContainer_1.default {
@@ -66641,18 +66640,6 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         this.startButton.anchor.set(0.5, 0.5);
         this.startButton.scale.set(0);
         this.startButton.position.y = -190;
-        const startText = Translation_1.default.t('tfStart');
-        const bitmapText = new pixi_js_1.Text(startText, {
-            fontFamily: AssetsManager_1.default.webFonts.get('LongdonDecorative').family,
-            fill: ['#FFFFFF'],
-            stroke: '#000000',
-            strokeThickness: 4,
-            fontSize: 80,
-            lineJoin: 'round',
-            align: 'center',
-        });
-        bitmapText.anchor.set(0.5, 0.5);
-        this.startButton.addChild(bitmapText);
         this.footerText.addChild(this.startButton);
         this.progressBar = new LoadingProgressBar_1.default();
         this.addChild(this.progressBar);

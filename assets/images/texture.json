@@ -24,48 +24,72 @@
         "y": 0.5
       }
     },
-    "Fade": {
+    "reel": {
       "frame": {
         "x": 2,
         "y": 280,
-        "w": 1920,
-        "h": 408
+        "w": 1208,
+        "h": 828
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 1920,
-        "h": 408
+        "w": 1208,
+        "h": 828
       },
       "sourceSize": {
-        "w": 1920,
-        "h": 408
+        "w": 1208,
+        "h": 828
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "reel": {
+    "reel-blur": {
       "frame": {
-        "x": 2,
-        "y": 692,
-        "w": 1208,
-        "h": 828
+        "x": 1214,
+        "y": 280,
+        "w": 1210,
+        "h": 822
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 1208,
-        "h": 828
+        "w": 1210,
+        "h": 822
       },
       "sourceSize": {
-        "w": 1208,
-        "h": 828
+        "w": 1210,
+        "h": 822
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fade": {
+      "frame": {
+        "x": 1214,
+        "y": 1106,
+        "w": 1920,
+        "h": 408
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 408
+      },
+      "sourceSize": {
+        "w": 1920,
+        "h": 408
       },
       "pivot": {
         "x": 0.5,
@@ -74,8 +98,8 @@
     },
     "buy-feature-bg": {
       "frame": {
-        "x": 1214,
-        "y": 692,
+        "x": 3138,
+        "y": 280,
         "w": 726,
         "h": 545
       },
@@ -90,30 +114,6 @@
       "sourceSize": {
         "w": 726,
         "h": 545
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "TumbleBox-Desktop": {
-      "frame": {
-        "x": 1214,
-        "y": 1241,
-        "w": 606,
-        "h": 84
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 606,
-        "h": 84
-      },
-      "sourceSize": {
-        "w": 606,
-        "h": 84
       },
       "pivot": {
         "x": 0.5,
@@ -122,7 +122,7 @@
     },
     "Multiplier_Desktop": {
       "frame": {
-        "x": 1944,
+        "x": 2428,
         "y": 280,
         "w": 582,
         "h": 552
@@ -146,8 +146,8 @@
     },
     "SettingPanelBG-landscape": {
       "frame": {
-        "x": 1944,
-        "y": 836,
+        "x": 2,
+        "y": 1112,
         "w": 582,
         "h": 380
       },
@@ -162,30 +162,6 @@
       "sourceSize": {
         "w": 582,
         "h": 380
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "reel-header-bcg": {
-      "frame": {
-        "x": 1214,
-        "y": 1329,
-        "w": 576,
-        "h": 119
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 576,
-        "h": 119
-      },
-      "sourceSize": {
-        "w": 576,
-        "h": 119
       },
       "pivot": {
         "x": 0.5,
@@ -194,12 +170,12 @@
     },
     "Multiplier": {
       "frame": {
-        "x": 2530,
-        "y": 280,
+        "x": 588,
+        "y": 1112,
         "w": 373,
         "h": 552
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -216,72 +192,24 @@
         "y": 0.5
       }
     },
-    "autoplaySettingLandscape": {
+    "SettingPanelBG-portrait": {
       "frame": {
-        "x": 1794,
-        "y": 1329,
-        "w": 532,
-        "h": 141
+        "x": 3138,
+        "y": 829,
+        "w": 373,
+        "h": 380
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 532,
-        "h": 141
+        "w": 373,
+        "h": 380
       },
       "sourceSize": {
-        "w": 532,
-        "h": 141
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "betMaxButtonLandscape": {
-      "frame": {
-        "x": 1214,
-        "y": 1452,
-        "w": 532,
-        "h": 62
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 532,
-        "h": 62
-      },
-      "sourceSize": {
-        "w": 532,
-        "h": 62
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "numberofspinLandscape": {
-      "frame": {
-        "x": 2330,
-        "y": 1220,
-        "w": 532,
-        "h": 186
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 532,
-        "h": 186
-      },
-      "sourceSize": {
-        "w": 532,
-        "h": 186
+        "w": 373,
+        "h": 380
       },
       "pivot": {
         "x": 0.5,
@@ -290,7 +218,7 @@
     },
     "settingBG-landscape": {
       "frame": {
-        "x": 2530,
+        "x": 2428,
         "y": 836,
         "w": 532,
         "h": 263
@@ -312,202 +240,10 @@
         "y": 0.5
       }
     },
-    "start-autoplay-landscape-btn": {
-      "frame": {
-        "x": 2330,
-        "y": 1410,
-        "w": 532,
-        "h": 58
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 532,
-        "h": 58
-      },
-      "sourceSize": {
-        "w": 532,
-        "h": 58
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "totalBetBG-landscape": {
-      "frame": {
-        "x": 2530,
-        "y": 1103,
-        "w": 532,
-        "h": 72
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 532,
-        "h": 72
-      },
-      "sourceSize": {
-        "w": 532,
-        "h": 72
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "spinBtnBG-landscape": {
-      "frame": {
-        "x": 2866,
-        "y": 1179,
-        "w": 475,
-        "h": 173
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 475,
-        "h": 173
-      },
-      "sourceSize": {
-        "w": 475,
-        "h": 173
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "PlayerStatus-landscape": {
-      "frame": {
-        "x": 1824,
-        "y": 1241,
-        "w": 447,
-        "h": 50
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 447,
-        "h": 50
-      },
-      "sourceSize": {
-        "w": 447,
-        "h": 50
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "bottomToolbarBG-portarit": {
-      "frame": {
-        "x": 1750,
-        "y": 1474,
-        "w": 420,
-        "h": 40
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 420,
-        "h": 40
-      },
-      "sourceSize": {
-        "w": 420,
-        "h": 40
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "sliderBGLandscape": {
-      "frame": {
-        "x": 1824,
-        "y": 1295,
-        "w": 419,
-        "h": 24
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 419,
-        "h": 24
-      },
-      "sourceSize": {
-        "w": 419,
-        "h": 24
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "sliderFillLandscape": {
-      "frame": {
-        "x": 2174,
-        "y": 1474,
-        "w": 419,
-        "h": 24
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 419,
-        "h": 24
-      },
-      "sourceSize": {
-        "w": 419,
-        "h": 24
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "SettingPanelBG-portrait": {
-      "frame": {
-        "x": 2907,
-        "y": 280,
-        "w": 373,
-        "h": 380
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 373,
-        "h": 380
-      },
-      "sourceSize": {
-        "w": 373,
-        "h": 380
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
     "insufficientBalance_Desktop": {
       "frame": {
-        "x": 3066,
-        "y": 664,
+        "x": 3515,
+        "y": 829,
         "w": 373,
         "h": 325
       },
@@ -528,48 +264,24 @@
         "y": 0.5
       }
     },
-    "volatility": {
+    "numberofspinLandscape": {
       "frame": {
-        "x": 2866,
-        "y": 1356,
-        "w": 369,
-        "h": 53
+        "x": 3138,
+        "y": 1213,
+        "w": 532,
+        "h": 186
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 369,
-        "h": 53
+        "w": 532,
+        "h": 186
       },
       "sourceSize": {
-        "w": 369,
-        "h": 53
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "betMaxButtonPortrait": {
-      "frame": {
-        "x": 2866,
-        "y": 1413,
-        "w": 323,
-        "h": 62
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 323,
-        "h": 62
-      },
-      "sourceSize": {
-        "w": 323,
-        "h": 62
+        "w": 532,
+        "h": 186
       },
       "pivot": {
         "x": 0.5,
@@ -578,8 +290,8 @@
     },
     "settingBG-portrait": {
       "frame": {
-        "x": 3284,
-        "y": 280,
+        "x": 3674,
+        "y": 1158,
         "w": 323,
         "h": 263
       },
@@ -600,72 +312,24 @@
         "y": 0.5
       }
     },
-    "start-autoplay-portrait-btn": {
+    "spinBtnBG-landscape": {
       "frame": {
-        "x": 3193,
-        "y": 1413,
-        "w": 323,
-        "h": 58
+        "x": 588,
+        "y": 1489,
+        "w": 475,
+        "h": 173
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 323,
-        "h": 58
+        "w": 475,
+        "h": 173
       },
       "sourceSize": {
-        "w": 323,
-        "h": 58
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "totalBetBG-portrait": {
-      "frame": {
-        "x": 3284,
-        "y": 547,
-        "w": 323,
-        "h": 72
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 323,
-        "h": 72
-      },
-      "sourceSize": {
-        "w": 323,
-        "h": 72
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "autoplaySettingPortrait": {
-      "frame": {
-        "x": 3066,
-        "y": 993,
-        "w": 317,
-        "h": 141
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 317,
-        "h": 141
-      },
-      "sourceSize": {
-        "w": 317,
-        "h": 141
+        "w": 475,
+        "h": 173
       },
       "pivot": {
         "x": 0.5,
@@ -674,12 +338,12 @@
     },
     "cascade_history_frame": {
       "frame": {
-        "x": 3387,
-        "y": 993,
+        "x": 3138,
+        "y": 1403,
         "w": 252,
         "h": 315
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -696,24 +360,48 @@
         "y": 0.5
       }
     },
-    "PlayerStatus-portrait": {
+    "autoplaySettingLandscape": {
       "frame": {
-        "x": 2530,
-        "y": 1179,
-        "w": 298,
-        "h": 30
+        "x": 2,
+        "y": 1496,
+        "w": 532,
+        "h": 141
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 298,
-        "h": 30
+        "w": 532,
+        "h": 141
       },
       "sourceSize": {
-        "w": 298,
-        "h": 30
+        "w": 532,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "reel-header-bcg": {
+      "frame": {
+        "x": 3014,
+        "y": 280,
+        "w": 576,
+        "h": 119
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 576,
+        "h": 119
+      },
+      "sourceSize": {
+        "w": 576,
+        "h": 119
       },
       "pivot": {
         "x": 0.5,
@@ -722,8 +410,8 @@
     },
     "feature-buy-btn-bg": {
       "frame": {
-        "x": 3643,
-        "y": 280,
+        "x": 3457,
+        "y": 1425,
         "w": 264,
         "h": 247
       },
@@ -746,8 +434,8 @@
     },
     "spin-btn-static": {
       "frame": {
-        "x": 3643,
-        "y": 531,
+        "x": 3725,
+        "y": 1425,
         "w": 236,
         "h": 236
       },
@@ -762,6 +450,438 @@
       "sourceSize": {
         "w": 236,
         "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "TumbleBox-Desktop": {
+      "frame": {
+        "x": 3892,
+        "y": 280,
+        "w": 606,
+        "h": 84
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 606,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "autoplaySettingPortrait": {
+      "frame": {
+        "x": 1067,
+        "y": 1518,
+        "w": 317,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 317,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 317,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "totalBetBG-landscape": {
+      "frame": {
+        "x": 1388,
+        "y": 1518,
+        "w": 532,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 532,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 72
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "betMaxButtonLandscape": {
+      "frame": {
+        "x": 1388,
+        "y": 1594,
+        "w": 532,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 532,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 62
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "start-autoplay-landscape-btn": {
+      "frame": {
+        "x": 1924,
+        "y": 1518,
+        "w": 532,
+        "h": 58
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 532,
+        "h": 58
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 58
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "multiplier_4": {
+      "frame": {
+        "x": 2964,
+        "y": 860,
+        "w": 180,
+        "h": 140
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 180,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 140
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "totalBetBG-portrait": {
+      "frame": {
+        "x": 2460,
+        "y": 1518,
+        "w": 323,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 323,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 323,
+        "h": 72
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "multiplier_2": {
+      "frame": {
+        "x": 2787,
+        "y": 1518,
+        "w": 167,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 167,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 167,
+        "h": 140
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "multiplier_3": {
+      "frame": {
+        "x": 2958,
+        "y": 1518,
+        "w": 167,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 167,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 167,
+        "h": 140
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PlayerStatus-landscape": {
+      "frame": {
+        "x": 2,
+        "y": 1641,
+        "w": 447,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 447,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 447,
+        "h": 50
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "multiplier_1": {
+      "frame": {
+        "x": 3725,
+        "y": 1665,
+        "w": 156,
+        "h": 148
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 148
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 148
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "betMaxButtonPortrait": {
+      "frame": {
+        "x": 1144,
+        "y": 1112,
+        "w": 323,
+        "h": 62
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 323,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 323,
+        "h": 62
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "volatility": {
+      "frame": {
+        "x": 1924,
+        "y": 1580,
+        "w": 369,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 369,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 369,
+        "h": 53
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "start-autoplay-portrait-btn": {
+      "frame": {
+        "x": 3129,
+        "y": 1659,
+        "w": 323,
+        "h": 58
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 323,
+        "h": 58
+      },
+      "sourceSize": {
+        "w": 323,
+        "h": 58
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "bottomToolbarBG-portarit": {
+      "frame": {
+        "x": 2297,
+        "y": 1594,
+        "w": 420,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 420,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 420,
+        "h": 40
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "adjustbet-panel-btn-max": {
+      "frame": {
+        "x": 3892,
+        "y": 890,
+        "w": 240,
+        "h": 70
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sliderBGLandscape": {
+      "frame": {
+        "x": 3965,
+        "y": 1425,
+        "w": 419,
+        "h": 24
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 419,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 419,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sliderFillLandscape": {
+      "frame": {
+        "x": 2,
+        "y": 1817,
+        "w": 419,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 419,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 419,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
@@ -770,12 +890,12 @@
     },
     "history-cell-bcg": {
       "frame": {
-        "x": 2597,
-        "y": 1472,
+        "x": 2721,
+        "y": 1594,
         "w": 216,
         "h": 47
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -792,96 +912,72 @@
         "y": 0.5
       }
     },
-    "sliderBGPortrait": {
+    "backBtn": {
       "frame": {
-        "x": 3066,
-        "y": 1138,
-        "w": 214,
-        "h": 24
+        "x": 453,
+        "y": 1641,
+        "w": 100,
+        "h": 100
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 214,
-        "h": 24
+        "w": 100,
+        "h": 100
       },
       "sourceSize": {
-        "w": 214,
-        "h": 24
+        "w": 100,
+        "h": 100
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "sliderFillPortrait": {
+    "forwardBtn": {
       "frame": {
-        "x": 3284,
-        "y": 623,
-        "w": 214,
-        "h": 24
+        "x": 3456,
+        "y": 1676,
+        "w": 100,
+        "h": 100
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 214,
-        "h": 24
+        "w": 100,
+        "h": 100
       },
       "sourceSize": {
-        "w": 214,
-        "h": 24
+        "w": 100,
+        "h": 100
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "toogleOFF": {
+    "PlayerStatus-portrait": {
       "frame": {
-        "x": 3239,
-        "y": 1356,
-        "w": 96,
-        "h": 48
+        "x": 2,
+        "y": 1695,
+        "w": 298,
+        "h": 30
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 96,
-        "h": 48
+        "w": 298,
+        "h": 30
       },
       "sourceSize": {
-        "w": 96,
-        "h": 48
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "toogleON": {
-      "frame": {
-        "x": 3339,
-        "y": 1356,
-        "w": 96,
-        "h": 48
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 96,
-        "h": 48
-      },
-      "sourceSize": {
-        "w": 96,
-        "h": 48
+        "w": 298,
+        "h": 30
       },
       "pivot": {
         "x": 0.5,
@@ -890,8 +986,8 @@
     },
     "btn-close": {
       "frame": {
-        "x": 3911,
-        "y": 280,
+        "x": 304,
+        "y": 1695,
         "w": 83,
         "h": 82
       },
@@ -914,8 +1010,8 @@
     },
     "btn-volume-off": {
       "frame": {
-        "x": 3911,
-        "y": 366,
+        "x": 2,
+        "y": 1729,
         "w": 81,
         "h": 81
       },
@@ -938,8 +1034,8 @@
     },
     "btn-volume-on": {
       "frame": {
-        "x": 3911,
-        "y": 451,
+        "x": 87,
+        "y": 1729,
         "w": 81,
         "h": 81
       },
@@ -960,10 +1056,58 @@
         "y": 0.5
       }
     },
+    "sliderBGPortrait": {
+      "frame": {
+        "x": 3108,
+        "y": 860,
+        "w": 214,
+        "h": 24
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 214,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 214,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sliderFillPortrait": {
+      "frame": {
+        "x": 3966,
+        "y": 890,
+        "w": 214,
+        "h": 24
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 214,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 214,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "Setting-landscape": {
       "frame": {
-        "x": 3439,
-        "y": 1312,
+        "x": 172,
+        "y": 1729,
         "w": 74,
         "h": 74
       },
@@ -986,8 +1130,8 @@
     },
     "Sound-landscape": {
       "frame": {
-        "x": 3517,
-        "y": 1312,
+        "x": 3885,
+        "y": 1665,
         "w": 74,
         "h": 74
       },
@@ -1010,8 +1154,8 @@
     },
     "Soundoff-landscape": {
       "frame": {
-        "x": 3883,
-        "y": 536,
+        "x": 3885,
+        "y": 1743,
         "w": 74,
         "h": 74
       },
@@ -1034,8 +1178,8 @@
     },
     "info-landscape": {
       "frame": {
-        "x": 3883,
-        "y": 614,
+        "x": 3560,
+        "y": 1676,
         "w": 74,
         "h": 74
       },
@@ -1058,8 +1202,8 @@
     },
     "autoplayButton": {
       "frame": {
-        "x": 3883,
-        "y": 692,
+        "x": 3638,
+        "y": 1676,
         "w": 72,
         "h": 72
       },
@@ -1082,8 +1226,8 @@
     },
     "turbo-off-landscape": {
       "frame": {
-        "x": 3883,
-        "y": 768,
+        "x": 3638,
+        "y": 1752,
         "w": 72,
         "h": 72
       },
@@ -1106,8 +1250,8 @@
     },
     "turbo-on-landscape": {
       "frame": {
-        "x": 3520,
-        "y": 1390,
+        "x": 3560,
+        "y": 1754,
         "w": 72,
         "h": 72
       },
@@ -1128,10 +1272,58 @@
         "y": 0.5
       }
     },
+    "toogleOFF": {
+      "frame": {
+        "x": 391,
+        "y": 1695,
+        "w": 96,
+        "h": 48
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "toogleON": {
+      "frame": {
+        "x": 3515,
+        "y": 1158,
+        "w": 96,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "betButton-portrait": {
       "frame": {
-        "x": 3595,
-        "y": 1312,
+        "x": 2772,
+        "y": 1780,
         "w": 68,
         "h": 68
       },
@@ -1154,8 +1346,8 @@
     },
     "buy-freespins-accept": {
       "frame": {
-        "x": 3596,
-        "y": 1384,
+        "x": 2772,
+        "y": 1662,
         "w": 68,
         "h": 68
       },
@@ -1178,8 +1370,8 @@
     },
     "buy-freespins-cancel": {
       "frame": {
-        "x": 3502,
-        "y": 623,
+        "x": 1144,
+        "y": 1439,
         "w": 65,
         "h": 66
       },
@@ -1202,8 +1394,8 @@
     },
     "minusButton-landscape": {
       "frame": {
-        "x": 3596,
-        "y": 1456,
+        "x": 2964,
+        "y": 1044,
         "w": 56,
         "h": 57
       },
@@ -1226,8 +1418,8 @@
     },
     "plusButton-landscape": {
       "frame": {
-        "x": 3656,
-        "y": 1456,
+        "x": 3024,
+        "y": 1044,
         "w": 56,
         "h": 57
       },
@@ -1250,8 +1442,8 @@
     },
     "betMinusActive": {
       "frame": {
-        "x": 3571,
-        "y": 623,
+        "x": 2844,
+        "y": 1780,
         "w": 56,
         "h": 56
       },
@@ -1274,8 +1466,8 @@
     },
     "betMinusDeactive": {
       "frame": {
-        "x": 3571,
-        "y": 683,
+        "x": 2844,
+        "y": 1662,
         "w": 56,
         "h": 56
       },
@@ -1298,8 +1490,8 @@
     },
     "betPlusActive": {
       "frame": {
-        "x": 3443,
-        "y": 693,
+        "x": 2904,
+        "y": 1662,
         "w": 56,
         "h": 56
       },
@@ -1322,8 +1514,8 @@
     },
     "betPlusDeactive": {
       "frame": {
-        "x": 3503,
-        "y": 693,
+        "x": 2964,
+        "y": 1662,
         "w": 56,
         "h": 56
       },
@@ -1346,8 +1538,8 @@
     },
     "minusButton-landscape-disabled": {
       "frame": {
-        "x": 3563,
-        "y": 743,
+        "x": 3024,
+        "y": 1662,
         "w": 56,
         "h": 56
       },
@@ -1370,8 +1562,8 @@
     },
     "plusButton-landscape-disabled": {
       "frame": {
-        "x": 3443,
-        "y": 753,
+        "x": 2904,
+        "y": 1780,
         "w": 56,
         "h": 56
       },
@@ -1386,30 +1578,6 @@
       "sourceSize": {
         "w": 56,
         "h": 56
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "slider": {
-      "frame": {
-        "x": 2817,
-        "y": 1472,
-        "w": 38,
-        "h": 48
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 38,
-        "h": 48
-      },
-      "sourceSize": {
-        "w": 38,
-        "h": 48
       },
       "pivot": {
         "x": 0.5,
@@ -1418,8 +1586,8 @@
     },
     "multiplier-symbol-bcg": {
       "frame": {
-        "x": 3193,
-        "y": 1475,
+        "x": 3615,
+        "y": 1158,
         "w": 46,
         "h": 44
       },
@@ -1440,10 +1608,34 @@
         "y": 0.5
       }
     },
+    "slider": {
+      "frame": {
+        "x": 250,
+        "y": 1729,
+        "w": 38,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 38,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 38,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "Group": {
       "frame": {
-        "x": 2247,
-        "y": 1295,
+        "x": 3966,
+        "y": 1108,
         "w": 30,
         "h": 30
       },
@@ -1466,8 +1658,8 @@
     },
     "sound-off": {
       "frame": {
-        "x": 3611,
-        "y": 280,
+        "x": 3084,
+        "y": 1078,
         "w": 26,
         "h": 22
       },
@@ -1490,8 +1682,8 @@
     },
     "info-default": {
       "frame": {
-        "x": 3611,
-        "y": 306,
+        "x": 1067,
+        "y": 1489,
         "w": 22,
         "h": 24
       },
@@ -1514,8 +1706,8 @@
     },
     "info-hover": {
       "frame": {
-        "x": 3611,
-        "y": 334,
+        "x": 1093,
+        "y": 1489,
         "w": 22,
         "h": 24
       },
@@ -1538,8 +1730,8 @@
     },
     "setting-defualt": {
       "frame": {
-        "x": 3611,
-        "y": 362,
+        "x": 250,
+        "y": 1781,
         "w": 22,
         "h": 24
       },
@@ -1562,8 +1754,8 @@
     },
     "setting-hover": {
       "frame": {
-        "x": 3611,
-        "y": 390,
+        "x": 276,
+        "y": 1781,
         "w": 22,
         "h": 24
       },
@@ -1586,12 +1778,12 @@
     },
     "sound-on": {
       "frame": {
-        "x": 3611,
-        "y": 418,
+        "x": 1119,
+        "y": 1489,
         "w": 24,
         "h": 21
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1602,30 +1794,6 @@
       "sourceSize": {
         "w": 24,
         "h": 21
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "turbo-off": {
-      "frame": {
-        "x": 3611,
-        "y": 443,
-        "w": 18,
-        "h": 24
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 18,
-        "h": 24
-      },
-      "sourceSize": {
-        "w": 18,
-        "h": 24
       },
       "pivot": {
         "x": 0.5,
@@ -1634,8 +1802,8 @@
     },
     "turbo-on": {
       "frame": {
-        "x": 3611,
-        "y": 471,
+        "x": 3114,
+        "y": 1078,
         "w": 20,
         "h": 24
       },
@@ -1649,6 +1817,30 @@
       },
       "sourceSize": {
         "w": 20,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "turbo-off": {
+      "frame": {
+        "x": 3084,
+        "y": 1044,
+        "w": 18,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 18,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 18,
         "h": 24
       },
       "pivot": {
@@ -1658,8 +1850,8 @@
     },
     "checkboxOff": {
       "frame": {
-        "x": 3439,
-        "y": 1390,
+        "x": 2964,
+        "y": 836,
         "w": 18,
         "h": 19
       },
@@ -1682,8 +1874,8 @@
     },
     "checkboxOn": {
       "frame": {
-        "x": 3461,
-        "y": 1390,
+        "x": 2986,
+        "y": 836,
         "w": 18,
         "h": 19
       },
@@ -1706,8 +1898,8 @@
     },
     "autoplayStopButton": {
       "frame": {
-        "x": 3883,
-        "y": 692,
+        "x": 3638,
+        "y": 1676,
         "w": 72,
         "h": 72
       },
@@ -1736,7 +1928,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 4003,
-      "h": 1522
+      "h": 1850
     },
     "scale": 1
   }

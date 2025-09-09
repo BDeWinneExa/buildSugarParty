@@ -11,7 +11,9 @@
                 "textureName": "intro-bg-mobile"
               }
             ],
-            "customParams": {},
+            "customParams": {
+              "customComponentClass": "IntroScreenBackground"
+            },
             "params": {
               "name": "backgroundMobile",
               "x": 540,
@@ -82,18 +84,15 @@
             "constructorParams": [
               {
                 "cls": "starling.textures.Texture",
-                "textureName": "fade"
+                "textureName": "Fade"
               }
             ],
             "customParams": {},
             "params": {
-              "name": "fade",
-              "pivotX": 308,
-              "pivotY": 210.5,
+              "name": "gradient",
               "scaleX": 1,
               "scaleY": 1,
-              "x": 0,
-              "y": 544.5
+              "x": 540
             }
           },
           {
@@ -305,8 +304,7 @@
                 "customParams": {},
                 "params": {
                   "bold": true,
-                  "color": "#FFE998",
-                  "font": "DalekPinpointBold",
+                  "font": "SugarPartyFont",
                   "size": 50,
                   "dropShadow": true,
                   "dropShadowColor": "#000000",
@@ -356,7 +354,9 @@
                 "textureName": "intro-bg-desktop"
               }
             ],
-            "customParams": {},
+           "customParams": {
+              "customComponentClass": "IntroScreenBackground"
+            },
             "params": {
               "name": "background",
               "x": 960,
@@ -643,8 +643,8 @@
                 "params": {
                   "bold": true,
                   "color": "#FFFFFF",
-                  "font": "LongdonDecorative",
-                  "size": 50,
+                  "font": "SugarPartyFont",
+                  "size": 20,
                   "align": "center"
                 }
               },
@@ -658,16 +658,7 @@
               "y": 1050
             },
             "tweenData": {
-              "effects":[
-                {
-                  "options":{
-                    "color":"#000000",
-                    "lineJoin":"round",
-                    "thickness":2
-                  },
-                  "type":"stroke"
-                }
-              ]
+              
             }
           }
         ],

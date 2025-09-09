@@ -50,8 +50,8 @@
                 "cls":"starling.text.TextFormat",
                 "customParams":{},
                 "params":{
-                  "color":16761600,
-                  "font":"ZodiacRushGoldFont",
+                  "color":"#ffffff",
+                  "font":"SugarPartyFont",
                   "size":60,
                   "bold": true,
                   "align": "center"
@@ -114,8 +114,8 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "LongdonDecorative",
-                  "size": 45,
+                  "font": "SugarPartyFont",
+                  "size": 22.5,
                   "align": "center"
                 }
               },
@@ -154,8 +154,8 @@
                 "params": {
                   "bold": true,
                   "color": "#6D2E00",
-                  "font": "LongdonDecorative",
-                  "size": 25,
+                  "font": "SugarPartyFont",
+                  "size": 12.5,
                   "align": "center"
                 }
               },
@@ -194,8 +194,8 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "LongdonDecorative",
-                  "size": 45,
+                  "font": "SugarPartyFont",
+                  "size": 22.5,
                   "align": "center"
                 }
               },
@@ -234,7 +234,7 @@
                 "params": {
                   "bold": true,
                   "color": 16777215,
-                  "font": "ZodiacRushGoldFont",
+                  "font": "SugarPartyFont",
                   "size": 50,
                   "align": "center"
                 }
@@ -294,8 +294,8 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "LongdonDecorative",
-                  "size": 45,
+                  "font": "SugarPartyFont",
+                  "size": 22.5,
                   "align": "center"
                 }
               },
@@ -334,7 +334,7 @@
                 "params": {
                   "bold": true,
                   "color": 16777215,
-                  "font": "ZodiacRushGoldFont",
+                  "font": "SugarPartyFont",
                   "size": 50,
                   "align": "center"
                 }
@@ -371,8 +371,8 @@
                 "params": {
                   "bold": true,
                   "color": "#6D2E00",
-                  "font": "LongdonDecorative",
-                  "size": 50,
+                  "font": "SugarPartyFont",
+                  "size": 25,
                   "align": "center"
                 }
               },
@@ -409,8 +409,8 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "LongdonDecorative",
-                  "size":25,
+                  "font": "SugarPartyFont",
+                  "size":15,
                   "align": "center"
                 }
               },

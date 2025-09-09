@@ -35,12 +35,23 @@
                 "children":[],
                 "cls":"starling.display.Sprite",
                 "customParams":{
+                  "customComponentClass":"Blur"
+                },
+                "params":{
+                  "name":"blur"
+                }
+              },
+              {
+                "children":[],
+                "cls":"starling.display.Sprite",
+                "customParams":{
                   "customComponentClass":"Frame"
                 },
                 "params":{
                   "name":"frame"
                 }
               }
+              
             ],
             "cls":"starling.display.Sprite",
             "customParams":{
@@ -530,8 +541,8 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"LongdonDecorative",
-                      "size":45
+                      "font":"SugarPartyFont",
+                      "size":22.5
                     }
                   },
                   "height":100,
@@ -566,7 +577,7 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"LongdonDecorative",
+                      "font":"SugarPartyFont",
                       "size":45
                     }
                   },
@@ -578,27 +589,7 @@
                   "width":1080
                 },
                 "tweenData":{
-                  "effects":[
-                    {
-                      "options":{
-                        "color":"0xa34411",
-                        "lineJoin":"round",
-                        "thickness":6
-                      },
-                      "type":"stroke"
-                    },
-                    {
-                      "options":{
-                        "fill":[
-                          "#d97d1b",
-                          "#f5cf54",
-                          "#f6d55a",
-                          "#d98e30"
-                        ]
-                      },
-                      "type":"gradient"
-                    }
-                  ]
+                  
                 }
               },
               {
@@ -623,7 +614,7 @@
                         "customParams":{},
                         "params":{
                           "color":16777215,
-                          "font":"LongdonDecorative",
+                          "font":"SugarPartyFont",
                           "size":45
                         }
                       },
@@ -635,27 +626,7 @@
                       "width":200
                     },
                     "tweenData":{
-                      "effects":[
-                        {
-                          "options":{
-                            "color":"0xa34411",
-                            "lineJoin":"round",
-                            "thickness":6
-                          },
-                          "type":"stroke"
-                        },
-                        {
-                          "options":{
-                            "fill":[
-                              "#d97d1b",
-                              "#f5cf54",
-                              "#f6d55a",
-                              "#d98e30"
-                            ]
-                          },
-                          "type":"gradient"
-                        }
-                      ]
+                      
                     }
                   }
                 ],
@@ -722,7 +693,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"ZodiacRushGoldFont",
+                          "font":"SugarPartyFont",
                           "size":25,
                           "align": "center"
                         }
@@ -730,7 +701,7 @@
                       "height":65,
                       "name":"tfValue",
                       "pivotX":95,
-                      "pivotY":32.5,
+                      "pivotY":65,
                       "text":"$200",
                       "width":190,
                       "x":-5,
@@ -861,41 +832,23 @@
                         "cls":"starling.text.TextFormat",
                         "customParams":{},
                         "params":{
+                          "bold":true,
                           "color":16777215,
-                          "font":"DalekPinpoint",
-                          "size":25
+                          "font":"SugarPartyFont",
+                          "size":15
                         }
                       },
                       "height":30,
                       "name":"tfCount",
                       "pivotX":29.8,
-                      "pivotY":15,
+                      "pivotY":30,
                       "text":"99",
                       "width":29.8,
                       "x":50,
                       "y":22
                     },
                     "tweenData":{
-                      "effects":[
-                        {
-                          "options":{
-                            "fill":[
-                          "#FFFF7E",
-                          "#F0D658",
-                          "#CE7800"
-                            ]
-                          },
-                          "type":"gradient"
-                        },
-                        {
-                          "options":{
-                            "color":"#FFA600",
-                            "lineJoin":"round",
-                            "thickness":1.7
-                          },
-                          "type":"stroke"
-                        }
-                      ]
+                      
                     }
                   },
                   {
@@ -949,41 +902,23 @@
                         "cls":"starling.text.TextFormat",
                         "customParams":{},
                         "params":{
+                          "bold":true,
                           "color":16777215,
-                          "font":"DalekPinpoint",
+                          "font":"SugarPartyFont",
                           "size":25
                         }
                       },
                       "height":30,
                       "name":"tfWin",
                       "pivotX":88.81,
-                      "pivotY":15,
+                      "pivotY":30,
                       "text":"99",
                       "width":88.81,
                       "x":175,
                       "y":22
                     },
                     "tweenData":{
-                      "effects":[
-                        {
-                          "options":{
-                            "fill":[
-                          "#FFFF7E",
-                          "#F0D658",
-                          "#CE7800"
-                            ]
-                          },
-                          "type":"gradient"
-                        },
-                        {
-                          "options":{
-                            "color":"#FFA600",
-                            "lineJoin":"round",
-                            "thickness":1.7
-                          },
-                          "type":"stroke"
-                        }
-                      ]
+                      
                     }
                     
                   }
@@ -1106,12 +1041,23 @@
                 "children":[],
                 "cls":"starling.display.Sprite",
                 "customParams":{
+                  "customComponentClass":"Blur"
+                },
+                "params":{
+                  "name":"blur"
+                }
+              },
+              {
+                "children":[],
+                "cls":"starling.display.Sprite",
+                "customParams":{
                   "customComponentClass":"Frame"
                 },
                 "params":{
                   "name":"frame"
                 }
               }
+              
             ],
             "cls":"starling.display.Sprite",
             "customParams":{
@@ -1510,41 +1456,23 @@
                         "cls":"starling.text.TextFormat",
                         "customParams":{},
                         "params":{
+                          "bold":true,
                           "color":16777215,
-                          "font":"DalekPinpoint",
-                          "size":25
+                          "font":"SugarPartyFont",
+                          "size":15
                         }
                       },
                       "height":30,
                       "name":"tfCount",
                       "pivotX":29.8,
-                      "pivotY":15,
+                      "pivotY":30,
                       "text":"99",
                       "width":29.8,
                       "x":50,
                       "y":30
                     },
                     "tweenData":{
-                      "effects":[
-                        {
-                          "options":{
-                            "fill":[
-                          "#FFFF7E",
-                          "#F0D658",
-                          "#CE7800"
-                            ]
-                          },
-                          "type":"gradient"
-                        },
-                        {
-                          "options":{
-                            "color":"#FFA600",
-                            "lineJoin":"round",
-                            "thickness":1.7
-                          },
-                          "type":"stroke"
-                        }
-                      ]
+                      
                     }
                   },
                   {
@@ -1598,41 +1526,23 @@
                         "cls":"starling.text.TextFormat",
                         "customParams":{},
                         "params":{
+                          "bold":true,
                           "color":16777215,
-                          "font":"DalekPinpoint",
+                          "font":"SugarPartyFont",
                           "size":25
                         }
                       },
                       "height":30,
                       "name":"tfWin",
                       "pivotX":88.81,
-                      "pivotY":15,
+                      "pivotY":30,
                       "text":"99",
                       "width":88.81,
                       "x":175,
                       "y":30
                     },
                     "tweenData":{
-                      "effects":[
-                        {
-                          "options":{
-                            "fill":[
-                          "#FFFF7E",
-                          "#F0D658",
-                          "#CE7800"
-                            ]
-                          },
-                          "type":"gradient"
-                        },
-                        {
-                          "options":{
-                            "color":"#FFA600",
-                            "lineJoin":"round",
-                            "thickness":1.7
-                          },
-                          "type":"stroke"
-                        }
-                      ]
+                      
                     }
                   }
                 ],
@@ -1741,8 +1651,8 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"LongdonDecorative",
-                      "size":45
+                      "font":"SugarPartyFont",
+                      "size":22.5
                     }
                   },
                   "height":100,
@@ -1778,7 +1688,7 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"LongdonDecorative",
+                      "font":"SugarPartyFont",
                       "size":45
                     }
                   },
@@ -1790,27 +1700,7 @@
                   "width":1080
                 },
                 "tweenData":{
-                  "effects":[
-                    {
-                      "options":{
-                        "color":"0xa34411",
-                        "lineJoin":"round",
-                        "thickness":6
-                      },
-                      "type":"stroke"
-                    },
-                    {
-                      "options":{
-                        "fill":[
-                          "#d97d1b",
-                          "#f5cf54",
-                          "#f6d55a",
-                          "#d98e30"
-                        ]
-                      },
-                      "type":"gradient"
-                    }
-                  ]
+                  
                 }
               },
               {
@@ -1835,7 +1725,7 @@
                         "customParams":{},
                         "params":{
                           "color":16777215,
-                          "font":"LongdonDecorative",
+                          "font":"SugarPartyFont",
                           "size":45
                         }
                       },
@@ -1847,27 +1737,7 @@
                       "width":200
                     },
                     "tweenData":{
-                      "effects":[
-                        {
-                          "options":{
-                            "color":"0xa34411",
-                            "lineJoin":"round",
-                            "thickness":6
-                          },
-                          "type":"stroke"
-                        },
-                        {
-                          "options":{
-                            "fill":[
-                              "#d97d1b",
-                              "#f5cf54",
-                              "#f6d55a",
-                              "#d98e30"
-                            ]
-                          },
-                          "type":"gradient"
-                        }
-                      ]
+                     
                     }
                   }
                 ],
@@ -2104,15 +1974,15 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"ZodiacRushGoldFont",
-                          "size":25,
+                          "font":"SugarPartyFont",
+                          "size":30,
                           "align": "center"
                         }
                       },
                       "height":65,
                       "name":"tfValue",
                       "pivotX":95,
-                      "pivotY":32.5,
+                      "pivotY":65,
                       "text":"$200",
                       "width":190,
                       "x":-5,

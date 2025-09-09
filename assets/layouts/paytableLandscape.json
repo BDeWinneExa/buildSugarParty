@@ -12,7 +12,7 @@
         "customParams": {},
         "params": {
           "name": "background",
-          "scaleX": 3,
+          "scaleX": 3.4,
           "scaleY": 2.86,
           "pivotX": 196,
           "pivotY": 384,
@@ -50,6 +50,34 @@
         }
       },
       {
+				"cls": "starling.display.Image",
+				"constructorParams": [
+					{
+						"cls": "starling.textures.Texture",
+						"textureName": "adjustbet-panel-btn-max"
+					}
+				],
+				"customParams": {},
+				"params": {
+					"alpha": 0.55,
+					"color": "#000000",
+					"name": "valueBG",
+					"scale9Grid": {
+						"cls": "flash.geom.Rectangle",
+						"customParams": {},
+						"params": {
+							"height": 34,
+							"width": 62,
+							"x": 46,
+							"y": 25
+						}
+					},
+					"scaleX": 4.44,
+					"x": 77.02,
+					"y": 796
+				}
+			},
+      {
         "children": [
           {
             "cls": "starling.display.Image",
@@ -73,7 +101,7 @@
         },
         "params": {
           "name": "btnClose",
-          "x": 1072.5,
+          "x": 1183.5,
           "y": -39
         },
         "tweenData": {
@@ -106,10 +134,12 @@
         },
         "params": {
           "name": "btnPreviousPage",
-          "x": 180,
+          "x": 128.5,
           "y": 830,
-          "scaleX": 0.25,
-          "scaleY": 0.25
+          "scaleX": 0.6,
+          "scaleY": 0.6,
+          "pivotX": -50,
+          "pivotY": -50
         },
         "tweenData": {
           "animation": {
@@ -141,10 +171,12 @@
         },
         "params": {
           "name": "btnNextPage",
-          "x": 240,
+          "x": 208,
           "y": 830,
-          "scaleX": 0.25,
-          "scaleY": 0.25
+          "scaleX": 0.6,
+          "scaleY": 0.6,
+          "pivotX": -50,
+          "pivotY": -50
         },
         "tweenData": {
           "animation": {
@@ -247,9 +279,11 @@
                 "params": {
                   "color": 16777215,
                   "font": "Alexandria",
-                  "size": 20
+                  "size": 20,
+                  "horizontalAlign": "center"
                 }
               },
+              
               "alpha": 0.55,
               "height": 56,
               "name": "tf0",
@@ -1336,6 +1370,44 @@
                 "value": ""
               }
             ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#FD6302",
+                  "font": "Alexandria",
+                  "size": 32
+                }
+              },
+              "height": 39,
+              "name": "title2",
+              "pivotX": 200,
+              "pivotY": 19.5,
+              "text": "FREESPİN KURALLARI",
+              "width": 400,
+              "x": 605,
+              "y": 235
+            },
+            "tweenData": {
+              "translation-key": "paytableDesktop.page3.title2"
+            }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
             "customParams": {
               "customComponentClass": ""
             },
@@ -1356,205 +1428,10 @@
               "text": "FREESPİN turu sırasında, ÇARPAN sembolü her denk geldiğinde ve spin bir galibiyetle sonuçlandığında, ÇARPANdeğeri\rtoplam çarpana eklenir. Turun tüm süresi boyunca, herhangi bir yeni ÇARPAN sembolü isabet ettiğinde ve birgalibiyetle\rsonuçlandığında, toplam çarpan değeri de kazancı çarpmak için kullanılır.",
               "width": 1021,
               "x": 605,
-              "y": 227.5
+              "y": 306.5
             },
             "tweenData": {
               "translation-key": "paytableDesktop.page3.tf1"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {
-              "customComponentClass": ""
-            },
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 20
-                }
-              },
-              "height": 84,
-              "name": "tf2",
-              "pivotX": 510.5,
-              "pivotY": 42,
-              "text": "FREESPİN TURU sırasında 3 veya daha fazla SCATTER sembolü yakalandığında, 5 ilave freespin kazanılır.\rFREESPİN TURLARINDA özel makaralar oyundadır.",
-              "width": 1021,
-              "x": 605,
-              "y": 327
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page3.tf2"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {},
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "bold": true,
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 32
-                }
-              },
-              "height": 39,
-              "name": "tf3",
-              "pivotX": 200,
-              "pivotY": 19.5,
-              "text": "ANTE BAHİS",
-              "width": 400,
-              "x": 605,
-              "y": 432
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page3.tf3"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {
-              "customComponentClass": ""
-            },
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 20
-                }
-              },
-              "height": 84,
-              "name": "tf4",
-              "pivotX": 510.5,
-              "pivotY": 42,
-              "text": "Oyuncunun bahis mel anını 9625 artırarak çizgi başına 25x bahsi artırma seçeneği vardır. Aktif\rante bahsiyle oynarken Scatter sembollerini yakalama şansı artar.",
-              "width": 1021,
-              "x": 605,
-              "y": 508.5
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page3.tf4"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {
-              "customComponentClass": ""
-            },
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "bold": true,
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 32
-                }
-              },
-              "height": 39,
-              "name": "tf5",
-              "pivotX": 200,
-              "pivotY": 19.5,
-              "text": "ANTE BAHİS",
-              "width": 400,
-              "x": 605,
-              "y": 597
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page3.tf5"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {
-              "customComponentClass": ""
-            },
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 20
-                }
-              },
-              "height": 84,
-              "name": "tf6",
-              "pivotX": 510.5,
-              "pivotY": 42,
-              "text": "Oyuncunun bahis mel anını 9625 artırarak çizgi başına 25x bahsi artırma seçeneği vardır. Aktif\rante bahsiyle oynarken Scatter sembollerini yakalama şansı artar.",
-              "width": 1021,
-              "x": 605,
-              "y": 654
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page3.tf6"
             }
           }
         ],
@@ -2931,7 +2808,7 @@
                 "cls": "starling.text.TextFormat",
                 "customParams": {},
                 "params": {
-                  "color": 16777215,
+                  "color": "#FD6302",
                   "font": "Alexandria",
                   "size": 32,
                   "bold": true
@@ -3454,86 +3331,6 @@
             },
             "tweenData": {
               "translation-key": "paytableDesktop.page6.tf5"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {
-              "customComponentClass": ""
-            },
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 32,
-                  "bold": true
-                }
-              },
-              "height": 39,
-              "name": "tf6",
-              "pivotX": 510.5,
-              "pivotY": 19.5,
-              "text": "BAHİS MENÜSÜBAHİS MENÜSÜ",
-              "width": 1021,
-              "x": 605,
-              "y": 650,
-              "bold": true
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page6.tf6"
-            }
-          },
-          {
-            "cls": "starling.text.TextField",
-            "constructorParams": [
-              {
-                "value": 200
-              },
-              {
-                "value": 100
-              },
-              {
-                "value": ""
-              }
-            ],
-            "customParams": {
-              "customComponentClass": ""
-            },
-            "params": {
-              "format": {
-                "cls": "starling.text.TextFormat",
-                "customParams": {},
-                "params": {
-                  "color": 16777215,
-                  "font": "Alexandria",
-                  "size": 20
-                }
-              },
-              "height": 24,
-              "name": "tf7",
-              "pivotX": 510.5,
-              "pivotY": 12,
-              "text": "KREDİ ve BAHİS etiketleri mevcut ",
-              "width": 1021,
-              "x": 605,
-              "y": 705.5
-            },
-            "tweenData": {
-              "translation-key": "paytableDesktop.page6.tf7"
             }
           }
         ],

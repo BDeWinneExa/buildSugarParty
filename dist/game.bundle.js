@@ -66630,10 +66630,12 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         this.characterLogo = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-logo'));
         this.characterLogo.anchor.set(0.5, 0.5);
         this.characterLogo.scale.set(0.55);
+        this.characterLogo.position.x = 120;
         this.characterLogo.position.y = 450;
         this.character.addChild(this.characterLogo);
         this.createGradientBottom();
         this.footerText = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-text'));
+        this.footerText.name = "footerText";
         this.footerText.anchor.set(0.5, 0.5);
         this.addChild(this.footerText);
         this.startButton = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('startbutton'));
@@ -66736,9 +66738,9 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         const xScale = width / baseWidth;
         const scale = Math.min(xScale, yScale);
         // Background: Scale on Y-axis to be full screen
-        this.character.position.set(width / 2, (height / 2) - 200);
         // Character: Always keep centered
         if (ScreenOrientation_1.ScreenOrientation.HORIZONTAL == BrowserApplication_1.BrowserApplication.mainScreenStage.orientation) {
+            this.character.position.set((width / 2) - (width / 16), (height / 2) - (height / 4));
             this.character.scale.set(scale);
             this.backgroundMobile.visible = false;
             this.gradientBottomMobile.visible = false;
@@ -66766,6 +66768,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             }
         }
         else {
+            this.character.position.set((width / 2) - (width / 6), (height / 2) - (height / 6));
             this.character.scale.set(scale * 2.5);
             this.backgroundMobile.visible = true;
             this.background.visible = false;
@@ -66785,7 +66788,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             // Footer text: Center horizontally at bottom, positioned within gradient area
             this.footerText.x = width / 2;
             this.footerText.y = height - (this.gradientBottom.height * 0.15); // Position in lower part of gradient
-            this.footerText.scale.set(scale);
+            this.footerText.scale.set(scale * 2);
             // Progress bar: Center horizontally and position at bottom
             if (this.progressBar) {
                 this.progressBar.x = width / 2;
@@ -68122,6 +68125,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const pixi_js_1 = __webpack_require__(95894);
 const tsyringe_1 = __webpack_require__(659);
+const ControlEvent_1 = __importDefault(__webpack_require__(68659));
 const SoundManager_1 = __importDefault(__webpack_require__(6881));
 const LayoutBuilder_1 = __importDefault(__webpack_require__(98744));
 const ValueText_1 = __importDefault(__webpack_require__(68223));
@@ -68131,6 +68135,8 @@ const Wallet_1 = __importDefault(__webpack_require__(92162));
 const SlotMachineEvent_1 = __webpack_require__(96421);
 const WalletEvent_1 = __webpack_require__(63035);
 const SoundList_1 = __importDefault(__webpack_require__(27310));
+const UIEvent_1 = __webpack_require__(77066);
+const UIEventExtension_1 = __webpack_require__(43022);
 class BetSettings extends pixi_js_1.Container {
     constructor(le) {
         super();
@@ -68175,7 +68181,7 @@ class BetSettings extends pixi_js_1.Container {
         this.onBetValueChanged();
     }
     onTotalBetUp() {
-        // new ControlEvent(UIEventExtension.TOTAL_BET_UP).dispatch();
+        new ControlEvent_1.default(UIEventExtension_1.UIEventExtension.TOTAL_BET_UP).dispatch();
         if (this.betLimits.indexOf(this.currentBetValue) < this.betLimits.length - 1) {
             this.currentBetValue = this.betLimits[this.betLimits.indexOf(this.currentBetValue) + 1];
         }
@@ -68184,7 +68190,7 @@ class BetSettings extends pixi_js_1.Container {
         SoundManager_1.default.play(SoundList_1.default.BET_AMOUNT_INCREASE);
     }
     onTotalBetDown() {
-        // new ControlEvent(UIEventExtension.TOTAL_BET_DOWN).dispatch();
+        new ControlEvent_1.default(UIEventExtension_1.UIEventExtension.TOTAL_BET_DOWN).dispatch();
         if (this.betLimits.indexOf(this.currentBetValue) != 0) {
             this.currentBetValue = this.betLimits[this.betLimits.indexOf(this.currentBetValue) - 1];
         }
@@ -68193,7 +68199,7 @@ class BetSettings extends pixi_js_1.Container {
         SoundManager_1.default.play(SoundList_1.default.BET_AMOUNT_DECREASE);
     }
     onCoinUp() {
-        // new ControlEvent(UIEvent.COIN_VALUE_UP).dispatch();
+        new ControlEvent_1.default(UIEvent_1.UIEvent.COIN_VALUE_UP).dispatch();
         if (this.wallet.coinValueLimits.indexOf(this.wallet.coinValue) < this.wallet.coinValueLimits.length - 1) {
             this.wallet.coinValue = this.wallet.coinValueLimits[this.wallet.coinValueLimits.indexOf(this.wallet.coinValue) + 1];
         }
@@ -68202,7 +68208,7 @@ class BetSettings extends pixi_js_1.Container {
         SoundManager_1.default.play(SoundList_1.default.BET_AMOUNT_INCREASE);
     }
     onCoinDown() {
-        // new ControlEvent(UIEvent.COIN_VALUE_DOWN).dispatch();
+        new ControlEvent_1.default(UIEvent_1.UIEvent.COIN_VALUE_DOWN).dispatch();
         if (this.wallet.coinValueLimits.indexOf(this.wallet.coinValue) != 0) {
             this.wallet.coinValue = this.wallet.coinValueLimits[this.wallet.coinValueLimits.indexOf(this.wallet.coinValue) - 1];
         }
@@ -68211,7 +68217,7 @@ class BetSettings extends pixi_js_1.Container {
         SoundManager_1.default.play(SoundList_1.default.BET_AMOUNT_DECREASE);
     }
     onBetUp() {
-        // new ControlEvent(UIEvent.BET_QUANTITY_UP).dispatch();
+        new ControlEvent_1.default(UIEvent_1.UIEvent.BET_QUANTITY_UP).dispatch();
         if (this.betLimits.indexOf(this.currentBetValue) < this.betLimits.length - 1) {
             this.currentBetValue = this.betLimits[this.betLimits.indexOf(this.currentBetValue) + 1];
         }
@@ -68220,7 +68226,7 @@ class BetSettings extends pixi_js_1.Container {
         SoundManager_1.default.play(SoundList_1.default.BET_AMOUNT_INCREASE);
     }
     onBetDown() {
-        // new ControlEvent(UIEvent.BET_QUANTITY_DOWN).dispatch();
+        new ControlEvent_1.default(UIEvent_1.UIEvent.BET_QUANTITY_DOWN).dispatch();
         if (this.betLimits.indexOf(this.currentBetValue) != 0) {
             this.currentBetValue = this.betLimits[this.betLimits.indexOf(this.currentBetValue) - 1];
         }
@@ -68294,7 +68300,8 @@ class CascadeHistoryCell extends pixi_js_1.Container {
         this.tfWin.text = this.wallet.getCurrencyValue(config.payout, true);
         this.tfWin.text = config.payout;
         this.createSymbolInSlot(config.symbol);
-        (0, Utils_1.autoscaleText)(this.tfWin, 30, 50, 33);
+        (0, Utils_1.autoscaleText)(this.tfWin, 20, 50, 40);
+        (0, Utils_1.autoscaleText)(this.tfWin, 15, 50, 40);
     }
     createSymbolInSlot(symbolData) {
         this.symbolSlot['area'].visible = false;
@@ -68569,11 +68576,11 @@ class FreeSpinButton extends Button_1.default {
         super(le);
         this.tfTitle = this.normal['tfTitle'];
         this.tfValue = this.normal['tfValue'];
+        this.tfTitle.style.align = 'center';
         this.featureBuyButtonBg = this.normal['featureBuyButtonBg'];
         this.featureBuyButtonBg.anchor.set(0.5, 0.5);
         //this.area = this.normal['area'];
         //this.area.visible = false;
-        this.tfTitle.style.align = 'center';
         const sm = tsyringe_1.container.resolve(SlotMachine_1.default);
         const wallet = tsyringe_1.container.resolve(Wallet_1.default);
         const gs = tsyringe_1.container.resolve('GameService');
@@ -68628,7 +68635,7 @@ class FreeSpinButton extends Button_1.default {
         this.tfTitle.text = title;
         this.tfValue.text = value;
         (0, Utils_1.autoscaleText)(this.tfTitle, 35, 300, 100);
-        (0, Utils_1.autoscaleText)(this.tfValue, 25, 200, 65);
+        (0, Utils_1.autoscaleText)(this.tfValue, 25, 200, 75);
         this.setActive(isActive);
         // isNotAlpha ? this.alpha = 1 : this.alpha = 0.4
     }
@@ -69307,7 +69314,7 @@ class Panel extends pixi_js_1.Container {
         });
     }
     updateItemsVertically(items, spacingY) {
-        let y = 0;
+        let y = 10;
         items.forEach((item) => {
             item.y = y;
             y += (item.height + spacingY);
@@ -69465,7 +69472,7 @@ const SoundManager_1 = __importDefault(__webpack_require__(6881));
 const SoundList_1 = __importDefault(__webpack_require__(27310));
 class PaytablePanelDesktop extends Panel_1.default {
     constructor(configuration) {
-        super(AssetsManager_1.default.layouts.get('PaytablePanelDesktop'));
+        super(AssetsManager_1.default.layouts.get('paytableLandscape'));
         this.symbolCells = [];
         this.pages = [];
         this.currentPage = null;
@@ -69647,7 +69654,7 @@ const MetricsView_1 = __importDefault(__webpack_require__(35498));
 const SwitchView_1 = __importDefault(__webpack_require__(76473));
 class PaytablePanelMobile extends Panel_1.default {
     constructor(configuration) {
-        super(AssetsManager_1.default.layouts.get('paytablePortait'));
+        super(AssetsManager_1.default.layouts.get('paytablePortrait'));
         this.symbolCells = [];
         this.pages = [];
         // LayoutBuilder.create(this.layout, this, (le)=>{
@@ -69657,7 +69664,7 @@ class PaytablePanelMobile extends Panel_1.default {
         this.content = this.scrollBox['content'];
         const numOfPages = 6;
         for (let i = 1; i < numOfPages + 1; i++) {
-            let p = this.content['page_' + i];
+            const p = this.content['page_' + i];
             this.removeChild(p);
             this.pages.push(p);
         }
@@ -69670,6 +69677,7 @@ class PaytablePanelMobile extends Panel_1.default {
         this.config.symbolsWithDescription.forEach((desc) => {
             this.createSymbolInProperItem(desc.itemId, this.config.symbolsList.find((symbol) => symbol.id === desc.symbolId));
         });
+        this.once('removed', () => { this.scrollBox.updateScroll(); }, this);
         this.combineTextSprite();
     }
     // PUBLIC API
@@ -69681,11 +69689,11 @@ class PaytablePanelMobile extends Panel_1.default {
         this.updateItemsGrid(this.symbolCells, desc.currentWidth - xOffset - (desc.currentWidth - desc.baseWidth), 21, 150);
         //
         // this.symbolsContainer.x = this.symbolsContainer.pivot.x = (desc.currentWidth - xOffset) / 2;
-        const spacing = 40;
+        const spacing = 100;
         this.pages.forEach((page) => {
             for (let i = 0; i < page.children.length; i++) {
                 if (i == 0)
-                    page.children[i].position.y = 100;
+                    page.children[i].position.y = 0;
                 else {
                     if (page.children[i].text !== '') // do not add spacing if the Text is empty
                         page.children[i].position.y = page.children[i - 1].position.y + page.children[i - 1].height + spacing;
@@ -69699,9 +69707,7 @@ class PaytablePanelMobile extends Panel_1.default {
         this.symbolsContainer.pivot.x = this.symbolsContainer.width / 2 + xOffset / 2;
         this.symbolsContainer.x = 500;
         this.content['spacerBottom'].y = this.pages[this.pages.length - 1].y + this.pages[this.pages.length - 1].height + 100;
-        const offsetXToMaskBorders = 10;
-        this.background.width = desc.currentWidth + offsetXToMaskBorders;
-        this.background.pivot.x = this.background.width / 2;
+        // this.background.width = desc.currentWidth;
     }
     // PRIVATE API
     customClassElementCreate(le) {
@@ -69750,16 +69756,16 @@ class PaytablePanelMobile extends Panel_1.default {
                             containerToFit[j].x = containerToFit[j - 1].x + containerToFit[j - 1].width + spacingX;
                         }
                     }
-                    if (p[`textCombined${i}`][`tfUnder`]) {
-                        this.textAlign(p[`textCombined${i}`][`tfUnder`], 'center');
-                        p[`textCombined${i}`][`tfUnder`].y = p[`textCombined${i}`]['content'].y +
+                    if (p[`textCombined${i}`]['tfUnder']) {
+                        this.textAlign(p[`textCombined${i}`]['tfUnder'], 'center');
+                        p[`textCombined${i}`]['tfUnder'].y = p[`textCombined${i}`]['content'].y +
                             p[`textCombined${i}`]['content'].height;
                     }
-                    if (p[`textCombined${i}`][`tfAbove`]) {
-                        this.textAlign(p[`textCombined${i}`][`tfAbove`], 'center');
-                        p[`textCombined${i}`][`tfAbove`].y = p[`textCombined${i}`]['content'].y -
-                            p[`textCombined${i}`][`tfAbove`].height;
-                        p[`textCombined${i}`].pivot.y = p[`textCombined${i}`][`tfAbove`].y;
+                    if (p[`textCombined${i}`]['tfAbove']) {
+                        this.textAlign(p[`textCombined${i}`]['tfAbove'], 'center');
+                        p[`textCombined${i}`]['tfAbove'].y = p[`textCombined${i}`]['content'].y -
+                            p[`textCombined${i}`]['tfAbove'].height;
+                        p[`textCombined${i}`].pivot.y = p[`textCombined${i}`]['tfAbove'].y;
                     }
                 }
             }
@@ -69847,17 +69853,9 @@ class PaytableSymbolCell extends pixi_js_1.Container {
         const staticIcon = new pixi_js_1.Sprite(symbolData.staticIcon.texture);
         staticIcon.anchor.set(0.5, 0.5);
         this.staticIcon.addChild(staticIcon);
-        this.tfPays15 = this['multiplierDescription']['tfPays15'];
-        this.tfPays14 = this['multiplierDescription']['tfPays14'];
-        this.tfPays13 = this['multiplierDescription']['tfPays13'];
-        this.tfPays12 = this['multiplierDescription']['tfPays12'];
-        this.tfPays11 = this['multiplierDescription']['tfPays11'];
-        this.tfPays10 = this['multiplierDescription']['tfPays10'];
-        this.tfPays9 = this['multiplierDescription']['tfPays9'];
-        this.tfPays8 = this['multiplierDescription']['tfPays8'];
-        this.tfPays7 = this['multiplierDescription']['tfPays7'];
         this.tfPays6 = this['multiplierDescription']['tfPays6'];
         this.tfPays5 = this['multiplierDescription']['tfPays5'];
+        this.tfPays4 = this['multiplierDescription']['tfPays4'];
         if (this.config.setMultipliers)
             this.setMultipliers(symbolData.id);
         else
@@ -69865,15 +69863,15 @@ class PaytableSymbolCell extends pixi_js_1.Container {
     }
     updateView(maxWidth = null, texts = null) {
         // const texts: Text[] =  this['multiplierDescription'].children as Text[];
-        [this.tfPays5, this.tfPays6, this.tfPays7, this.tfPays8, this.tfPays9, this.tfPays10, this.tfPays11, this.tfPays12, this.tfPays13, this.tfPays14, this.tfPays15].forEach((text) => {
+        [this.tfPays5, this.tfPays6].forEach((text) => {
             (0, Utils_1.autoscaleText)(text, this.config.maxFontSize, this.config.maxWidth, this.config.maxHeight);
         });
         const offset = 12;
         const totalWidth = maxWidth ? maxWidth : this.width;
-        for (let i = 0; i < 11; i++) {
-            texts[i].x = (totalWidth - (texts[i].width + offset + texts[i + 11].width)) / 2;
+        for (let i = 0; i < 3; i++) {
+            texts[i].x = (totalWidth - (texts[i].width + offset + texts[i + 3].width)) / 2;
             const posX = texts[i].x + texts[i].width + offset;
-            texts[i + 11].x = posX + texts[i + 11].width;
+            texts[i + 3].x = posX;
         }
     }
     get width() {
@@ -69885,17 +69883,9 @@ class PaytableSymbolCell extends pixi_js_1.Container {
     setMultipliers(symbolId) {
         const sm = tsyringe_1.container.resolve(SlotMachine_1.default);
         if (symbolId > 100 && symbolId < 8000) {
-            this.tfPays15.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 15).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays14.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 14).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays13.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 13).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays12.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 12).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays11.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 11).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays10.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 10).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays9.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 9).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays8.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 8).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            this.tfPays7.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 7).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
             this.tfPays6.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 6).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
             this.tfPays5.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 5).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            //this.tfPays4.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 4).reward.line.multiplier * container.resolve(SlotMachine).totalBet * container.resolve(Wallet).coinValue)}`;
             this.updateView(this.width, this['multiplierDescription'].children);
         }
     }
@@ -70855,12 +70845,12 @@ class UIPanelDesktop extends AdjustableLayoutContainer_1.default {
     onBtnBetUp() {
         SoundManager_1.default.play(SoundList_1.default.UI_BUTTON_CLICK);
         new ControlEvent_1.default(UIPanelEvent_1.UIPanelEvent.OPEN_PANEL, UIState_1.UIPanelType.BET_SETTINGS).dispatch();
-        new ControlEvent_1.default(UIEvent_1.UIEvent.BET_QUANTITY_UP).dispatch();
+        //new ControlEvent(UIEvent.BET_QUANTITY_UP).dispatch();
     }
     onBtnBetDown() {
         SoundManager_1.default.play(SoundList_1.default.UI_BUTTON_CLICK);
         new ControlEvent_1.default(UIPanelEvent_1.UIPanelEvent.OPEN_PANEL, UIState_1.UIPanelType.BET_SETTINGS).dispatch();
-        new ControlEvent_1.default(UIEvent_1.UIEvent.BET_QUANTITY_DOWN).dispatch();
+        //new ControlEvent(UIEvent.BET_QUANTITY_DOWN).dispatch();
     }
     onQuickSpinHandler() {
         SoundManager_1.default.play(SoundListExtended_1.default.UI_BUTTON_CLICK);
@@ -76093,7 +76083,7 @@ class MultiplierSymbolView extends pixi_js_1.Container {
         super();
         this.background = new pixi_js_1.Sprite();
         this.multiplier = new pixi_js_1.BitmapText('', {
-            fontName: 'ZodiacRushGoldFont',
+            fontName: 'SugarPartyFont',
             fontSize: 35,
             align: 'center'
         });
@@ -76597,7 +76587,7 @@ class ReelView extends pixi_js_1.Container {
     }
     createMultiplier(value) {
         const style = new pixi_js_1.TextStyle({
-            fontFamily: AssetsManager_1.default.webFonts.get('LongdonDecorative').family,
+            fontFamily: AssetsManager_1.default.webFonts.get('SugarPartyFont').family,
             fill: [
                 '#FFB200',
                 '#FFFF00'
@@ -81433,6 +81423,9 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
     }
     updateLayout(desc) {
         super.updateLayout(desc);
+        const scaleX = desc.currentWidth / desc.baseWidth;
+        const scaleY = desc.currentHeight / desc.baseHeight;
+        const scale = Math.max(scaleX, scaleY);
         if (desc.orientation === ScreenOrientation_1.ScreenOrientation.HORIZONTAL) {
             this.background.visible = true;
             this.backgroundMobile.visible = false;
@@ -81441,9 +81434,9 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             this.background.visible = false;
             this.backgroundMobile.visible = true;
         }
-        if (this.fade) {
-            this.fade.width = desc.currentWidth;
-            this.fade.height = desc.currentHeight;
+        if (this.gradient) {
+            this.gradient.width = desc.currentWidth;
+            this.gradient.y = desc.currentHeight;
         }
         if (this.tfDoNotShowAgain) {
             this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
@@ -81560,10 +81553,11 @@ const pixi_js_1 = __webpack_require__(95894);
 const ScreenOrientation_1 = __webpack_require__(81827);
 class IntroScreenBackground extends pixi_js_1.Sprite {
     constructor() {
-        super(AssetsManager_1.default.textures.get('intro-bg-desktop'));
-        // this.on('added', () => {
-        //     this.state.setAnimation(0, 'idle', true);
-        // });
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const aspectRatio = +(width / height).toFixed(2);
+        const textureName = aspectRatio < 1 ? 'intro-bg-mobile' : 'intro-bg-desktop';
+        super(AssetsManager_1.default.textures.get(textureName));
         this.anchor.set(0.5, 0.5);
     }
     // PUBLIC API
@@ -81571,23 +81565,19 @@ class IntroScreenBackground extends pixi_js_1.Sprite {
         // hardcoded value!
         switch (desc.orientation) {
             case ScreenOrientation_1.ScreenOrientation.HORIZONTAL:
+                this.texture = AssetsManager_1.default.textures.get('intro-bg-desktop');
                 const xScale = desc.currentWidth / desc.baseWidth;
                 const yScale = desc.currentHeight / desc.baseHeight;
                 this.scale.set(xScale > yScale ? xScale : yScale);
                 break;
             case ScreenOrientation_1.ScreenOrientation.VERTICAL:
-                const offsetX = (desc.currentWidth - desc.baseWidth) / 2;
-                const backgroundWidth = 1920;
-                this.scale.set((desc.currentHeight / desc.baseHeight) * 2);
-                this.pivot.x = -(backgroundWidth / 2);
-                this.x = 0 - offsetX;
-                break;
-        }
-        if (desc.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL) {
-            const offsetX = (desc.currentWidth - desc.baseWidth) / 2;
-            const backgroundWidth = 1920;
-            this.pivot.x = -(backgroundWidth / 2);
-            this.x = 0 - offsetX;
+                this.texture = AssetsManager_1.default.textures.get('intro-bg-mobile');
+                const baseWidth = 1080;
+                const baseHeight = 1920;
+                const scaleX = desc.currentWidth / baseWidth;
+                const scaleY = desc.currentHeight / baseHeight;
+                const scale = Math.max(scaleX, scaleY);
+                this.scale.set(scale * 3.01);
         }
     }
 }
@@ -82201,6 +82191,10 @@ class ReelsBackground extends pixi_js_1.Container {
                 });
             }
         });
+        this.frame.scale.set(1.1);
+        this.frame.position.set(0, -423);
+        this.blur.position = this.frame.position;
+        this.blur.scale.set(1.06);
         this.on('added', this.onAdded, this);
     }
     customClassElementCreate(le) {
@@ -82209,12 +82203,14 @@ class ReelsBackground extends pixi_js_1.Container {
             case 'Frame':
                 instance = new pixi_spine_1.Spine(AssetsManager_1.default.spine.get('reel-frame'));
                 break;
+            case 'Blur':
+                instance = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('reel-blur'));
+                break;
         }
         return instance;
     }
     onAdded() {
-        this.frame.scale.set(1.1);
-        this.frame.position.set(0, -423);
+        this.blur.anchor.set(0.5, 0.5);
         const spineState = this.frame.state;
         const currentTrack = spineState.getCurrent(0);
         if ((currentTrack === null || currentTrack === void 0 ? void 0 : currentTrack.animation.name) === ReelsBackgroundType.NORMAL)

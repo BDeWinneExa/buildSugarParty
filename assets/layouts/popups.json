@@ -69,6 +69,46 @@
             "tweenData":{
               
             }
+          },
+          {
+            "cls": "starling.text.TextField",
+            "constructorParams": [
+              {
+                "value": 200
+              },
+              {
+                "value": 100
+              },
+              {
+                "value": ""
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "format": {
+                "cls": "starling.text.TextFormat",
+                "customParams": {},
+                "params": {
+                  "bold": true,
+                  "color": "#A34500",
+                  "font": "SuperMorning",
+                  "size": 26,
+                  "align": "center"
+                }
+              },
+              "height": 120,
+              "name": "tfContinue",
+              "pivotX": 250,
+              "pivotY": 60,
+              "text": "",
+              "width": 500,
+              "x": 960,
+              "y": 580,
+              "scaley": -1
+            },
+            "tweenData": {
+              "translation-key": "freeSpin.tfFreeSpinContinue"
+            }
           }
         ],
         "cls":"starling.display.Sprite",
@@ -114,8 +154,8 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "SugarPartyFont",
-                  "size": 22.5,
+                  "font": "SuperMorning",
+                  "size": 48,
                   "align": "center"
                 }
               },
@@ -153,9 +193,9 @@
                 "customParams": {},
                 "params": {
                   "bold": true,
-                  "color": "#6D2E00",
-                  "font": "SugarPartyFont",
-                  "size": 12.5,
+                  "color": "#A34500",
+                  "font": "SuperMorning",
+                  "size": 24,
                   "align": "center"
                 }
               },
@@ -193,9 +233,9 @@
                 "customParams": {},
                 "params": {
                   "bold": true,
-                  "color": "#A34500",
-                  "font": "SugarPartyFont",
-                  "size": 22.5,
+                  "color": "#6D2E00",
+                  "font": "SuperMorning",
+                  "size": 36,
                   "align": "center"
                 }
               },
@@ -334,7 +374,7 @@
                 "params": {
                   "bold": true,
                   "color": 16777215,
-                  "font": "SugarPartyFont",
+                  "font": "SuperMorning",
                   "size": 50,
                   "align": "center"
                 }
@@ -371,7 +411,7 @@
                 "params": {
                   "bold": true,
                   "color": "#6D2E00",
-                  "font": "SugarPartyFont",
+                  "font": "SuperMorning",
                   "size": 25,
                   "align": "center"
                 }
@@ -409,7 +449,7 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "SugarPartyFont",
+                  "font": "SuperMorning",
                   "size":15,
                   "align": "center"
                 }

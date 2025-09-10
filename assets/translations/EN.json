@@ -226,6 +226,7 @@
     "tfCoinValue": "COIN VALUE",
     "tfTotalBet": "TOTAL BET",
     "btnMax": "MAXIMUM BET",
+    "btnMin": "MINIMUM BET",
     "btnConfirm":"CONFIRM"
   },
   "history": {

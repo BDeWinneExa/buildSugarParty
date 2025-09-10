@@ -226,6 +226,7 @@
     "tfCoinValue": "JETON DEĞERİ",
     "tfTotalBet": "TOPLAM BAHİS",
     "btnMax": "MAXIMUM BAHİS",
+    "btnMin": "MİNİMUM BAHİS",
      "btnConfirm":"ONAYLAMAK"
   },
   "history": {

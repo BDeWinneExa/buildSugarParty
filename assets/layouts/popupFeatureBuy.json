@@ -41,7 +41,7 @@
             "params": {
               "bold": true,
               "color": 16777215,
-              "font": "LongdonDecorative",
+              "font": "SuperMorning",
               "size": 40,
               "align": "center"
             }

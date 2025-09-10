@@ -734,7 +734,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"LongdonDecorative",
+                          "font":"SuperMorning",
                           "size":65,
                           "align": "center"
                         }
@@ -2015,7 +2015,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"LongdonDecorative",
+                          "font":"SuperMorning",
                           "size":65,
                           "align": "center"
                         }

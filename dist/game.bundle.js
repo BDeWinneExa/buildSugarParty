@@ -67186,6 +67186,10 @@ class PopupBigWin extends pixi_js_1.Container {
         this.tfAmount = this['tfAmount'];
         this.tfAmount.anchor.set(0.5, 0.5);
         this.tfAmount.scale.y = -1;
+        this.tfContinue = this['tfContinue'];
+        this.tfContinue.anchor.set(0.5, 0.5);
+        this.tfContinue.scale.y = -1;
+        this.tfContinue.position.set(10, -300);
         this.on('removed', this.onRemoved, this);
     }
     // PRIVATE API
@@ -67250,6 +67254,7 @@ class PopupBigWin extends pixi_js_1.Container {
         this.addChild(this.animation);
         const amountContainer = this.animation.slotContainers[this.animation.skeleton.findSlotIndex('rectangle')];
         amountContainer.name = 'AmountContainer';
+        amountContainer.addChild(this.tfContinue);
         amountContainer.addChild(this.tfAmount);
         const levelAnimationDuration = this.levelAnimationDurations[this.levelValue];
         // spec says 5 secs animating, so we put 4 + 1 in + 1 out
@@ -77916,6 +77921,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
         this.frontController.addCommand(UIEventExtension_1.UIEventExtension.BET_QUANTITY_UP, AdjustBetQuantityCommand_1.default);
         this.frontController.addCommand(UIEventExtension_1.UIEventExtension.BET_QUANTITY_DOWN, AdjustBetQuantityCommand_1.default);
         this.frontController.addCommand(UIEventExtension_1.UIEventExtension.BET_QUANTITY_MAX, AdjustBetQuantityCommand_1.default);
+        this.frontController.addCommand(UIEventExtension_1.UIEventExtension.BET_QUANTITY_MIN, AdjustBetQuantityCommand_1.default);
         this.frontController.addCommand(UIEventExtension_1.UIEventExtension.TOTAL_BET_DOWN, AdjustTotalBetCommand_1.AdjustTotalBetCommand);
         this.frontController.addCommand(UIEventExtension_1.UIEventExtension.TOTAL_BET_UP, AdjustTotalBetCommand_1.AdjustTotalBetCommand);
         this.frontController.removeCommand(SlotGameEvent_1.SlotGameEvent.SPIN_START, SpinStartCommand_1.default);
@@ -78153,7 +78159,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
                 //     })
                 // }
                 const freeSpinAmount = this.slotMachine.currentSpinResult.freespins.moreAwarded ? this.slotMachine.currentSpinResult.freespins.moreAwarded : this.slotMachine.currentSpinResult.freespins.remainingCount;
-                this.popupManager.show(((_j = this.popupFreespinsHorizontal) !== null && _j !== void 0 ? _j : (this.popupFreespinsHorizontal = new PopupFreespins_1.default(freeSpinAmount, 1.2))), ((_k = this.popupFreespinsVertical) !== null && _k !== void 0 ? _k : (this.popupFreespinsVertical = new PopupFreespins_1.default(freeSpinAmount, 1))), -1, true, {
+                this.popupManager.show(((_j = this.popupFreespinsHorizontal) !== null && _j !== void 0 ? _j : (this.popupFreespinsHorizontal = new PopupFreespins_1.default(freeSpinAmount, 1.2))), ((_k = this.popupFreespinsVertical) !== null && _k !== void 0 ? _k : (this.popupFreespinsVertical = new PopupFreespins_1.default(freeSpinAmount, 0.85))), -1, true, {
                     onPopupHidden: () => {
                         var _a, _b;
                         if (this.slotMachine.currentSpinResult.freespins.moreAwarded) {

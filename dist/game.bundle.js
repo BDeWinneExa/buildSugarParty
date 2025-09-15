@@ -78281,6 +78281,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
     onUiActivePanelChanged() {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
         const uiState = tsyringe_1.container.resolve(UIState_1.default);
+        PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = 1;
         switch (uiState.activePanel) {
             case UIState_1.UIPanelType.HISTORY:
                 this.popupVertical = (_a = this.historyPanelVertical) !== null && _a !== void 0 ? _a : (this.historyPanelVertical = new HistoryPanel_1.default('HistoryPanel'));
@@ -78288,6 +78289,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
                 break;
             case UIState_1.UIPanelType.AUTOSPIN_SETTINGS:
                 this.popupVertical = (_c = this.autospinPanelVertical) !== null && _c !== void 0 ? _c : (this.autospinPanelVertical = new AutospinPanel_1.default(AssetsManager_1.default.layouts.get('autoplayPortrait')));
+                this.popupVertical.scale.set(1.5);
                 this.popupDesktop = (_d = this.autospinPanelHorizontal) !== null && _d !== void 0 ? _d : (this.autospinPanelHorizontal = new AutospinPanel_1.default(AssetsManager_1.default.layouts.get('autoplayLandscape')));
                 break;
             case UIState_1.UIPanelType.BET_SETTINGS:
@@ -78325,6 +78327,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
             case UIState_1.UIPanelType.SYSTEM_SETTINGS:
                 this.popupDesktop = (_l = this.systemSettingsPanelHorizontal) !== null && _l !== void 0 ? _l : (this.systemSettingsPanelHorizontal = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingslLandscape')));
                 this.popupVertical = (_m = this.systemSettingsPanelVertical) !== null && _m !== void 0 ? _m : (this.systemSettingsPanelVertical = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingPortrait')));
+                this.popupVertical.scale.set(2);
                 break;
             default:
                 this.popupManager.hide();
@@ -78362,6 +78365,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
         let popupVertical = null;
         let showSound = SoundListExtended_1.default.UI_POPUP_COMMON_WINDOW;
         let reloadOnClick = false;
+        PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = 1;
         switch (popupState.activePopup.type) {
             case PopupState_1.PopupType.NOT_ENOUGH_BALANCE:
                 popupHorizontal = (_a = this.popupBalanceVertical) !== null && _a !== void 0 ? _a : (this.popupBalanceVertical = new PopupNotEnoughBalance_1.default());

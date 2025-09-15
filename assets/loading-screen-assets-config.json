@@ -2,13 +2,13 @@
   "layouts": [
     {
       "name": "loading-screen",
-      "url": "./layouts/loading-screen.json?v=0.0.10.1757933313049"
+      "url": "./layouts/loading-screen.json?v=0.0.10.1757948108148"
     }
   ],
   "textures": [
     {
       "name": "loading",
-      "url": "./images/loading-screen/loading.json?v=0.0.10.1757933313049"
+      "url": "./images/loading-screen/loading.json?v=0.0.10.1757948108148"
     }
   ],
   "sounds": [],
@@ -16,11 +16,11 @@
   "fonts": [
     {
       "name": "AlbertSans",
-      "url": "./fonts/AlbertSans-Black.woff?v=0.0.10.1757933313049"
+      "url": "./fonts/AlbertSans-Black.woff?v=0.0.10.1757948108148"
     },
     {
       "name": "LongdonDecorative",
-      "url": "./fonts/LongdonDecorative.ttf?v=0.0.10.1757933313049"
+      "url": "./fonts/LongdonDecorative.ttf?v=0.0.10.1757948108148"
     }
   ]
 }

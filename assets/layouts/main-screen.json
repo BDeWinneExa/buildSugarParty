@@ -550,7 +550,9 @@
                   "pivotX":540,
                   "pivotY":50,
                   "text":"Abc123",
-                  "width":1080
+                  "width":1080,
+                  "scaleX":0.5,
+                  "scaleY":0.5
                 },
                 "tweenData":{
                   
@@ -636,8 +638,8 @@
                 },
                 "params":{
                   "name":"tfCurrentWinValue",
-                  "pivotX":100,
-                  "pivotY":50
+                  "pivotX":0,
+                  "pivotY":25
                 }
               }
             ],
@@ -648,7 +650,7 @@
             "params":{
               "name":"reelHeader",
               "x":540,
-              "y":341
+              "y":361.5
             }
           },
           {
@@ -1658,9 +1660,11 @@
                   "height":100,
                   "name":"tfText",
                   "pivotX":540,
-                  "pivotY":50,
+                  "pivotY":100,
                   "text":"Abc123",
-                  "width":1080
+                  "width":1080,
+                  "scaleX":0.5,
+                  "scaleY":0.5
                   
                 },
                 "tweenData":{
@@ -1747,8 +1751,8 @@
                 },
                 "params":{
                   "name":"tfCurrentWinValue",
-                  "pivotX":100,
-                  "pivotY":50
+                  "pivotX":0,
+                  "pivotY":25
                 }
               }
             ],
@@ -1759,7 +1763,7 @@
             "params":{
               "name":"reelHeader",
               "x":980,
-              "y":99
+              "y":113
             }
           },
           {

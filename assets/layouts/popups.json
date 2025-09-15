@@ -334,7 +334,7 @@
                 "params": {
                   "bold": true,
                   "color": "#A34500",
-                  "font": "SugarPartyFont",
+                  "font": "SuperMorning",
                   "size": 22.5,
                   "align": "center"
                 }
@@ -374,7 +374,7 @@
                 "params": {
                   "bold": true,
                   "color": 16777215,
-                  "font": "SuperMorning",
+                  "font": "SugarPartyFont",
                   "size": 50,
                   "align": "center"
                 }

@@ -68154,6 +68154,7 @@ class BetSettings extends pixi_js_1.Container {
         this.wallet.on(WalletEvent_1.WalletEvent.COIN_VALUE_CHANGED, this.onBetValueChanged, this);
         this.betLimits = this.slotMachine.description.betLimits;
         this.currentBetValue = this.slotMachine.currentBetValue;
+        this.onBetValueChanged();
         this.btnTotalBetUp.on('pointerup', this.onTotalBetUp, this);
         this.btnTotalBetDown.on('pointerup', this.onTotalBetDown, this);
         this.btnCoinDown.on('pointerup', this.onCoinDown, this);
@@ -69612,6 +69613,9 @@ class PaytablePanelDesktop extends Panel_1.default {
         if (parent['area']) {
             parent['area'].visible = false;
         }
+        // if(parent['multiplierDescription']){
+        //     symbolIcon.scatterMultiplier(symbolData.id, parent)
+        // }
         parent['iconSlot'].addChild(symbolIcon);
     }
     // USER INTERACTION
@@ -69858,6 +69862,15 @@ class PaytableSymbolCell extends pixi_js_1.Container {
         const staticIcon = new pixi_js_1.Sprite(symbolData.staticIcon.texture);
         staticIcon.anchor.set(0.5, 0.5);
         this.staticIcon.addChild(staticIcon);
+        this.tfPays15 = this['multiplierDescription']['tfPays15'];
+        this.tfPays14 = this['multiplierDescription']['tfPays14'];
+        this.tfPays13 = this['multiplierDescription']['tfPays13'];
+        this.tfPays12 = this['multiplierDescription']['tfPays12'];
+        this.tfPays11 = this['multiplierDescription']['tfPays11'];
+        this.tfPays10 = this['multiplierDescription']['tfPays10'];
+        this.tfPays9 = this['multiplierDescription']['tfPays9'];
+        this.tfPays8 = this['multiplierDescription']['tfPays8'];
+        this.tfPays7 = this['multiplierDescription']['tfPays7'];
         this.tfPays6 = this['multiplierDescription']['tfPays6'];
         this.tfPays5 = this['multiplierDescription']['tfPays5'];
         this.tfPays4 = this['multiplierDescription']['tfPays4'];
@@ -69868,16 +69881,16 @@ class PaytableSymbolCell extends pixi_js_1.Container {
     }
     updateView(maxWidth = null, texts = null) {
         // const texts: Text[] =  this['multiplierDescription'].children as Text[];
-        [this.tfPays5, this.tfPays6].forEach((text) => {
+        [this.tfPays5, this.tfPays6, this.tfPays7, this.tfPays8, this.tfPays9, this.tfPays10, this.tfPays11, this.tfPays12, this.tfPays13, this.tfPays14, this.tfPays15].forEach((text) => {
             (0, Utils_1.autoscaleText)(text, this.config.maxFontSize, this.config.maxWidth, this.config.maxHeight);
         });
         const offset = 12;
         const totalWidth = maxWidth ? maxWidth : this.width;
-        for (let i = 0; i < 3; i++) {
-            texts[i].x = (totalWidth - (texts[i].width + offset + texts[i + 3].width)) / 2;
-            const posX = texts[i].x + texts[i].width + offset;
-            texts[i + 3].x = posX;
-        }
+        // for (let i = 0; i < 3; i++) {
+        //     texts[i].x = (totalWidth - (texts[i].width + offset + texts[i+3].width)) / 2;
+        //     const posX = texts[i].x + texts[i].width + offset;
+        //     texts[i+3].x = posX;
+        // }
     }
     get width() {
         return this.symbolArea.width;
@@ -69885,12 +69898,32 @@ class PaytableSymbolCell extends pixi_js_1.Container {
     get height() {
         return this.symbolArea.height;
     }
+    scatterMultiplier(symbolId, parent) {
+        const sm = tsyringe_1.container.resolve(SlotMachine_1.default);
+        this.tfPays6 = parent['multiplierDescription']['tfPays6'];
+        this.tfPays5 = parent['multiplierDescription']['tfPays5'];
+        this.tfPays4 = parent['multiplierDescription']['tfPays4'];
+        if (symbolId == 25) {
+            this.tfPays6.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 3).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays5.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 2).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays4.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 1).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.updateView(250, parent['multiplierDescription'].children);
+        }
+    }
     setMultipliers(symbolId) {
         const sm = tsyringe_1.container.resolve(SlotMachine_1.default);
         if (symbolId > 100 && symbolId < 8000) {
+            this.tfPays15.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 15).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays14.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 14).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays13.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 13).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays12.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 12).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays11.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 11).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays10.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 10).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays9.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 9).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays8.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 8).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
+            this.tfPays7.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 7).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
             this.tfPays6.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 6).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
             this.tfPays5.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 5).reward.line.multiplier * tsyringe_1.container.resolve(SlotMachine_1.default).totalBet * tsyringe_1.container.resolve(Wallet_1.default).coinValue)}`;
-            //this.tfPays4.text = `${this.wallet.getCurrencyValue(sm.findRule(symbolId, 4).reward.line.multiplier * container.resolve(SlotMachine).totalBet * container.resolve(Wallet).coinValue)}`;
             this.updateView(this.width, this['multiplierDescription'].children);
         }
     }
@@ -81847,7 +81880,7 @@ let MainGameScreen = class MainGameScreen extends AdjustableLayoutContainer_1.de
                     // this.totalWinFrameMobile.setValue(sm.currentSpinResult.currentTotalWinValue, true);
                 }
                 // if (sm.currentSpinResult.winValue && sm.currentSpinResult.winValue > 0)
-                //     this.reelHeader.setHeader(sm.currentSpinResult.winValue, true);
+                this.reelHeader.setHeader(sm.currentSpinResult.winValue, true);
                 break;
             case SlotMachineState_1.SlotMachineState.SPIN_RESULT_SCATTER:
                 this.showScatterWin();
@@ -82085,6 +82118,7 @@ const Wallet_1 = __importDefault(__webpack_require__(92162));
 const engineTween_1 = __webpack_require__(50381);
 const SoundManager_1 = __importDefault(__webpack_require__(6881));
 const SoundList_1 = __importDefault(__webpack_require__(27310));
+const Utils_1 = __webpack_require__(63948);
 class ReelHeader extends pixi_js_1.Container {
     constructor(le) {
         super();
@@ -82093,12 +82127,15 @@ class ReelHeader extends pixi_js_1.Container {
         });
         this.tfCurrentWinValue.renderValueFunction = (tfText, value) => {
             tfText.text = `${value.toLocaleString('de-DE')} ${Wallet_1.default.currency.isoCode}`;
+            (0, Utils_1.autoscaleText)(tfText, 45, 600, 100);
         };
         if (this.background) {
             this.background.anchor.set(0.5, 0.5);
         }
         this.tfCurrentWinValue.setValue(0);
         this.tfCurrentWinValue.visible = false;
+        this.tfText.scale.set(0.5);
+        this.tfCurrentWinValue.scale.set(0.5);
     }
     customClassElementCreate(le) {
         let instance = null;
@@ -82135,14 +82172,14 @@ class ReelHeader extends pixi_js_1.Container {
             volume: 0.35,
         });
         engineTween_1.Tweener.addTween(this.tfCurrentWinValue.scale, {
-            x: 1.15,
-            y: 1.15,
+            x: 0.65,
+            y: 0.65,
             transition: 'easeOutSine',
             time: 0.35,
             onComplete: () => {
                 engineTween_1.Tweener.addTween(this.tfCurrentWinValue.scale, {
-                    x: 1,
-                    y: 1,
+                    x: 0.5,
+                    y: 0.5,
                     transition: 'easeOutElastic',
                     time: 0.3
                 });

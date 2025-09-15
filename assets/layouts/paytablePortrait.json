@@ -897,7 +897,7 @@
 																	"pivotY": 20,
 																	"text": "0",
 																	"width": 14,
-																	"x": 99,
+																	"x": 138,
 																	"y": 282.5
 																}
 															},
@@ -932,7 +932,7 @@
 																	"pivotY": 20,
 																	"text": "0",
 																	"width": 14,
-																	"x": 94,
+																	"x": 138,
 																	"y": 312.5
 																}
 															}
@@ -941,6 +941,7 @@
 														"customParams": {},
 														"params": {
 															"name": "multiplierDescription",
+															"x": 42,
 															"y": 185
 														}
 													}

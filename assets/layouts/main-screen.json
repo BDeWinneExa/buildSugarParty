@@ -1602,7 +1602,9 @@
             "params":{
               "name":"cascadeHistoryPanelHorizontal",
               "x":94,
-              "y":636.5
+              "y":574.5,
+              "scaleX":1.1,
+              "scaleY":1.1
             }
           },
           {
@@ -2052,8 +2054,10 @@
             },
             "params":{
               "name":"btnFreeSpinHorizontal",
-              "x":180,
-              "y":355.5
+              "x":199,
+              "y":355.5,
+              "scaleX":1.1,
+              "scaleY":1.1
             },
             "tweenData":{
               "animation":{

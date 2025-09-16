@@ -67481,6 +67481,7 @@ class PopupFreeSpinWinning extends pixi_js_1.Container {
         // headerContainer.name = 'HeaderContainer';
         // headerContainer.removeChildren();
         const wallet = tsyringe_1.container.resolve(Wallet_1.default);
+        this.tfAmount.text = wallet.getCurrencyValue(this.amount instanceof Function ? this.amount() : this.amount);
         this.tfAmount.anchor.set(0.5);
         this.tfFreeSpinNumber.anchor.set(0.5);
         this.tfFreespinsHeader.anchor.set(0.5);
@@ -67544,7 +67545,7 @@ class PopupFreeSpinWinning extends pixi_js_1.Container {
     onAdded() {
         let sm = tsyringe_1.container.resolve(SlotMachine_1.default);
         const wallet = tsyringe_1.container.resolve(Wallet_1.default);
-        this.tfAmount.text = wallet.getCurrencyValue(this.amount instanceof Function ? this.amount() : this.amount);
+        this.tfAmount.text = wallet.getCurrencyValue(sm.roundResult.totalWinValue);
         (0, Utils_1.autoscaleText)(this.tfAmount, 50, 500, 120);
         this.animation.state.setEmptyAnimations(0);
         this.animation.state.setAnimation(0, 'idle', true);
@@ -77089,6 +77090,7 @@ class SymbolView extends pixi_js_1.Container {
         this.addChild(this.staticIcon);
         if (this.data.id === 25) {
             this.scale.set(1.4);
+            this.data.skipWinFrameAnimation = true;
         }
         if (this.data.id > 1000) {
             console.log(this.data.id);

@@ -1079,15 +1079,6 @@
                 "children":[
                   {
                     "children":[
-                      
-                      {
-                        "children":[],
-                        "cls":"starling.display.Sprite",
-                        "customParams":{},
-                        "params":{
-                          "name":"spinContainer"
-                        }
-                      },
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
@@ -1097,7 +1088,16 @@
                           "x":77.5,
                           "y":64
                         }
+                      },
+                      {
+                        "children":[],
+                        "cls":"starling.display.Sprite",
+                        "customParams":{},
+                        "params":{
+                          "name":"spinContainer"
+                        }
                       }
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{
@@ -1115,20 +1115,21 @@
                         "cls":"starling.display.Sprite",
                         "customParams":{},
                         "params":{
-                          "name":"spinContainer"
+                          "name":"multiplierContainer",
+                          "x":77.5,
+                          "y":64
                         }
                       },
-                      
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
                         "customParams":{},
                         "params":{
-                          "name":"multiplierContainer",
-                          "x":77.5,
-                          "y":64
+                          "name":"spinContainer"
                         }
                       }
+                      
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{
@@ -1142,16 +1143,6 @@
                   },
                   {
                     "children":[
-                      
-                      {
-                        "children":[],
-                        "cls":"starling.display.Sprite",
-                        "customParams":{},
-                        "params":{
-                          "name":"spinContainer"
-                        }
-                      },
-                      
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
@@ -1161,7 +1152,17 @@
                           "x":77.5,
                           "y":64
                         }
+                      },
+                      {
+                        "children":[],
+                        "cls":"starling.display.Sprite",
+                        "customParams":{},
+                        "params":{
+                          "name":"spinContainer"
+                        }
                       }
+                      
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{
@@ -1180,20 +1181,21 @@
                         "cls":"starling.display.Sprite",
                         "customParams":{},
                         "params":{
-                          "name":"spinContainer"
+                          "name":"multiplierContainer",
+                          "x":77.5,
+                          "y":64
                         }
                       },
-                      
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
                         "customParams":{},
                         "params":{
-                          "name":"multiplierContainer",
-                          "x":77.5,
-                          "y":64
+                          "name":"spinContainer"
                         }
                       }
+                      
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{
@@ -1207,16 +1209,6 @@
                   },
                   {
                     "children":[
-                      
-                      {
-                        "children":[],
-                        "cls":"starling.display.Sprite",
-                        "customParams":{},
-                        "params":{
-                          "name":"spinContainer"
-                        }
-                      },
-                      
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
@@ -1226,7 +1218,17 @@
                           "x":77.5,
                           "y":64
                         }
+                      },
+                      {
+                        "children":[],
+                        "cls":"starling.display.Sprite",
+                        "customParams":{},
+                        "params":{
+                          "name":"spinContainer"
+                        }
                       }
+                      
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{
@@ -1240,16 +1242,6 @@
                   },
                   {
                     "children":[
-                      
-                      {
-                        "children":[],
-                        "cls":"starling.display.Sprite",
-                        "customParams":{},
-                        "params":{
-                          "name":"spinContainer"
-                        }
-                      },
-                      
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
@@ -1259,7 +1251,17 @@
                           "x":77.5,
                           "y":64
                         }
+                      },
+                      {
+                        "children":[],
+                        "cls":"starling.display.Sprite",
+                        "customParams":{},
+                        "params":{
+                          "name":"spinContainer"
+                        }
                       }
+                      
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{
@@ -1273,16 +1275,6 @@
                   },
                   {
                     "children":[
-                      
-                      {
-                        "children":[],
-                        "cls":"starling.display.Sprite",
-                        "customParams":{},
-                        "params":{
-                          "name":"spinContainer"
-                        }
-                      },
-                      
                       {
                         "children":[],
                         "cls":"starling.display.Sprite",
@@ -1292,7 +1284,17 @@
                           "x":77.5,
                           "y":64
                         }
+                      },
+                      {
+                        "children":[],
+                        "cls":"starling.display.Sprite",
+                        "customParams":{},
+                        "params":{
+                          "name":"spinContainer"
+                        }
                       }
+                      
+                      
                     ],
                     "cls":"starling.display.Sprite",
                     "customParams":{

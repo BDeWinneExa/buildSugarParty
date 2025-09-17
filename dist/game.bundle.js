@@ -70859,14 +70859,15 @@ class PaytableSymbolCell extends pixi_js_1.Container {
         // const texts: Text[] =  this['multiplierDescription'].children as Text[];
         [this.tfPays5, this.tfPays6, this.tfPays7, this.tfPays8, this.tfPays9, this.tfPays10, this.tfPays11, this.tfPays12, this.tfPays13, this.tfPays14, this.tfPays15].forEach((text) => {
             (0, Utils_1.autoscaleText)(text, this.config.maxFontSize, this.config.maxWidth, this.config.maxHeight);
+            text.style.align = 'left';
         });
         const offset = 12;
         const totalWidth = maxWidth ? maxWidth : this.width;
-        // for (let i = 0; i < 3; i++) {
-        //     texts[i].x = (totalWidth - (texts[i].width + offset + texts[i+3].width)) / 2;
-        //     const posX = texts[i].x + texts[i].width + offset;
-        //     texts[i+3].x = posX;
-        // }
+        for (let i = 0; i < 11; i++) {
+            texts[i].x = (totalWidth - (texts[i].width + offset + texts[i + 11].width)) / 2;
+            const posX = texts[i].x + texts[i].width + offset;
+            texts[i + 11].x = posX + texts[i + 11].width;
+        }
     }
     get width() {
         return this.symbolArea.width;
@@ -82522,7 +82523,7 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
                 instance = new IntroScreenBackground_1.default();
                 break;
             case "Logo":
-                instance = new Logo_1.default();
+                instance = new Logo_1.default(true);
                 break;
             case "ToggleButton":
                 instance = new ToggleButton_1.ToggleButton(le);
@@ -82759,7 +82760,7 @@ let MainGameScreen = class MainGameScreen extends AdjustableLayoutContainer_1.de
                 instance = new MainScreenBackground_1.default(le);
                 break;
             case 'Logo':
-                instance = new Logo_1.default();
+                instance = new Logo_1.default(true);
                 break;
             case 'MultiFunctionalButton':
                 instance = new MultiFunctionalButton_1.default(le);
@@ -83042,7 +83043,7 @@ class MainScreenBackground extends pixi_js_1.Container {
             this.base_game_bg.state.setAnimation(0, 'idle', true);
             this.blur_bg = new pixi_spine_1.Spine(this.base_game_bg.spineData);
             this.blur_bg.visible = true;
-            this.blur_bg.filters = [new pixi_js_1.BlurFilter(3)];
+            this.blur_bg.filters = [new pixi_js_1.BlurFilter(5)];
             this.blur_mask = new pixi_js_1.Graphics()
                 .beginFill(0x000000)
                 .drawRoundedRect(20, 0, 1141.6, 767.8, 20)
@@ -83056,7 +83057,7 @@ class MainScreenBackground extends pixi_js_1.Container {
             this.base_game_bg_mobile.state.setAnimation(0, 'idle', true);
             this.blur_bg_mobile = new pixi_spine_1.Spine(this.base_game_bg_mobile.spineData);
             this.blur_bg_mobile.visible = true;
-            this.blur_bg_mobile.filters = [new pixi_js_1.BlurFilter(3)];
+            this.blur_bg_mobile.filters = [new pixi_js_1.BlurFilter(5)];
             this.blur_mask_mobile = new pixi_js_1.Graphics()
                 .beginFill(0x000000)
                 .drawRoundedRect(0, -211.5, 1008.1, 698.3, 20)
@@ -83082,9 +83083,11 @@ class MainScreenBackground extends pixi_js_1.Container {
         switch (desc.orientation) {
             case ScreenOrientation_1.ScreenOrientation.HORIZONTAL:
                 this.scale.set(xScale > yScale ? xScale : yScale);
+                this.blur_mask.scale.set(1 / this.scale.x, 1 / this.scale.y);
                 break;
             case ScreenOrientation_1.ScreenOrientation.VERTICAL:
                 this.scale.set(xScale > yScale ? xScale : yScale);
+                this.blur_mask_mobile.scale.set(1 / this.scale.x, 1 / this.scale.y);
                 break;
         }
     }

@@ -261,6 +261,7 @@
             "cls":"starling.text.TextFormat",
             "customParams":{},
             "params":{
+              "bold":true,
               "color":"#FD6302",
               "font":"Alexandria",
               "size":20
@@ -341,7 +342,7 @@
         },
         "params":{
           "name":"btnClose",
-          "x":723,
+          "x":715,
           "y":85
         },
         "tweenData":{

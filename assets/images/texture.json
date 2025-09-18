@@ -1392,6 +1392,30 @@
         "y": 0.5
       }
     },
+    "sliderLandscape": {
+      "frame": {
+        "x": 2720,
+        "y": 1670,
+        "w": 75,
+        "h": 48
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 75,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 75,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "minusButton-landscape": {
       "frame": {
         "x": 2880,

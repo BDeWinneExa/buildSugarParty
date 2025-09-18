@@ -1194,8 +1194,8 @@
                 "customParams": {},
                 "params": {
                   "name": "iconSlot",
-                  "pivotX": 215,
-                  "pivotY": 170,
+                  "pivotX": 130,
+                  "pivotY": 130,
                   "scaleX": 0.9,
                   "scaleY": 0.9,
                   "x": 300,

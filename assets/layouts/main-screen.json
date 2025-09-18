@@ -542,7 +542,7 @@
                     "params":{
                       "color":16777215,
                       "font":"SugarPartyFont",
-                      "size":22.5
+                      "size":18
                     }
                   },
                   "height":100,
@@ -1658,7 +1658,7 @@
                     "params":{
                       "color":16777215,
                       "font":"SugarPartyFont",
-                      "size":22.5
+                      "size":18
                     }
                   },
                   "height":100,
@@ -1756,7 +1756,7 @@
                 "params":{
                   "name":"tfCurrentWinValue",
                   "pivotX":0,
-                  "pivotY":25
+                  "pivotY":40
                 }
               }
             ],
@@ -1993,7 +1993,7 @@
                       "pivotY":65,
                       "text":"$200",
                       "width":190,
-                      "x":-5,
+                      "x":-2,
                       "y":18.5
                     },
                     "tweenData":{
@@ -2034,7 +2034,7 @@
                       "pivotY":75,
                       "text":"BUY\nFEATURE",
                       "width":300,
-                      "x":-5,
+                      "x":-3,
                       "y":-53.5
                     },
                     "tweenData":{

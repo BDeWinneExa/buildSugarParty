@@ -67606,7 +67606,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         this.characterLogo.anchor.set(0.5, 0.5);
         this.characterLogo.scale.set(0.55);
         this.characterLogo.position.x = 120;
-        this.characterLogo.position.y = 450;
+        this.characterLogo.position.y = 0;
         this.character.addChild(this.characterLogo);
         this.createGradientBottom();
         this.footerText = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-text'));
@@ -67685,7 +67685,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
                             time: 0.6,
                             transition: 'easeOutBounce'
                         });
-                        const targetY = this.characterLogo.position.y - 100;
+                        const targetY = this.characterLogo.position.y - 50;
                         engineTween_1.Tweener.addTween(this.characterLogo.position, {
                             y: targetY,
                             time: 0.6,
@@ -67721,7 +67721,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.gradientBottomMobile.visible = false;
             this.background.visible = true;
             this.gradientBottom.visible = true;
-            this.characterLogo.position.y = this.progressBar.alpha == 0 ? 300 : 300;
+            this.characterLogo.position.y = 350;
             // this.startButton.position.y = -150;
             if (width > height * (baseWidth / baseHeight)) {
                 this.background.scale.set(xScale);
@@ -67754,7 +67754,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             const yScaleMobile = height / mobileHeight;
             const xScaleMobile = width / mobileWidth;
             const scaleMobile = Math.max(xScaleMobile, yScaleMobile);
-            this.characterLogo.position.y = this.progressBar.alpha == 0 ? 450 : 450;
+            this.characterLogo.position.y = 475;
             this.backgroundMobile.scale.set(scaleMobile, scaleMobile);
             this.backgroundMobile.x = width / 2;
             this.backgroundMobile.y = height / 2;
@@ -67768,7 +67768,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             if (this.progressBar) {
                 this.progressBar.x = width / 2;
                 this.progressBar.y = height - (this.gradientBottom.height * 0.3); // Position above footer text
-                this.progressBar.scale.set(scale);
+                this.progressBar.scale.set(scale * 2);
             }
         }
     }
@@ -68845,6 +68845,7 @@ class AdjustSettings extends pixi_js_1.Container {
         this.gs.settings.soundFx = !this.gs.settings.soundFx;
         this.gs.saveSettings();
         SoundManager_1.default.getChannel('default').mute = !this.gs.settings.soundFx;
+        SoundManager_1.default.getChannel('ambient').mute = !this.gs.settings.soundFx;
     }
     changeIntroScreen() {
         this.gs.settings.introScreen = !this.gs.settings.introScreen;
@@ -69051,7 +69052,7 @@ class AutospinPanel extends Panel_1.default {
                 instance = new ui_1.Slider({
                     bg: 'sliderBGLandscape',
                     fill: 'sliderFillLandscape',
-                    slider: 'slider',
+                    slider: 'sliderLandscape',
                     min: 0,
                     max: 1000,
                     value: 500
@@ -83131,7 +83132,7 @@ class ReelHeader extends pixi_js_1.Container {
             return this.customClassElementCreate(le);
         });
         this.tfCurrentWinValue.renderValueFunction = (tfText, value) => {
-            tfText.text = `${value.toLocaleString('de-DE')} ${Wallet_1.default.currency.isoCode}`;
+            tfText.text = ` ${Wallet_1.default.getCurrencyFormattedValue(value)}`;
             (0, Utils_1.autoscaleText)(tfText, 45, 600, 100);
         };
         if (this.background) {

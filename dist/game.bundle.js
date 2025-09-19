@@ -82337,6 +82337,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+const pixi_js_1 = __webpack_require__(95894);
 const ButtonSpin_1 = __importDefault(__webpack_require__(79619));
 const IntroScreenEvent_1 = __webpack_require__(81616);
 const SoundManager_1 = __importDefault(__webpack_require__(6881));
@@ -82373,9 +82374,15 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         this.startTextInterval();
         if (this.background) {
             this.background.anchor.set(0.5, 0.5);
+            this.blur_bg.filters = [new pixi_js_1.BlurFilter(10)];
+            this.blur_mask.pivot.set(this.blur_mask.width / 2, this.blur_mask.height / 2);
+            this.blur_bg.mask = this.blur_mask;
         }
         if (this.backgroundMobile) {
             this.backgroundMobile.anchor.set(0.5, 0.5);
+            this.blur_bg_mobile.filters = [new pixi_js_1.BlurFilter(10)];
+            this.blur_mask_mobile.pivot.set(this.blur_mask_mobile.width / 2, this.blur_mask_mobile.height / 2);
+            this.blur_bg_mobile.mask = this.blur_mask_mobile;
         }
         if (this.gradient) {
             this.gradient.anchor.set(0.5, 1);
@@ -82442,13 +82449,21 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         const scaleX = desc.currentWidth / desc.baseWidth;
         const scaleY = desc.currentHeight / desc.baseHeight;
         const scale = Math.max(scaleX, scaleY);
+        this.backgroundMobile.visible = false;
+        this.background.visible = false;
+        this.blur_bg.visible = false;
+        this.blur_bg_mobile.visible = false;
+        this.blur_mask.visible = false;
+        this.blur_mask_mobile.visible = false;
         if (desc.orientation === ScreenOrientation_1.ScreenOrientation.HORIZONTAL) {
             this.background.visible = true;
-            this.backgroundMobile.visible = false;
+            this.blur_bg.visible = true;
+            this.blur_mask.visible = true;
         }
         else {
-            this.background.visible = false;
+            this.blur_bg_mobile.visible = true;
             this.backgroundMobile.visible = true;
+            this.blur_mask_mobile.visible = true;
         }
         if (this.gradient) {
             this.gradient.width = desc.currentWidth;

@@ -27,6 +27,46 @@
             "constructorParams": [
               {
                 "cls": "starling.textures.Texture",
+                "textureName": "intro-bg-mobile"
+              }
+            ],
+            "customParams": {
+              
+            },
+            "params": {
+              "name": "blur_bg_mobile",
+              "scaleX": 3,
+              "scaleY": 3
+            }
+          },
+          {
+            "cls":"starling.display.Quad",
+            "constructorParams":[
+              {
+                    "name":"width",
+                    "type":"Number",
+                    "value":992.5
+                  },
+                  {
+                    "name":"height",
+                    "type":"Number",
+                    "value":675
+                  }
+            ],
+            "customParams":{
+            },
+            "params":{
+              "color":16711680,
+              "name":"blur_mask_mobile",
+              "x": 37.5,
+              "y": 413
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
                 "textureName": "reel"
               }
             ],
@@ -363,6 +403,46 @@
               "y": 540,
               "scaleX": 1,
               "scaleY": 1
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "intro-bg-desktop"
+              }
+            ],
+           "customParams": {
+              
+            },
+            "params": {
+              "name": "blur_bg",
+              "scaleX": 1,
+              "scaleY": 1
+            }
+          },
+          {
+            "cls":"starling.display.Quad",
+            "constructorParams":[
+              {
+                    "name":"width",
+                    "type":"Number",
+                    "value":1166.5
+                  },
+                  {
+                    "name":"height",
+                    "type":"Number",
+                    "value":794
+                  }
+            ],
+            "customParams":{
+            },
+            "params":{
+              "color":16711680,
+              "name":"blur_mask",
+              "x": 167.5,
+              "y": 103.5
             }
           },
           {

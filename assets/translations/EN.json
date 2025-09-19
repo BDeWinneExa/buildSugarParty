@@ -202,7 +202,7 @@
         "desc": "TURN ON OR OFF THE GAME\nMUSIC"
       },
       "switch_module_4": {
-        "tf": "SOUND FX",
+        "tf": "SOUND",
         "desc": "TURN ON OR OFF THE GAME\nSOUNDS"
       },
       "switch_module_5": {
@@ -269,7 +269,7 @@
     "doubleChance": "DOUBLE\nCHANCE"
   },
   
-  "tfWinUpTo": "WIN UP TO 5.000 X",
+  "tfWinUpTo": "WIN UP TO 5,000 X",
   "tfGoodLuck": "GOOD LUCK",
   "tfWin": "WIN: ",
   "tfTotalWin": "TOTAL WIN",

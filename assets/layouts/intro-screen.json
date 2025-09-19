@@ -470,8 +470,8 @@
               "name": "logo",
               "x": 1645,
               "y": 280,
-              "scaleX": 0.6,
-              "scaleY": 0.6
+              "scaleX": 2,
+              "scaleY": 2
             }
           },
           {

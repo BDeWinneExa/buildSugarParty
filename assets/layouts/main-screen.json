@@ -1658,7 +1658,7 @@
                     "params":{
                       "color":16777215,
                       "font":"SugarPartyFont",
-                      "size":18
+                      "size":27
                     }
                   },
                   "height":100,
@@ -1668,8 +1668,8 @@
                   "text":"Abc123",
                   "width":1080,
                   "scaleX":0.5,
-                  "scaleY":0.5
-                  
+                  "scaleY":0.5,
+                  "y":-7
                 },
                 "tweenData":{
                   
@@ -1994,7 +1994,7 @@
                       "text":"$200",
                       "width":190,
                       "x":-2,
-                      "y":18.5
+                      "y":28
                     },
                     "tweenData":{
                       
@@ -2035,7 +2035,7 @@
                       "text":"BUY\nFEATURE",
                       "width":300,
                       "x":-3,
-                      "y":-53.5
+                      "y":-39.5
                     },
                     "tweenData":{
                       "translation-key":"freeSpins.buy"

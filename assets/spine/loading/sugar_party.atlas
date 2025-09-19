@@ -1,0 +1,25 @@
+sugar_party.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+	scale: 0.7
+FX01 3
+	bounds: 1083, 278, 788, 741
+	rotate: 90
+Group
+	bounds: 1348, 1500, 118, 155
+Group (1)
+	bounds: 1531, 1722, 137, 102
+Group (2)
+	bounds: 1348, 1657, 181, 167
+Group-1
+	bounds: 134, 208, 62, 100
+Group-2
+	bounds: 2, 61, 104, 101
+Group-3
+	bounds: 1348, 1455, 74, 43
+Group-4
+	bounds: 2, 164, 130, 144
+a_dreamy_candyland_sky_background
+	bounds: 2, 1068, 1344, 756
+effect 4@4x 1
+	bounds: 2, 310, 1079, 756

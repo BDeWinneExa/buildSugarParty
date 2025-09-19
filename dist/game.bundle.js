@@ -67586,14 +67586,15 @@ const BrowserApplication_1 = __webpack_require__(32139);
 const ScreenOrientation_1 = __webpack_require__(81827);
 const engineTween_1 = __webpack_require__(50381);
 const LoadingProgressBar_1 = __importDefault(__webpack_require__(64823));
+const pixi_spine_1 = __webpack_require__(15091);
 class LoadingScreen extends AdjustableLayoutContainer_1.default {
     constructor(onCompleteCallback) {
         super(null);
         this.isClickable = false;
-        this.background = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-bg-desktop'));
-        this.backgroundMobile = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-bg-mobile'));
-        this.background.anchor.set(0.5, 0.5);
-        this.backgroundMobile.anchor.set(0.5, 0.5);
+        this.background = new pixi_spine_1.Spine(AssetsManager_1.default.spine.get('loading-bg-desktop'));
+        this.backgroundMobile = new pixi_spine_1.Spine(AssetsManager_1.default.spine.get('loading-bg-mobile'));
+        this.background.state.setAnimation(0, 'loading_screen', true);
+        this.backgroundMobile.state.setAnimation(0, 'loading_screen', true);
         this.addChild(this.background);
         this.addChild(this.backgroundMobile);
         this.coinDesktop = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('coins-desktop'));
@@ -67604,10 +67605,10 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         this.addChild(this.character);
         this.characterLogo = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-logo'));
         this.characterLogo.anchor.set(0.5, 0.5);
-        this.characterLogo.scale.set(0.55);
-        this.characterLogo.position.x = 120;
-        this.characterLogo.position.y = 0;
-        this.character.addChild(this.characterLogo);
+        this.characterLogo.scale.set(this.isMobile() ? 0.25 : 0.5);
+        this.characterLogo.position.x = 170;
+        this.characterLogo.position.y = 500;
+        this.addChild(this.characterLogo);
         this.createGradientBottom();
         this.footerText = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('loading-text'));
         this.footerText.name = "footerText";
@@ -67696,6 +67697,9 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             }
         }
     }
+    isMobile() {
+        return BrowserApplication_1.BrowserApplication.mainScreenStage.orientation === ScreenOrientation_1.ScreenOrientation.VERTICAL;
+    }
     handleWindowResize() {
         if (!this.parent) {
             return;
@@ -67714,15 +67718,14 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         const scale = Math.min(xScale, yScale);
         // Background: Scale on Y-axis to be full screen
         // Character: Always keep centered
-        if (ScreenOrientation_1.ScreenOrientation.HORIZONTAL == BrowserApplication_1.BrowserApplication.mainScreenStage.orientation) {
+        if (!this.isMobile()) {
             this.character.position.set((width / 2) - (width / 16), (height / 2) - (height / 4));
             this.character.scale.set(scale);
+            this.characterLogo.scale.set(scale * 0.5);
             this.backgroundMobile.visible = false;
             this.gradientBottomMobile.visible = false;
             this.background.visible = true;
             this.gradientBottom.visible = true;
-            this.characterLogo.position.y = 350;
-            // this.startButton.position.y = -150;
             if (width > height * (baseWidth / baseHeight)) {
                 this.background.scale.set(xScale);
             }
@@ -67741,10 +67744,13 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
                 this.progressBar.y = height * 0.77; // Position above footer text
                 this.progressBar.scale.set(scale);
             }
+            this.characterLogo.position.y = this.footerText.position.y - (this.footerText.height * 4) + (LoadingScreen.finished ? 0 : 50);
+            this.characterLogo.position.x = this.character.position.x + 100;
         }
         else {
             this.character.position.set((width / 2) - (width / 6), (height / 2) - (height / 6));
             this.character.scale.set(scale * 2.5);
+            this.characterLogo.scale.set(scale);
             this.backgroundMobile.visible = true;
             this.background.visible = false;
             this.gradientBottomMobile.visible = true;
@@ -67754,7 +67760,6 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             const yScaleMobile = height / mobileHeight;
             const xScaleMobile = width / mobileWidth;
             const scaleMobile = Math.max(xScaleMobile, yScaleMobile);
-            this.characterLogo.position.y = 475;
             this.backgroundMobile.scale.set(scaleMobile, scaleMobile);
             this.backgroundMobile.x = width / 2;
             this.backgroundMobile.y = height / 2;
@@ -67764,10 +67769,12 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.footerText.x = width / 2;
             this.footerText.y = height - (this.gradientBottom.height * 0.15); // Position in lower part of gradient
             this.footerText.scale.set(scale * 2);
+            this.characterLogo.position.y = this.footerText.position.y - (this.footerText.height * 4.5) + (LoadingScreen.finished ? 0 : 50);
+            this.characterLogo.position.x = this.character.position.x + width * 0.15;
             // Progress bar: Center horizontally and position at bottom
             if (this.progressBar) {
                 this.progressBar.x = width / 2;
-                this.progressBar.y = height - (this.gradientBottom.height * 0.3); // Position above footer text
+                this.progressBar.y = height - (this.gradientBottom.height * 0.25); // Position above footer text
                 this.progressBar.scale.set(scale * 2);
             }
         }
@@ -68787,8 +68794,9 @@ const LayoutBuilder_1 = __importDefault(__webpack_require__(98744));
 const SlotMachine_1 = __importDefault(__webpack_require__(56918));
 const GameServiceEvent_1 = __webpack_require__(83363);
 const ToggleButton_1 = __webpack_require__(19838);
+const ControlEvent_1 = __importDefault(__webpack_require__(68659));
+const UIEvent_1 = __webpack_require__(77066);
 class AdjustSettings extends pixi_js_1.Container {
-    ;
     constructor(le) {
         super();
         LayoutBuilder_1.default.create(le, this, (le) => {
@@ -68800,12 +68808,12 @@ class AdjustSettings extends pixi_js_1.Container {
         }, this);
         this.switch_1 = this.getChildByName('switch_module_1')['switch_1'];
         this.switch_2 = this.getChildByName('switch_module_2')['switch_2'];
-        this.switch_3 = this.getChildByName('switch_module_3')['switch_3'];
+        //this.switch_3 = this.getChildByName('switch_module_3')['switch_3'] as ToggleButton;
         this.switch_4 = this.getChildByName('switch_module_4')['switch_4'];
         // this.switch_5 = this.getChildByName('switch_module_5')['switch_5'] as ToggleButton;
         this.switch_1.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeQuickSpin, this);
         this.switch_2.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeBattery, this);
-        this.switch_3.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeAmbient, this);
+        //this.switch_3.on(ToggleButton.STATE_CHANGED, this.changeAmbient, this);
         this.switch_4.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeSounds, this);
         // this.switch_5.on(ToggleButton.STATE_CHANGED, this.changeIntroScreen, this);
         this.updateView();
@@ -68822,8 +68830,8 @@ class AdjustSettings extends pixi_js_1.Container {
     updateView() {
         this.switch_1.setStateView(this.gs.settings.quickSpin);
         this.switch_2.setStateView(this.gs.settings.batterySaver);
-        this.switch_3.setStateView(this.gs.settings.ambientMusic);
-        this.switch_4.setStateView(this.gs.settings.soundFx);
+        //this.switch_3.setStateView(this.gs.settings.ambientMusic);
+        this.switch_4.setStateView(this.gs.settings.sound);
         // this.switch_5.setStateView(this.gs.settings.introScreen);
     }
     changeQuickSpin() {
@@ -68836,16 +68844,12 @@ class AdjustSettings extends pixi_js_1.Container {
         this.gs.settings.batterySaver = !this.gs.settings.batterySaver;
         this.gs.saveSettings();
     }
-    changeAmbient() {
-        this.gs.settings.ambientMusic = !this.gs.settings.ambientMusic;
-        this.gs.saveSettings();
-        SoundManager_1.default.getChannel('ambient').mute = !this.gs.settings.ambientMusic;
-    }
     changeSounds() {
-        this.gs.settings.soundFx = !this.gs.settings.soundFx;
+        new ControlEvent_1.default(UIEvent_1.UIEvent.SOUND_STATE_CHANGED).dispatch();
+        this.gs.settings.sound = !this.gs.settings.sound;
         this.gs.saveSettings();
-        SoundManager_1.default.getChannel('default').mute = !this.gs.settings.soundFx;
-        SoundManager_1.default.getChannel('ambient').mute = !this.gs.settings.soundFx;
+        SoundManager_1.default.getChannel('default').mute = !this.gs.settings.sound;
+        SoundManager_1.default.getChannel('ambient').mute = !this.gs.settings.sound;
     }
     changeIntroScreen() {
         this.gs.settings.introScreen = !this.gs.settings.introScreen;
@@ -72249,20 +72253,18 @@ class UISettingsMobileVertical extends pixi_js_1.Container {
         return instance;
     }
     onBtnVolume() {
-        if (!this.gs.settings.ambientMusic && !this.gs.settings.soundFx) {
-            this.gs.settings.ambientMusic = true;
-            this.gs.settings.soundFx = true;
+        if (!this.gs.settings.sound) {
+            this.gs.settings.sound = true;
         }
         else {
-            this.gs.settings.ambientMusic = false;
-            this.gs.settings.soundFx = false;
+            this.gs.settings.sound = false;
         }
         this.gs.saveSettings();
-        SoundManager_1.default.getChannel('ambient').mute = !this.gs.settings.ambientMusic;
-        SoundManager_1.default.getChannel('default').mute = !this.gs.settings.soundFx;
+        SoundManager_1.default.getChannel('ambient').mute = !this.gs.settings.sound;
+        SoundManager_1.default.getChannel('default').mute = !this.gs.settings.sound;
     }
     updateVolume() {
-        this.btnVolume.setInitialState(this.gs.settings.ambientMusic, this.gs.settings.soundFx);
+        this.btnVolume.setInitialState(this.gs.settings.sound, this.gs.settings.sound);
     }
     onBtnSettings() {
         SoundManager_1.default.play(SoundList_1.default.UI_BUTTON_CLICK);
@@ -76244,6 +76246,7 @@ var UIEvent;
     UIEvent["BET_SELECT"] = "onUIBetSelect";
     UIEvent["GAME_SPEED_LEVEL_UP"] = "onUIGameSpeedLevelUp";
     UIEvent["GAME_SPEED_LEVEL_DOWN"] = "onUIGameSpeedLevelDown";
+    UIEvent["SOUND_STATE_CHANGED"] = "onSoundStateChanged";
 })(UIEvent || (exports.UIEvent = UIEvent = {}));
 
 
@@ -79307,6 +79310,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
                 this.popupDesktop = (_l = this.systemSettingsPanelHorizontal) !== null && _l !== void 0 ? _l : (this.systemSettingsPanelHorizontal = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingslLandscape')));
                 this.popupVertical = (_m = this.systemSettingsPanelVertical) !== null && _m !== void 0 ? _m : (this.systemSettingsPanelVertical = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingPortrait')));
                 this.popupVertical.scale.set(2);
+                PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = this.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL ? 2 : 1.5;
                 break;
             default:
                 this.popupManager.hide();
@@ -79812,9 +79816,7 @@ let GameService = class GameService extends eventemitter3_1.default {
         this._settings = (_a = (0, LocalStorageUtils_1.getFromLocalStorage)('settings')) !== null && _a !== void 0 ? _a : {
             quickSpin: false,
             batterySaver: false,
-            ambientMusic: true,
             sound: true,
-            soundFx: true,
             introScreen: true,
             skipScreen: false,
             turboSpin: false,
@@ -81089,6 +81091,10 @@ let GameService = class GameService extends eventemitter3_1.default {
     get featureBuyConfig() {
         return this.featureBuy;
     }
+    toggleSkipScreen(value) {
+        this._settings.skipScreen = value;
+        this.saveSettings();
+    }
     saveSettings() {
         (0, LocalStorageUtils_1.saveToLocalStorage)('settings', this._settings);
         this.emit(GameServiceEvent_1.GameServiceEvent.SETTINGS_CHANGED, this);
@@ -82346,8 +82352,11 @@ const Utils_1 = __webpack_require__(63948);
 const Translation_1 = __importDefault(__webpack_require__(62231));
 const engineTween_1 = __webpack_require__(50381);
 const ScreenOrientation_1 = __webpack_require__(81827);
+const tsyringe_1 = __webpack_require__(24872);
+const LocalStorageUtils_1 = __webpack_require__(41087);
 class IntroScreen extends AdjustableLayoutContainer_1.default {
     constructor() {
+        var _a, _b;
         super(AssetsManager_1.default.layouts.get("intro-screen"));
         this.messages = [
             "WIN UP TO 5000X BET",
@@ -82390,24 +82399,9 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         }
         this.tfDoNotShowAgain.text = Translation_1.default.t('tfDoNotShowAgain');
         (0, Utils_1.autoscaleText)(this.tfDoNotShowAgain, 36, 450, 100);
-        if (this.doNotShowAgainCheckbox) {
-            if (this.doNotShowAgainCheckbox.onState) {
-                this.doNotShowAgainCheckbox.onState.removeAllListeners("pointerup");
-                this.doNotShowAgainCheckbox.onState.once("pointerup", () => {
-                    this.doNotShowAgainCheckbox.changeState(false);
-                });
-            }
-            if (this.doNotShowAgainCheckbox.offState) {
-                this.doNotShowAgainCheckbox.offState.removeAllListeners("pointerup");
-                this.doNotShowAgainCheckbox.offState.once("pointerup", () => {
-                    this.doNotShowAgainCheckbox.changeState(true);
-                });
-            }
-            this.doNotShowAgainCheckbox.removeAllListeners(ToggleButton_1.ToggleButton.STATE_CHANGED);
-            this.doNotShowAgainCheckbox.on(ToggleButton_1.ToggleButton.STATE_CHANGED, () => {
-                this.onCheckboxClicked(this.doNotShowAgainCheckbox.getIsStateOn());
-            }, this);
-        }
+        this.doNotShowAgainCheckbox.on(ToggleButton_1.ToggleButton.STATE_CHANGED, () => { this.onCheckboxClicked(this.doNotShowAgainCheckbox.getIsStateOn()); }, this);
+        const isSkipScreen = (_b = (_a = (0, LocalStorageUtils_1.getFromLocalStorage)('settings')) === null || _a === void 0 ? void 0 : _a.skipScreen) !== null && _b !== void 0 ? _b : false;
+        this.doNotShowAgainCheckbox.setStateView(isSkipScreen);
         // Set up text animations
         setTimeout(() => {
             if (this.tfDoNotShowAgain) {
@@ -82553,7 +82547,8 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         }
     }
     onCheckboxClicked(value) {
-        localStorage.setItem('skipScreen', value ? 'true' : 'false');
+        const gs = tsyringe_1.container.resolve('GameService');
+        gs.toggleSkipScreen(value);
     }
 }
 exports["default"] = IntroScreen;
@@ -82819,6 +82814,7 @@ let MainGameScreen = class MainGameScreen extends AdjustableLayoutContainer_1.de
                     this.uiPanelDesktop.totalWinFrame.setValue(0);
                     // this.totalWinFrame.setValue(0);;
                 }
+                this.reelHeader.setHeader(0);
                 this.cascadeHistoryPanelHorizontal.reset();
                 this.cascadeHistoryPanelVertical.reset();
                 this.uiPanelMobileVertical.lock();

@@ -1,0 +1,26 @@
+sugar_party.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+	scale: 0.7
+FX01 3
+	bounds: 760, 530, 788, 741
+Group-1
+	bounds: 1550, 1008, 62, 100
+Group-2
+	bounds: 96, 582, 104, 101
+Group-3
+	bounds: 1668, 1228, 74, 43
+coin1
+	bounds: 2, 494, 92, 189
+coin2
+	bounds: 1841, 1849, 188, 180
+coin3
+	bounds: 1550, 1110, 116, 161
+coin4
+	bounds: 2, 375, 69, 117
+coin6
+	bounds: 1841, 1736, 109, 111
+effect 4@4x 1
+	bounds: 760, 1273, 1079, 756
+enhanced_bg_mobile
+	bounds: 2, 685, 756, 1344

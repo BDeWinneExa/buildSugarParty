@@ -2,25 +2,34 @@
   "layouts": [
     {
       "name": "loading-screen",
-      "url": "./layouts/loading-screen.json?v=0.0.10.1758212284371"
+      "url": "./layouts/loading-screen.json?v=0.0.10.1758290885718"
     }
   ],
   "textures": [
     {
       "name": "loading",
-      "url": "./images/loading-screen/loading.json?v=0.0.10.1758212284371"
+      "url": "./images/loading-screen/loading.json?v=0.0.10.1758290885718"
     }
   ],
   "sounds": [],
-  "spine": [],
+  "spine": [
+    {
+      "name": "loading-bg-desktop",
+      "url": "./spine/loading/sugar_party.json?v=0.0.10.1758290885718"
+    },
+    {
+      "name": "loading-bg-mobile",
+      "url": "./spine/loading/mobile/sugar_party.json?v=0.0.10.1758290885718"
+    }
+  ],
   "fonts": [
     {
       "name": "AlbertSans",
-      "url": "./fonts/AlbertSans-Black.woff?v=0.0.10.1758212284371"
+      "url": "./fonts/AlbertSans-Black.woff?v=0.0.10.1758290885718"
     },
     {
       "name": "LongdonDecorative",
-      "url": "./fonts/LongdonDecorative.ttf?v=0.0.10.1758212284371"
+      "url": "./fonts/LongdonDecorative.ttf?v=0.0.10.1758290885718"
     }
   ]
 }

@@ -82879,7 +82879,7 @@ let MainGameScreen = class MainGameScreen extends AdjustableLayoutContainer_1.de
                     // this.totalWinFrameMobile.setValue(sm.currentSpinResult.currentTotalWinValue, true);
                 }
                 // if (sm.currentSpinResult.winValue && sm.currentSpinResult.winValue > 0)
-                this.reelHeader.setHeader(sm.currentSpinResult.winValue, true);
+                this.reelHeader.setHeader(sm.currentSpinResult.currentTotalWinValue, true);
                 break;
             case SlotMachineState_1.SlotMachineState.SPIN_RESULT_SCATTER:
                 this.showScatterWin();
@@ -82896,6 +82896,7 @@ let MainGameScreen = class MainGameScreen extends AdjustableLayoutContainer_1.de
                         return;
                     });
                 });
+                this.reelHeader.setHeader(sm.currentSpinResult.currentTotalWinValue, true);
                 break;
             case SlotMachineState_1.SlotMachineState.FREE_SPINS_ROUND_START:
                 this.reelsBackground.playAnimation(ReelsBackground_1.ReelsBackgroundType.FREEGAME, true);

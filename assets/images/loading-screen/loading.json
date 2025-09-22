@@ -120,30 +120,6 @@
         "y": 0.5
       }
     },
-    "loading-logo": {
-      "frame": {
-        "x": 2777,
-        "y": 1105,
-        "w": 700,
-        "h": 635
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 700,
-        "h": 635
-      },
-      "sourceSize": {
-        "w": 700,
-        "h": 635
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
     "gold-panel": {
       "frame": {
         "x": 2668,
@@ -170,7 +146,7 @@
     },
     "base-panel": {
       "frame": {
-        "x": 3416,
+        "x": 2777,
         "y": 1105,
         "w": 612,
         "h": 61
@@ -194,12 +170,12 @@
     },
     "loading-bar": {
       "frame": {
-        "x": 3481,
-        "y": 1105,
+        "x": 2777,
+        "y": 1721,
         "w": 598,
         "h": 49
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -218,7 +194,7 @@
     },
     "loading-stripe": {
       "frame": {
-        "x": 3534,
+        "x": 2842,
         "y": 1105,
         "w": 598,
         "h": 49
@@ -266,12 +242,12 @@
     },
     "highlightTop": {
       "frame": {
-        "x": 3587,
-        "y": 1105,
+        "x": 2777,
+        "y": 1774,
         "w": 575,
         "h": 14
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -288,10 +264,34 @@
         "y": 0.5
       }
     },
+    "loading-logo": {
+      "frame": {
+        "x": 2895,
+        "y": 1105,
+        "w": 501,
+        "h": 449
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 501,
+        "h": 449
+      },
+      "sourceSize": {
+        "w": 501,
+        "h": 449
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "startbutton": {
       "frame": {
-        "x": 3731,
-        "y": 2,
+        "x": 3348,
+        "y": 1105,
         "w": 477,
         "h": 160
       },
@@ -314,8 +314,8 @@
     },
     "footer-mobile": {
       "frame": {
-        "x": 3605,
-        "y": 1105,
+        "x": 3731,
+        "y": 2,
         "w": 430,
         "h": 279
       },
@@ -343,7 +343,7 @@
     "image": "loading.png",
     "format": "RGBA8888",
     "size": {
-      "w": 3893,
+      "w": 4012,
       "h": 1924
     },
     "scale": 1

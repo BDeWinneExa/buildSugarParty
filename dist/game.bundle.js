@@ -67721,7 +67721,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         if (!this.isMobile()) {
             this.character.position.set((width / 2) - (width / 16), (height / 2) - (height / 4));
             this.character.scale.set(scale);
-            this.characterLogo.scale.set(scale * 0.5);
+            this.characterLogo.scale.set(scale);
             this.backgroundMobile.visible = false;
             this.gradientBottomMobile.visible = false;
             this.background.visible = true;
@@ -67745,12 +67745,12 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
                 this.progressBar.scale.set(scale);
             }
             this.characterLogo.position.y = this.footerText.position.y - (this.footerText.height * 4) + (LoadingScreen.finished ? 0 : 50);
-            this.characterLogo.position.x = this.character.position.x + 100;
+            this.characterLogo.position.x = this.character.position.x + width * 0.07;
         }
         else {
             this.character.position.set((width / 2) - (width / 6), (height / 2) - (height / 6));
             this.character.scale.set(scale * 2.5);
-            this.characterLogo.scale.set(scale);
+            this.characterLogo.scale.set(scale * 3);
             this.backgroundMobile.visible = true;
             this.background.visible = false;
             this.gradientBottomMobile.visible = true;
@@ -68797,6 +68797,7 @@ const ToggleButton_1 = __webpack_require__(19838);
 const ControlEvent_1 = __importDefault(__webpack_require__(68659));
 const UIEvent_1 = __webpack_require__(77066);
 class AdjustSettings extends pixi_js_1.Container {
+    ;
     constructor(le) {
         super();
         LayoutBuilder_1.default.create(le, this, (le) => {
@@ -68808,12 +68809,12 @@ class AdjustSettings extends pixi_js_1.Container {
         }, this);
         this.switch_1 = this.getChildByName('switch_module_1')['switch_1'];
         this.switch_2 = this.getChildByName('switch_module_2')['switch_2'];
-        //this.switch_3 = this.getChildByName('switch_module_3')['switch_3'] as ToggleButton;
+        this.switch_3 = this.getChildByName('switch_module_3')['switch_3'];
         this.switch_4 = this.getChildByName('switch_module_4')['switch_4'];
         // this.switch_5 = this.getChildByName('switch_module_5')['switch_5'] as ToggleButton;
         this.switch_1.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeQuickSpin, this);
         this.switch_2.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeBattery, this);
-        //this.switch_3.on(ToggleButton.STATE_CHANGED, this.changeAmbient, this);
+        this.switch_3.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.spinButtonLock, this);
         this.switch_4.on(ToggleButton_1.ToggleButton.STATE_CHANGED, this.changeSounds, this);
         // this.switch_5.on(ToggleButton.STATE_CHANGED, this.changeIntroScreen, this);
         this.updateView();
@@ -68830,9 +68831,13 @@ class AdjustSettings extends pixi_js_1.Container {
     updateView() {
         this.switch_1.setStateView(this.gs.settings.quickSpin);
         this.switch_2.setStateView(this.gs.settings.batterySaver);
-        //this.switch_3.setStateView(this.gs.settings.ambientMusic);
+        this.switch_3.setStateView(this.gs.settings.spinButtonLock);
         this.switch_4.setStateView(this.gs.settings.sound);
         // this.switch_5.setStateView(this.gs.settings.introScreen);
+    }
+    spinButtonLock() {
+        this.gs.settings.spinButtonLock = !this.gs.settings.spinButtonLock;
+        this.gs.saveSettings();
     }
     changeQuickSpin() {
         this.gs.settings.quickSpin = !this.gs.settings.quickSpin;
@@ -79309,8 +79314,8 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
             case UIState_1.UIPanelType.SYSTEM_SETTINGS:
                 this.popupDesktop = (_l = this.systemSettingsPanelHorizontal) !== null && _l !== void 0 ? _l : (this.systemSettingsPanelHorizontal = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingslLandscape')));
                 this.popupVertical = (_m = this.systemSettingsPanelVertical) !== null && _m !== void 0 ? _m : (this.systemSettingsPanelVertical = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingPortrait')));
-                this.popupVertical.scale.set(2);
-                PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = this.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL ? 2 : 1.5;
+                this.popupVertical.scale.set(2.5);
+                PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = this.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL ? 2.5 : 1.5;
                 break;
             default:
                 this.popupManager.hide();

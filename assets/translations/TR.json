@@ -198,8 +198,8 @@
         "desc": "PİL ÖMRÜNDEN TASARRUF EDİN\nANİMASYON HIZININ AZALTILMASI"
       },
       "switch_module_3": {
-        "tf": "ORTAM MÜZİĞİ",
-        "desc": "OYUNU AÇMA VEYA KAPATMA\nMÜZİK"
+        "tf": "DÖNDÜRME DÜĞMESİ KİLİDİ",
+        "desc": ""
       },
       "switch_module_4": {
         "tf": "SES",

@@ -198,8 +198,8 @@
         "desc": "SAVE BATTERY LIFE BY\nREDUCING ANIMATION SPEED"
       },
       "switch_module_3": {
-        "tf": "AMBIENT MUSIC",
-        "desc": "TURN ON OR OFF THE GAME\nMUSIC"
+        "tf": "SPIN BUTTON LOCK",
+        "desc": ""
       },
       "switch_module_4": {
         "tf": "SOUND",

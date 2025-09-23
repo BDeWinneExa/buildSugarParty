@@ -84,6 +84,7 @@
               "cls":"starling.text.TextFormat",
               "customParams":{},
               "params":{
+                "bold":true,
                 "color":"#FD6302",
                 "font":"Alexandria",
                 "size":20

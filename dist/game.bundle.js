@@ -67749,7 +67749,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
         }
         else {
             this.character.position.set((width / 2) - (width / 6), (height / 2) - (height / 6));
-            this.character.scale.set(scale * 2.5);
+            this.character.scale.set(scale * 2);
             this.characterLogo.scale.set(scale * 3);
             this.backgroundMobile.visible = true;
             this.background.visible = false;

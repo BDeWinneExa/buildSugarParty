@@ -21,6 +21,23 @@
         }
       },
       {
+        "cls": "starling.display.Image",
+        "constructorParams": [
+          {
+            "cls": "starling.textures.Texture",
+            "textureName": "buy-feature-amount-bcg"
+          }
+        ],
+        "customParams": {},
+        "params": {
+          "name": "amount-bcg",
+          "x": 839,
+          "y": 501.5,
+          "scaleX": 1,
+          "scaleY": 0.8
+        }
+      },
+      {
         "cls": "starling.text.TextField",
         "constructorParams": [
           {

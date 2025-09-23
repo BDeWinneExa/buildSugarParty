@@ -600,6 +600,30 @@
         "y": 0.5
       }
     },
+    "buy-feature-amount-bcg": {
+      "frame": {
+        "x": 3892,
+        "y": 890,
+        "w": 248,
+        "h": 96
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 248,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 248,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "totalBetBG-portrait": {
       "frame": {
         "x": 1924,
@@ -890,12 +914,12 @@
     },
     "history-cell-bcg": {
       "frame": {
-        "x": 3892,
-        "y": 890,
+        "x": 1067,
+        "y": 1663,
         "w": 216,
         "h": 47
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -986,8 +1010,8 @@
     },
     "btn-close": {
       "frame": {
-        "x": 2964,
-        "y": 1020,
+        "x": 1287,
+        "y": 1663,
         "w": 83,
         "h": 82
       },
@@ -1010,7 +1034,7 @@
     },
     "btn-volume-off": {
       "frame": {
-        "x": 3051,
+        "x": 2964,
         "y": 1020,
         "w": 81,
         "h": 81
@@ -1034,8 +1058,8 @@
     },
     "btn-volume-on": {
       "frame": {
-        "x": 1067,
-        "y": 1663,
+        "x": 3049,
+        "y": 1020,
         "w": 81,
         "h": 81
       },
@@ -1106,78 +1130,6 @@
     },
     "Setting-landscape": {
       "frame": {
-        "x": 1152,
-        "y": 1663,
-        "w": 74,
-        "h": 74
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 74,
-        "h": 74
-      },
-      "sourceSize": {
-        "w": 74,
-        "h": 74
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "Sound-landscape": {
-      "frame": {
-        "x": 1230,
-        "y": 1663,
-        "w": 74,
-        "h": 74
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 74,
-        "h": 74
-      },
-      "sourceSize": {
-        "w": 74,
-        "h": 74
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "Soundoff-landscape": {
-      "frame": {
-        "x": 1308,
-        "y": 1663,
-        "w": 74,
-        "h": 74
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 74,
-        "h": 74
-      },
-      "sourceSize": {
-        "w": 74,
-        "h": 74
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "info-landscape": {
-      "frame": {
         "x": 2880,
         "y": 1518,
         "w": 74,
@@ -1200,10 +1152,82 @@
         "y": 0.5
       }
     },
-    "autoplayButton": {
+    "Sound-landscape": {
       "frame": {
         "x": 2958,
         "y": 1518,
+        "w": 74,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 74
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Soundoff-landscape": {
+      "frame": {
+        "x": 3131,
+        "y": 1659,
+        "w": 74,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 74
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "info-landscape": {
+      "frame": {
+        "x": 3209,
+        "y": 1659,
+        "w": 74,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 74
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "autoplayButton": {
+      "frame": {
+        "x": 3287,
+        "y": 1659,
         "w": 72,
         "h": 72
       },
@@ -1226,7 +1250,7 @@
     },
     "turbo-off-landscape": {
       "frame": {
-        "x": 3131,
+        "x": 3363,
         "y": 1659,
         "w": 72,
         "h": 72
@@ -1250,8 +1274,8 @@
     },
     "turbo-on-landscape": {
       "frame": {
-        "x": 3207,
-        "y": 1659,
+        "x": 3439,
+        "y": 1676,
         "w": 72,
         "h": 72
       },
@@ -1298,12 +1322,12 @@
     },
     "toogleON": {
       "frame": {
-        "x": 2958,
-        "y": 1594,
+        "x": 3036,
+        "y": 1518,
         "w": 96,
         "h": 48
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1322,8 +1346,8 @@
     },
     "betButton-portrait": {
       "frame": {
-        "x": 3283,
-        "y": 1659,
+        "x": 3515,
+        "y": 1676,
         "w": 68,
         "h": 68
       },
@@ -1346,8 +1370,8 @@
     },
     "buy-freespins-accept": {
       "frame": {
-        "x": 3355,
-        "y": 1659,
+        "x": 3587,
+        "y": 1676,
         "w": 68,
         "h": 68
       },
@@ -1370,8 +1394,8 @@
     },
     "buy-freespins-cancel": {
       "frame": {
-        "x": 3034,
-        "y": 1518,
+        "x": 1144,
+        "y": 1439,
         "w": 65,
         "h": 66
       },
@@ -1418,8 +1442,8 @@
     },
     "minusButton-landscape": {
       "frame": {
-        "x": 2880,
-        "y": 1596,
+        "x": 3659,
+        "y": 1676,
         "w": 56,
         "h": 57
       },
@@ -1442,8 +1466,8 @@
     },
     "plusButton-landscape": {
       "frame": {
-        "x": 1144,
-        "y": 1439,
+        "x": 2880,
+        "y": 1596,
         "w": 56,
         "h": 57
       },
@@ -1466,8 +1490,8 @@
     },
     "betMinusActive": {
       "frame": {
-        "x": 3943,
-        "y": 890,
+        "x": 2940,
+        "y": 1596,
         "w": 56,
         "h": 56
       },
@@ -1490,8 +1514,8 @@
     },
     "betMinusDeactive": {
       "frame": {
-        "x": 3943,
-        "y": 950,
+        "x": 2,
+        "y": 1695,
         "w": 56,
         "h": 56
       },
@@ -1514,8 +1538,8 @@
     },
     "betPlusActive": {
       "frame": {
-        "x": 3943,
-        "y": 1010,
+        "x": 62,
+        "y": 1695,
         "w": 56,
         "h": 56
       },
@@ -1538,8 +1562,8 @@
     },
     "betPlusDeactive": {
       "frame": {
-        "x": 3943,
-        "y": 1070,
+        "x": 122,
+        "y": 1695,
         "w": 56,
         "h": 56
       },
@@ -1562,8 +1586,8 @@
     },
     "minusButton-landscape-disabled": {
       "frame": {
-        "x": 3427,
-        "y": 1676,
+        "x": 182,
+        "y": 1695,
         "w": 56,
         "h": 56
       },
@@ -1586,8 +1610,8 @@
     },
     "plusButton-landscape-disabled": {
       "frame": {
-        "x": 3487,
-        "y": 1676,
+        "x": 242,
+        "y": 1695,
         "w": 56,
         "h": 56
       },
@@ -1610,8 +1634,8 @@
     },
     "multiplier-symbol-bcg": {
       "frame": {
-        "x": 3892,
-        "y": 1110,
+        "x": 3615,
+        "y": 1158,
         "w": 46,
         "h": 44
       },
@@ -1634,8 +1658,8 @@
     },
     "slider": {
       "frame": {
-        "x": 3058,
-        "y": 1588,
+        "x": 3090,
+        "y": 704,
         "w": 38,
         "h": 48
       },
@@ -1658,8 +1682,8 @@
     },
     "Group": {
       "frame": {
-        "x": 3615,
-        "y": 1158,
+        "x": 3000,
+        "y": 1596,
         "w": 30,
         "h": 30
       },
@@ -1706,54 +1730,6 @@
     },
     "info-default": {
       "frame": {
-        "x": 3942,
-        "y": 1130,
-        "w": 22,
-        "h": 24
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 22,
-        "h": 24
-      },
-      "sourceSize": {
-        "w": 22,
-        "h": 24
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "info-hover": {
-      "frame": {
-        "x": 3968,
-        "y": 1130,
-        "w": 22,
-        "h": 24
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 22,
-        "h": 24
-      },
-      "sourceSize": {
-        "w": 22,
-        "h": 24
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "setting-defualt": {
-      "frame": {
         "x": 1067,
         "y": 1489,
         "w": 22,
@@ -1776,10 +1752,58 @@
         "y": 0.5
       }
     },
-    "setting-hover": {
+    "info-hover": {
       "frame": {
         "x": 1093,
         "y": 1489,
+        "w": 22,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 22,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 22,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "setting-defualt": {
+      "frame": {
+        "x": 3034,
+        "y": 1618,
+        "w": 22,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 22,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 22,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "setting-hover": {
+      "frame": {
+        "x": 3000,
+        "y": 1630,
         "w": 22,
         "h": 24
       },
@@ -1826,8 +1850,8 @@
     },
     "turbo-on": {
       "frame": {
-        "x": 3649,
-        "y": 1158,
+        "x": 3060,
+        "y": 1618,
         "w": 20,
         "h": 24
       },
@@ -1874,8 +1898,8 @@
     },
     "checkboxOff": {
       "frame": {
-        "x": 3649,
-        "y": 1186,
+        "x": 2251,
+        "y": 1608,
         "w": 18,
         "h": 19
       },
@@ -1899,7 +1923,7 @@
     "checkboxOn": {
       "frame": {
         "x": 2251,
-        "y": 1608,
+        "y": 1631,
         "w": 18,
         "h": 19
       },
@@ -1922,8 +1946,8 @@
     },
     "autoplayStopButton": {
       "frame": {
-        "x": 2958,
-        "y": 1518,
+        "x": 3287,
+        "y": 1659,
         "w": 72,
         "h": 72
       },
@@ -1952,7 +1976,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 4003,
-      "h": 1751
+      "h": 1753
     },
     "scale": 1
   }

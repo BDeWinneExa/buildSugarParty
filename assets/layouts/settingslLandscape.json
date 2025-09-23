@@ -14,7 +14,7 @@
             "name":"background",
             "x":314,
             "y":631,
-            "alpha":0.7
+            "alpha":0.6
           }
         },
         {
@@ -84,9 +84,10 @@
               "cls":"starling.text.TextFormat",
               "customParams":{},
               "params":{
+                "bold": true,
                 "color":"#FD6302",
                 "font":"Alexandria",
-                "size":20
+                "size":22
               }
             },
             "height":39,
@@ -125,6 +126,7 @@
                       "cls":"starling.text.TextFormat",
                       "customParams":{},
                       "params":{
+                        "bold":true,
                         "color":16777215,
                         "font":"Alexandria",
                         "horizontalAlign":"left",
@@ -240,6 +242,7 @@
                       "cls":"starling.text.TextFormat",
                       "customParams":{},
                       "params":{
+                        "bold":true,
                         "color":16777215,
                         "font":"Alexandria",
                         "horizontalAlign":"left",
@@ -355,6 +358,7 @@
                       "cls":"starling.text.TextFormat",
                       "customParams":{},
                       "params":{
+                        "bold":true,
                         "color":16777215,
                         "font":"Alexandria",
                         "horizontalAlign":"left",
@@ -470,6 +474,7 @@
                       "cls":"starling.text.TextFormat",
                       "customParams":{},
                       "params":{
+                        "bold":true,
                         "color":16777215,
                         "font":"Alexandria",
                         "horizontalAlign":"left",

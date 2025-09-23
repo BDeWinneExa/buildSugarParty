@@ -67692,6 +67692,14 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
                             time: 0.6,
                             transition: 'easeOutBounce',
                         });
+                        if (!this.isMobile()) {
+                            return;
+                        }
+                        engineTween_1.Tweener.addTween(this.character.position, {
+                            y: this.character.position.y - 50,
+                            time: 0.6,
+                            transition: 'easeOutBounce',
+                        });
                     }
                 });
             }
@@ -67748,8 +67756,8 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.characterLogo.position.x = this.character.position.x + width * 0.07;
         }
         else {
-            this.character.position.set((width / 2) - (width / 6), (height / 2) - (height / 6));
-            this.character.scale.set(scale * 2);
+            this.character.position.set((width / 2) - (width / 6), (height / 2) - (height / 8) - (LoadingScreen.finished ? 0 : 50));
+            this.character.scale.set(scale * 2.5);
             this.characterLogo.scale.set(scale * 3);
             this.backgroundMobile.visible = true;
             this.background.visible = false;
@@ -67769,7 +67777,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.footerText.x = width / 2;
             this.footerText.y = height - (this.gradientBottom.height * 0.15); // Position in lower part of gradient
             this.footerText.scale.set(scale * 2);
-            this.characterLogo.position.y = this.footerText.position.y - (this.footerText.height * 4.5) + (LoadingScreen.finished ? 0 : 50);
+            this.characterLogo.position.y = this.footerText.position.y - (this.footerText.height * 4.75) + (LoadingScreen.finished ? 0 : 50);
             this.characterLogo.position.x = this.character.position.x + width * 0.15;
             // Progress bar: Center horizontally and position at bottom
             if (this.progressBar) {

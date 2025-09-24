@@ -344,7 +344,7 @@
                 "customParams": {},
                 "params": {
                   "bold": true,
-                  "font": "SugarPartyFont",
+                  "font": "SugarPartyFont1",
                   "size": 50,
                   "dropShadow": true,
                   "dropShadowColor": "#000000",
@@ -723,7 +723,7 @@
                 "params": {
                   "bold": true,
                   "color": "#FFFFFF",
-                  "font": "SugarPartyFont",
+                  "font": "SugarPartyFont1",
                   "size": 20,
                   "align": "center"
                 }

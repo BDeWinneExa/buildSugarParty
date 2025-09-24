@@ -541,7 +541,7 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"SugarPartyFont",
+                      "font":"SugarPartyFont1",
                       "size":18
                     }
                   },
@@ -579,7 +579,7 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"SugarPartyFont",
+                      "font":"SugarPartyFont1",
                       "size":45
                     }
                   },
@@ -616,7 +616,7 @@
                         "customParams":{},
                         "params":{
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":45
                         }
                       },
@@ -695,7 +695,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":25,
                           "align": "center"
                         }
@@ -836,7 +836,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":15
                         }
                       },
@@ -906,7 +906,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":25
                         }
                       },
@@ -1462,7 +1462,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":15
                         }
                       },
@@ -1532,7 +1532,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":25
                         }
                       },
@@ -1657,7 +1657,7 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"SugarPartyFont",
+                      "font":"SugarPartyFont1",
                       "size":27
                     }
                   },
@@ -1696,7 +1696,7 @@
                     "customParams":{},
                     "params":{
                       "color":16777215,
-                      "font":"SugarPartyFont",
+                      "font":"SugarPartyFont1",
                       "size":45
                     }
                   },
@@ -1733,7 +1733,7 @@
                         "customParams":{},
                         "params":{
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":45
                         }
                       },
@@ -1982,7 +1982,7 @@
                         "params":{
                           "bold":true,
                           "color":16777215,
-                          "font":"SugarPartyFont",
+                          "font":"SugarPartyFont1",
                           "size":30,
                           "align": "center"
                         }

@@ -97,7 +97,7 @@
             "params": {
               "bold": true,
               "color": 16777215,
-              "font": "SugarPartyFont",
+              "font": "SugarPartyFont1",
               "size": 15,
               "align": "center"
             }

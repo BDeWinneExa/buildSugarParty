@@ -67778,7 +67778,7 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.footerText.y = height - (this.gradientBottom.height * 0.15); // Position in lower part of gradient
             this.footerText.scale.set(scale * 2);
             this.characterLogo.position.y = this.footerText.position.y - (this.footerText.height * 4.75) + (LoadingScreen.finished ? 0 : 50);
-            this.characterLogo.position.x = this.character.position.x + width * 0.15;
+            this.characterLogo.position.x = this.character.position.x + width * 0.175;
             // Progress bar: Center horizontally and position at bottom
             if (this.progressBar) {
                 this.progressBar.x = width / 2;
@@ -77115,7 +77115,7 @@ class MultiplierSymbolView extends pixi_js_1.Container {
         super();
         this.background = new pixi_js_1.Sprite();
         this.multiplier = new pixi_js_1.BitmapText('', {
-            fontName: 'SugarPartyFont',
+            fontName: 'SugarPartyFont1',
             fontSize: 35,
             align: 'center'
         });
@@ -77619,7 +77619,7 @@ class ReelView extends pixi_js_1.Container {
     }
     createMultiplier(value) {
         const style = new pixi_js_1.TextStyle({
-            fontFamily: AssetsManager_1.default.webFonts.get('SugarPartyFont').family,
+            fontFamily: AssetsManager_1.default.webFonts.get('SugarPartyFont1').family,
             fill: [
                 '#FFB200',
                 '#FFFF00'

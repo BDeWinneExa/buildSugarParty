@@ -51,7 +51,7 @@
                 "customParams":{},
                 "params":{
                   "color":"#ffffff",
-                  "font":"SugarPartyFont",
+                  "font":"SugarPartyFont1",
                   "size":60,
                   "bold": true,
                   "align": "center"
@@ -274,7 +274,7 @@
                 "params": {
                   "bold": true,
                   "color": 16777215,
-                  "font": "SugarPartyFont",
+                  "font": "SugarPartyFont1",
                   "size": 50,
                   "align": "center"
                 }
@@ -374,7 +374,7 @@
                 "params": {
                   "bold": true,
                   "color": 16777215,
-                  "font": "SugarPartyFont",
+                  "font": "SugarPartyFont1",
                   "size": 50,
                   "align": "center"
                 }

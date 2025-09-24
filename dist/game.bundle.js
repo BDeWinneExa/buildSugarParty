@@ -79323,7 +79323,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
                 this.popupDesktop = (_l = this.systemSettingsPanelHorizontal) !== null && _l !== void 0 ? _l : (this.systemSettingsPanelHorizontal = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingslLandscape')));
                 this.popupVertical = (_m = this.systemSettingsPanelVertical) !== null && _m !== void 0 ? _m : (this.systemSettingsPanelVertical = new SystemSettingsPanel_1.default(AssetsManager_1.default.layouts.get('settingPortrait')));
                 this.popupVertical.scale.set(2.5);
-                PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = this.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL ? 2.5 : 1.5;
+                PopupManager_1.default.defaultAnimationConfiguration.showPopup.scale.value = this.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL ? 2.5 : 1.25;
                 break;
             default:
                 this.popupManager.hide();

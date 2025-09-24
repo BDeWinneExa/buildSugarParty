@@ -56,12 +56,10 @@
           "params":{
             "name":"btnClose",
             "x":842,
-            "y":624
+            "y":634.5
           },
           "tweenData":{
-            "animation":{
-              "type":"bounce"
-            }
+
           }
         },
         {

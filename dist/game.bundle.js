@@ -82472,11 +82472,15 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             this.background.visible = true;
             this.blur_bg.visible = true;
             this.blur_mask.visible = true;
+            this.gradient.tint = 0xffffff;
+            this.reelBackground.texture = AssetsManager_1.default.textures.get("reel");
         }
         else {
             this.blur_bg_mobile.visible = true;
             this.backgroundMobile.visible = true;
             this.blur_mask_mobile.visible = true;
+            this.gradient.tint = 0x000000;
+            this.reelBackground.texture = AssetsManager_1.default.textures.get("reel-m");
         }
         if (this.gradient) {
             this.gradient.width = desc.currentWidth;

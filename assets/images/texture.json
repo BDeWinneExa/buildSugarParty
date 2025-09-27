@@ -288,10 +288,58 @@
         "y": 0.5
       }
     },
-    "settingBG-portrait": {
+    "gradient-m": {
       "frame": {
         "x": 3674,
         "y": 1158,
+        "w": 360,
+        "h": 260
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 260
+      },
+      "sourceSize": {
+        "w": 360,
+        "h": 260
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "reel-m": {
+      "frame": {
+        "x": 588,
+        "y": 1489,
+        "w": 338,
+        "h": 257
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 338,
+        "h": 257
+      },
+      "sourceSize": {
+        "w": 338,
+        "h": 257
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingBG-portrait": {
+      "frame": {
+        "x": 2,
+        "y": 1496,
         "w": 323,
         "h": 263
       },
@@ -314,8 +362,8 @@
     },
     "spinBtnBG-landscape": {
       "frame": {
-        "x": 588,
-        "y": 1489,
+        "x": 3138,
+        "y": 1403,
         "w": 475,
         "h": 173
       },
@@ -338,8 +386,8 @@
     },
     "cascade_history_frame": {
       "frame": {
-        "x": 3138,
-        "y": 1403,
+        "x": 3617,
+        "y": 1522,
         "w": 252,
         "h": 315
       },
@@ -362,8 +410,8 @@
     },
     "autoplaySettingLandscape": {
       "frame": {
-        "x": 2,
-        "y": 1496,
+        "x": 930,
+        "y": 1580,
         "w": 532,
         "h": 141
       },
@@ -386,12 +434,12 @@
     },
     "feature-buy-btn-bg": {
       "frame": {
-        "x": 3457,
-        "y": 1425,
+        "x": 329,
+        "y": 1496,
         "w": 264,
         "h": 247
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -410,8 +458,8 @@
     },
     "spin-btn-static": {
       "frame": {
-        "x": 3725,
-        "y": 1425,
+        "x": 1466,
+        "y": 1518,
         "w": 236,
         "h": 236
       },
@@ -458,7 +506,7 @@
     },
     "autoplaySettingPortrait": {
       "frame": {
-        "x": 1067,
+        "x": 1706,
         "y": 1518,
         "w": 317,
         "h": 141
@@ -506,8 +554,8 @@
     },
     "reel-header-bcg": {
       "frame": {
-        "x": 1388,
-        "y": 1518,
+        "x": 1706,
+        "y": 1663,
         "w": 346,
         "h": 111
       },
@@ -530,12 +578,12 @@
     },
     "betMaxButtonLandscape": {
       "frame": {
-        "x": 1388,
-        "y": 1633,
+        "x": 3938,
+        "y": 890,
         "w": 532,
         "h": 62
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -554,7 +602,7 @@
     },
     "start-autoplay-landscape-btn": {
       "frame": {
-        "x": 1738,
+        "x": 930,
         "y": 1518,
         "w": 532,
         "h": 58
@@ -602,12 +650,12 @@
     },
     "buy-feature-amount-bcg": {
       "frame": {
-        "x": 3892,
-        "y": 890,
+        "x": 2027,
+        "y": 1518,
         "w": 248,
         "h": 96
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -626,8 +674,8 @@
     },
     "totalBetBG-portrait": {
       "frame": {
-        "x": 1924,
-        "y": 1580,
+        "x": 2279,
+        "y": 1518,
         "w": 323,
         "h": 72
       },
@@ -650,7 +698,7 @@
     },
     "multiplier_2": {
       "frame": {
-        "x": 2274,
+        "x": 2606,
         "y": 1518,
         "w": 167,
         "h": 140
@@ -674,8 +722,8 @@
     },
     "multiplier_3": {
       "frame": {
-        "x": 2445,
-        "y": 1518,
+        "x": 2279,
+        "y": 1594,
         "w": 167,
         "h": 140
       },
@@ -698,8 +746,8 @@
     },
     "PlayerStatus-landscape": {
       "frame": {
-        "x": 2,
-        "y": 1641,
+        "x": 930,
+        "y": 1725,
         "w": 447,
         "h": 50
       },
@@ -722,12 +770,12 @@
     },
     "multiplier_1": {
       "frame": {
-        "x": 2616,
-        "y": 1518,
+        "x": 2450,
+        "y": 1594,
         "w": 156,
         "h": 148
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -746,8 +794,8 @@
     },
     "betMaxButtonPortrait": {
       "frame": {
-        "x": 1144,
-        "y": 1112,
+        "x": 3938,
+        "y": 1426,
         "w": 323,
         "h": 62
       },
@@ -770,12 +818,12 @@
     },
     "volatility": {
       "frame": {
-        "x": 1924,
-        "y": 1662,
+        "x": 1144,
+        "y": 1112,
         "w": 369,
         "h": 53
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -794,8 +842,8 @@
     },
     "start-autoplay-portrait-btn": {
       "frame": {
-        "x": 2776,
-        "y": 1659,
+        "x": 2777,
+        "y": 1518,
         "w": 323,
         "h": 58
       },
@@ -842,8 +890,8 @@
     },
     "adjustbet-panel-btn-max": {
       "frame": {
-        "x": 3725,
-        "y": 1665,
+        "x": 2602,
+        "y": 1662,
         "w": 240,
         "h": 70
       },
@@ -866,8 +914,8 @@
     },
     "sliderBGLandscape": {
       "frame": {
-        "x": 2297,
-        "y": 1670,
+        "x": 2056,
+        "y": 1754,
         "w": 419,
         "h": 24
       },
@@ -890,8 +938,8 @@
     },
     "sliderFillLandscape": {
       "frame": {
-        "x": 2297,
-        "y": 1698,
+        "x": 2479,
+        "y": 1754,
         "w": 419,
         "h": 24
       },
@@ -914,8 +962,8 @@
     },
     "history-cell-bcg": {
       "frame": {
-        "x": 1067,
-        "y": 1663,
+        "x": 2056,
+        "y": 1618,
         "w": 216,
         "h": 47
       },
@@ -938,8 +986,8 @@
     },
     "backBtn": {
       "frame": {
-        "x": 453,
-        "y": 1641,
+        "x": 2846,
+        "y": 1580,
         "w": 100,
         "h": 100
       },
@@ -962,8 +1010,8 @@
     },
     "forwardBtn": {
       "frame": {
-        "x": 2776,
-        "y": 1518,
+        "x": 2950,
+        "y": 1580,
         "w": 100,
         "h": 100
       },
@@ -986,12 +1034,12 @@
     },
     "PlayerStatus-portrait": {
       "frame": {
-        "x": 3969,
-        "y": 1425,
+        "x": 580,
+        "y": 1750,
         "w": 298,
         "h": 30
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1009,30 +1057,6 @@
       }
     },
     "btn-volume-off": {
-      "frame": {
-        "x": 1287,
-        "y": 1663,
-        "w": 81,
-        "h": 81
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 81,
-        "h": 81
-      },
-      "sourceSize": {
-        "w": 81,
-        "h": 81
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "btn-volume-on": {
       "frame": {
         "x": 2964,
         "y": 1020,
@@ -1056,14 +1080,38 @@
         "y": 0.5
       }
     },
+    "btn-volume-on": {
+      "frame": {
+        "x": 3049,
+        "y": 1020,
+        "w": 81,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 81,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 81,
+        "h": 81
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "sliderBGPortrait": {
       "frame": {
-        "x": 557,
-        "y": 1496,
+        "x": 930,
+        "y": 1489,
         "w": 214,
         "h": 24
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1082,7 +1130,7 @@
     },
     "sliderFillPortrait": {
       "frame": {
-        "x": 3103,
+        "x": 3104,
         "y": 1518,
         "w": 214,
         "h": 24
@@ -1106,8 +1154,8 @@
     },
     "Setting-landscape": {
       "frame": {
-        "x": 3049,
-        "y": 1020,
+        "x": 2056,
+        "y": 1669,
         "w": 74,
         "h": 74
       },
@@ -1130,8 +1178,8 @@
     },
     "Sound-landscape": {
       "frame": {
-        "x": 2880,
-        "y": 1518,
+        "x": 2134,
+        "y": 1669,
         "w": 74,
         "h": 74
       },
@@ -1154,8 +1202,8 @@
     },
     "Soundoff-landscape": {
       "frame": {
-        "x": 2958,
-        "y": 1518,
+        "x": 2902,
+        "y": 1684,
         "w": 74,
         "h": 74
       },
@@ -1178,8 +1226,8 @@
     },
     "info-landscape": {
       "frame": {
-        "x": 3131,
-        "y": 1659,
+        "x": 2980,
+        "y": 1684,
         "w": 74,
         "h": 74
       },
@@ -1202,8 +1250,8 @@
     },
     "autoplayButton": {
       "frame": {
-        "x": 3209,
-        "y": 1659,
+        "x": 3132,
+        "y": 1580,
         "w": 72,
         "h": 72
       },
@@ -1226,8 +1274,8 @@
     },
     "turbo-off-landscape": {
       "frame": {
-        "x": 3285,
-        "y": 1659,
+        "x": 3132,
+        "y": 1656,
         "w": 72,
         "h": 72
       },
@@ -1250,8 +1298,8 @@
     },
     "turbo-on-landscape": {
       "frame": {
-        "x": 3361,
-        "y": 1659,
+        "x": 3208,
+        "y": 1580,
         "w": 72,
         "h": 72
       },
@@ -1273,6 +1321,30 @@
       }
     },
     "toogleOFF": {
+      "frame": {
+        "x": 3617,
+        "y": 1403,
+        "w": 96,
+        "h": 48
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "toogleON": {
       "frame": {
         "x": 3515,
         "y": 1158,
@@ -1296,34 +1368,10 @@
         "y": 0.5
       }
     },
-    "toogleON": {
-      "frame": {
-        "x": 3036,
-        "y": 1518,
-        "w": 96,
-        "h": 48
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 96,
-        "h": 48
-      },
-      "sourceSize": {
-        "w": 96,
-        "h": 48
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
     "betButton-portrait": {
       "frame": {
-        "x": 3437,
-        "y": 1676,
+        "x": 3208,
+        "y": 1656,
         "w": 68,
         "h": 68
       },
@@ -1346,8 +1394,8 @@
     },
     "buy-freespins-accept": {
       "frame": {
-        "x": 3509,
-        "y": 1676,
+        "x": 3280,
+        "y": 1656,
         "w": 68,
         "h": 68
       },
@@ -1370,8 +1418,8 @@
     },
     "buy-freespins-cancel": {
       "frame": {
-        "x": 1144,
-        "y": 1439,
+        "x": 2777,
+        "y": 1580,
         "w": 65,
         "h": 66
       },
@@ -1394,8 +1442,8 @@
     },
     "btn-close": {
       "frame": {
-        "x": 3581,
-        "y": 1676,
+        "x": 3284,
+        "y": 1580,
         "w": 64,
         "h": 65
       },
@@ -1418,12 +1466,12 @@
     },
     "sliderLandscape": {
       "frame": {
-        "x": 2720,
-        "y": 1670,
+        "x": 1381,
+        "y": 1725,
         "w": 75,
         "h": 48
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1442,8 +1490,8 @@
     },
     "minusButton-landscape": {
       "frame": {
-        "x": 3649,
-        "y": 1676,
+        "x": 2212,
+        "y": 1669,
         "w": 56,
         "h": 57
       },
@@ -1466,8 +1514,8 @@
     },
     "plusButton-landscape": {
       "frame": {
-        "x": 2880,
-        "y": 1596,
+        "x": 3352,
+        "y": 1580,
         "w": 56,
         "h": 57
       },
@@ -1490,8 +1538,8 @@
     },
     "betMinusActive": {
       "frame": {
-        "x": 2940,
-        "y": 1596,
+        "x": 3352,
+        "y": 1641,
         "w": 56,
         "h": 56
       },
@@ -1514,8 +1562,8 @@
     },
     "betMinusDeactive": {
       "frame": {
-        "x": 2,
-        "y": 1695,
+        "x": 3352,
+        "y": 1701,
         "w": 56,
         "h": 56
       },
@@ -1538,8 +1586,8 @@
     },
     "betPlusActive": {
       "frame": {
-        "x": 62,
-        "y": 1695,
+        "x": 3412,
+        "y": 1580,
         "w": 56,
         "h": 56
       },
@@ -1562,8 +1610,8 @@
     },
     "betPlusDeactive": {
       "frame": {
-        "x": 122,
-        "y": 1695,
+        "x": 3412,
+        "y": 1640,
         "w": 56,
         "h": 56
       },
@@ -1586,8 +1634,8 @@
     },
     "minusButton-landscape-disabled": {
       "frame": {
-        "x": 182,
-        "y": 1695,
+        "x": 3412,
+        "y": 1700,
         "w": 56,
         "h": 56
       },
@@ -1610,8 +1658,8 @@
     },
     "plusButton-landscape-disabled": {
       "frame": {
-        "x": 242,
-        "y": 1695,
+        "x": 3472,
+        "y": 1580,
         "w": 56,
         "h": 56
       },
@@ -1658,8 +1706,8 @@
     },
     "slider": {
       "frame": {
-        "x": 3090,
-        "y": 704,
+        "x": 2846,
+        "y": 1684,
         "w": 38,
         "h": 48
       },
@@ -1682,8 +1730,8 @@
     },
     "Group": {
       "frame": {
-        "x": 3000,
-        "y": 1596,
+        "x": 882,
+        "y": 1750,
         "w": 30,
         "h": 30
       },
@@ -1706,12 +1754,12 @@
     },
     "sound-off": {
       "frame": {
-        "x": 3969,
-        "y": 1727,
+        "x": 2027,
+        "y": 1618,
         "w": 26,
         "h": 22
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1730,8 +1778,8 @@
     },
     "info-default": {
       "frame": {
-        "x": 1067,
-        "y": 1489,
+        "x": 1148,
+        "y": 1485,
         "w": 22,
         "h": 24
       },
@@ -1754,8 +1802,8 @@
     },
     "info-hover": {
       "frame": {
-        "x": 1093,
-        "y": 1489,
+        "x": 1174,
+        "y": 1485,
         "w": 22,
         "h": 24
       },
@@ -1778,8 +1826,8 @@
     },
     "setting-defualt": {
       "frame": {
-        "x": 3034,
-        "y": 1618,
+        "x": 3936,
+        "y": 1753,
         "w": 22,
         "h": 24
       },
@@ -1802,8 +1850,8 @@
     },
     "setting-hover": {
       "frame": {
-        "x": 3000,
-        "y": 1630,
+        "x": 3962,
+        "y": 1753,
         "w": 22,
         "h": 24
       },
@@ -1826,12 +1874,12 @@
     },
     "sound-on": {
       "frame": {
-        "x": 1119,
-        "y": 1489,
+        "x": 3412,
+        "y": 1760,
         "w": 24,
         "h": 21
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1850,12 +1898,12 @@
     },
     "turbo-on": {
       "frame": {
-        "x": 3060,
-        "y": 1618,
+        "x": 2212,
+        "y": 1730,
         "w": 20,
         "h": 24
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1874,12 +1922,12 @@
     },
     "turbo-off": {
       "frame": {
-        "x": 2251,
-        "y": 1580,
+        "x": 2240,
+        "y": 1730,
         "w": 18,
         "h": 24
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -1898,8 +1946,8 @@
     },
     "checkboxOff": {
       "frame": {
-        "x": 2251,
-        "y": 1608,
+        "x": 3440,
+        "y": 1760,
         "w": 18,
         "h": 19
       },
@@ -1922,8 +1970,8 @@
     },
     "checkboxOn": {
       "frame": {
-        "x": 2251,
-        "y": 1631,
+        "x": 3462,
+        "y": 1760,
         "w": 18,
         "h": 19
       },
@@ -1946,8 +1994,8 @@
     },
     "autoplayStopButton": {
       "frame": {
-        "x": 3209,
-        "y": 1659,
+        "x": 3132,
+        "y": 1580,
         "w": 72,
         "h": 72
       },
@@ -1976,7 +2024,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 4003,
-      "h": 1753
+      "h": 1783
     },
     "scale": 1
   }

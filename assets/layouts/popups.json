@@ -335,7 +335,7 @@
                   "bold": true,
                   "color": "#A34500",
                   "font": "SuperMorning",
-                  "size": 22.5,
+                  "size": 48,
                   "align": "center"
                 }
               },
@@ -412,7 +412,7 @@
                   "bold": true,
                   "color": "#6D2E00",
                   "font": "SuperMorning",
-                  "size": 25,
+                  "size": 36,
                   "align": "center"
                 }
               },
@@ -450,7 +450,7 @@
                   "bold": true,
                   "color": "#A34500",
                   "font": "SuperMorning",
-                  "size":15,
+                  "size":26,
                   "align": "center"
                 }
               },

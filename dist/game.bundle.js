@@ -68480,7 +68480,7 @@ class PopupFreeSpinWinning extends pixi_js_1.Container {
         this.tfAmount.position.set(10, -100);
         this.tfFreeSpinNumber.position.set(0, -230);
         this.tfFreespinsHeader.position.set(0, 25);
-        this.tfFreeSpinContinue.position.set(0, -300);
+        this.tfFreeSpinContinue.position.set(0, -285);
         this.tfFreeSpinContinue.scale.y = -1;
         this.tfFreespinsHeader.scale.y = -1;
         this.tfFreeSpinNumber.scale.y = -1;
@@ -68585,7 +68585,7 @@ class PopupFreespins extends pixi_js_1.Container {
         this.tfAmount.anchor.set(0.5);
         this.tfAmount.scale.set(1, -1);
         this.tfAmount.position.set(10, -100);
-        this.tfFreeSpinContinue.position.set(10, -300);
+        this.tfFreeSpinContinue.position.set(10, -285);
         this.tfFreespinsHeader.position.set(10, 35);
         this.tfFreeSpins.position.set(10, -230);
         const counterContainer = this.animation.slotContainers[this.animation.skeleton.findSlotIndex('rectangle')];
@@ -70682,6 +70682,7 @@ class PaytablePanelMobile extends Panel_1.default {
         });
         this.once('removed', () => { this.scrollBox.updateScroll(); }, this);
         this.combineTextSprite();
+        setTimeout(() => this.scrollBox.updateScroll(), 100);
     }
     // PUBLIC API
     updateLayout(desc) {
@@ -82170,7 +82171,7 @@ class Piece {
             this.spine.scale.set(scaleFactor * 2, scaleFactor * 4);
         }
         else {
-            this.spine.scale.set(1.65, 1.2);
+            this.spine.scale.set(1.45, 1);
         }
         this.spine.x = tileSize.width / 2;
         this.spine.y = tileSize.height / 2;
@@ -82406,6 +82407,8 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         // Instantiate GamePlayIntro
         this.tfDoNotShowAgain.anchor.set(0.5, 0.5);
         this.tfDoNotShowAgain.style.align = "center";
+        this.tfDoNotShowAgain.style.stroke = "#000000";
+        this.tfDoNotShowAgain.style.strokeThickness = 8;
         if (this.volatility) {
             this.volatility.anchor.set(0.5, 0.5);
         }

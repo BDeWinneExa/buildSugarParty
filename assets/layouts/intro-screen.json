@@ -568,10 +568,10 @@
             },
             "params": {
               "name": "gamePlayIntro",
-              "x": 160,
-              "y": -5,
-              "scaleX": 0.62,
-              "scaleY": 0.875
+              "x": 193,
+              "y": 8,
+              "scaleX": 0.58,
+              "scaleY": 0.835
             },
             "children": []
           },

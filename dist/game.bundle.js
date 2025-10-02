@@ -81912,10 +81912,10 @@ class GamePlayIntro extends pixi_js_1.Container {
             this.gridMask = new pixi_js_1.Graphics();
         }
         this.gridMask.beginFill(0xFFFFFF);
-        this.gridMask.drawRect(0, 0, gridWidth, gridHeight);
+        this.gridMask.drawRect(0, 0, gridWidth, gridHeight + 100);
         this.gridMask.endFill();
         this.gridMask.x = this.gridContainer.x;
-        this.gridMask.y = this.gridContainer.y;
+        this.gridMask.y = this.gridContainer.y - 10;
         this.gridContainer.mask = this.gridMask;
         if (!this.gridMask.parent) {
             this.addChild(this.gridMask);
@@ -82490,7 +82490,7 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             this.gradient.y = desc.currentHeight;
         }
         if (this.tfDoNotShowAgain) {
-            this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
+            this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 270;
         }
     }
     onAdded() {
@@ -82498,7 +82498,7 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             // this.btnGetStarted.buttonAnimator.setAnimation("spin_Idle");
         }
         if (this.tfDoNotShowAgain) {
-            this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
+            this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 270;
         }
         this.backgroundSound = SoundManager_1.default.loop({
             id: SoundListExtended_1.default.BASEGAME_BACKGROUND,

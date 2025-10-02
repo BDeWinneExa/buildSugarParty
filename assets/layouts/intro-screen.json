@@ -159,8 +159,8 @@
             },
             "params": {
               "name": "doNotShowAgainCheckbox",
-              "scaleX": 2.5,
-              "scaleY": 2.5,
+              "scaleX": 1.25,
+              "scaleY": 1.25,
               "x": 540,
               "y": 1730
             },
@@ -599,9 +599,9 @@
             },
             "params": {
               "name": "doNotShowAgainCheckbox",
-              "scaleX": 2.5,
-              "scaleY": 2.5,
-              "x": 1650,
+              "scaleX": 1.25,
+              "scaleY": 1.25,
+              "x": 1370,
               "y": 910
             },
             "children": [

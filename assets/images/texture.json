@@ -1728,6 +1728,54 @@
         "y": 0.5
       }
     },
+    "checkboxOff": {
+      "frame": {
+        "x": 3054,
+        "y": 1580,
+        "w": 36,
+        "h": 38
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 38
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 38
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "checkboxOn": {
+      "frame": {
+        "x": 3054,
+        "y": 1622,
+        "w": 36,
+        "h": 38
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 38
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 38
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "Group": {
       "frame": {
         "x": 882,
@@ -1938,54 +1986,6 @@
       "sourceSize": {
         "w": 18,
         "h": 24
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "checkboxOff": {
-      "frame": {
-        "x": 3440,
-        "y": 1760,
-        "w": 18,
-        "h": 19
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 18,
-        "h": 19
-      },
-      "sourceSize": {
-        "w": 18,
-        "h": 19
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "checkboxOn": {
-      "frame": {
-        "x": 3462,
-        "y": 1760,
-        "w": 18,
-        "h": 19
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 18,
-        "h": 19
-      },
-      "sourceSize": {
-        "w": 18,
-        "h": 19
       },
       "pivot": {
         "x": 0.5,

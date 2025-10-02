@@ -68477,7 +68477,7 @@ class PopupFreeSpinWinning extends pixi_js_1.Container {
         this.tfFreespinsHeader.anchor.set(0.5);
         this.tfFreeSpinContinue.anchor.set(0.5);
         this.tfAmount.scale.set(2, -2);
-        this.tfAmount.position.set(10, -100);
+        this.tfAmount.position.set(10, -85.5);
         this.tfFreeSpinNumber.position.set(0, -230);
         this.tfFreespinsHeader.position.set(0, 25);
         this.tfFreeSpinContinue.position.set(0, -285);
@@ -68584,7 +68584,7 @@ class PopupFreespins extends pixi_js_1.Container {
         this.tfAmount.text = '';
         this.tfAmount.anchor.set(0.5);
         this.tfAmount.scale.set(1, -1);
-        this.tfAmount.position.set(10, -100);
+        this.tfAmount.position.set(10, -85.5);
         this.tfFreeSpinContinue.position.set(10, -285);
         this.tfFreespinsHeader.position.set(10, 35);
         this.tfFreeSpins.position.set(10, -230);
@@ -69575,6 +69575,10 @@ class FreeSpinButton extends Button_1.default {
     constructor(le) {
         super(le);
         this.tfTitle = this.normal['tfTitle'];
+        this.tfTitle.style.dropShadow = true;
+        this.tfTitle.style.dropShadowAngle = Math.PI / 2;
+        this.tfTitle.style.dropShadowColor = 0x000000;
+        this.tfTitle.style.dropShadowAlpha = 0.4;
         this.tfValue = this.normal['tfValue'];
         this.tfTitle.style.align = 'center';
         this.featureBuyButtonBg = this.normal['featureBuyButtonBg'];
@@ -69634,7 +69638,7 @@ class FreeSpinButton extends Button_1.default {
     setTexts(title, value, isActive = true, isNotAlpha = true) {
         this.tfTitle.text = title;
         this.tfValue.text = value;
-        (0, Utils_1.autoscaleText)(this.tfTitle, 35, 300, 100);
+        (0, Utils_1.autoscaleText)(this.tfTitle, 35, 168, 100);
         (0, Utils_1.autoscaleText)(this.tfValue, 25, 200, 75);
         this.setActive(isActive);
         // isNotAlpha ? this.alpha = 1 : this.alpha = 0.4

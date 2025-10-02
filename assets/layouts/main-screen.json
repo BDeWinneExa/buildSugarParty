@@ -734,7 +734,6 @@
                           "customComponentClass": "BitmapText"
                         },
                         "params":{
-                          "bold":true,
                           "color":16777215,
                           "font":"SuperMorning",
                           "size":65,
@@ -747,7 +746,6 @@
                       "pivotY":75,
                       "text":"BUY\nFEATURE",
                       "width":300,
-                      "x":-3,
                       "y":-50
                     },
                     "tweenData":{
@@ -2021,7 +2019,6 @@
                           "customComponentClass": "BitmapText"
                         },
                         "params":{
-                          "bold":true,
                           "color":16777215,
                           "font":"SuperMorning",
                           "size":65,

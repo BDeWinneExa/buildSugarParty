@@ -275,7 +275,7 @@
                   "bold": true,
                   "color": 16777215,
                   "font": "SugarPartyFont1",
-                  "size": 50,
+                  "size": 75,
                   "align": "center"
                 }
               },
@@ -298,7 +298,8 @@
         "params":{
           "name":"PopupFreespins",
           "x":540,
-          "y":930
+          "y":930,
+          "pivotY":50
         }
       },
       {

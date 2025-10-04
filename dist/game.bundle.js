@@ -78932,7 +78932,7 @@ class SugarParty extends BrowserApplication_1.BrowserApplication {
         });
         this.currentWidth = 0;
         this.currentHeight = 0;
-        this.assetsBaseUrl = '/assets';
+        this.assetsBaseUrl = './assets';
         this.language = config.language;
         Logger_1.default.warning(`FPS VALUE - ${(((_d = (_c = (0, LocalStorageUtils_1.getFromLocalStorage)('settings')) === null || _c === void 0 ? void 0 : _c.batterySaver) !== null && _d !== void 0 ? _d : false) == true) ? 20 : 60}`);
         // PixiJS Chrome extension support
